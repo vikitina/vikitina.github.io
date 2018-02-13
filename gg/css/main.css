@@ -2,7 +2,7 @@
   background-color: #fff;
   padding: 45px 30px;
   -webkit-border-radius: 10px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   font-size: .9rem;
   margin-top: 20px;
   opacity: 0;
@@ -41,7 +41,7 @@
   -webkit-align-items: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .form__row--2 {

@@ -5060,6 +5060,7 @@ hr {
   opacity: 0.8;
   cursor: default !important;
 }
+.with-angle{margin-bottom:120px;position:relative;}
 .with-angle::after {
     background-image: url("../img/white-bottom.png");
     background-position: center top;
@@ -5074,3 +5075,4 @@ hr {
     z-index: 6;
 }
 .without_sidepadding{padding-right: 0 !important;padding-left: 0 !important;}
+.clear{clear:both;}
