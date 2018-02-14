@@ -5076,3 +5076,14 @@ hr {
 }
 .without_sidepadding{padding-right: 0 !important;padding-left: 0 !important;}
 .clear{clear:both;}
+.agree_checkbox{align-items:unset !important;}
+.agree_checkbox .check{float:left;}
+.agree_checkbox label{    margin-bottom: unset;margin-left: 6px;margin-top: -4px;}
+
+@media screen and (max-width: 520px) {
+
+  .agree_checkbox label {
+    margin-left: 30px;
+    margin-top: -23px;
+}
+}
