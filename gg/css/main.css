@@ -1541,4 +1541,11 @@
     width: 100%;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+.form__row {height: 45px;}
+.form__input--3 {margin: 0 0 10px;position: absolute;right: 0;top: 0;width: 60%;}
+
+@media screen and (max-width: 520px) {
+.form__row {height: unset;}
+.form__input--3 {margin: 0 0 10px;position: unset;right: unset;top: unset;width: 100%;}
+}
