@@ -9,7 +9,7 @@ ul{margin:0;padding:0;list-style: none;}
 .bg_top{position:absolute;top:0;left:0;width:100%;z-index:-1;}
 .bg_top img{max-width:100%;}
 .bg_bottom{position:absolute;bottom:0;left:0;width:100%;z-index:-1;}
-.bg_top img{max-width:100%;}
+.bg_bottom img{max-width:100%;}
 
 header{height: 176px;background-color: #0f101a;padding-top:24px;padding-bottom: 32px;transition:all 0.5s;}
 header .logo{float:left;  width: 120px; height: 120px;transition:all 0.5s;}
@@ -88,13 +88,21 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #level .level_block{width:100%; height:508px;position:relative;}
 #level .level_block .pillar{width: 180px;height: 508px;position:absolute;top:0; left:50%;margin-left:-90px;overflow:hidden;}
 #level .level_block .pillar .shape{width: 180px;height: 508px;position:absolute;top:0; left:50%;margin-left:-90px;background:url(../img/level/shape.png) no-repeat top center;z-index:1;}
-#level .level_block .pillar .level{margin-top:-87px;width: 180px;height: 508px;position:absolute;top:100%; left:50%;margin-left:-90px;background:url(../img/level/level.png) no-repeat top center;z-index:10;}
+#level .level_block .pillar .level{transition:all 3s;margin-top:-87px;width: 180px;height: 508px;position:absolute;top:100%; left:50%;margin-left:-90px;background:url(../img/level/level.png) no-repeat top center;z-index:10;}
+#level .level_block .pillar .actuall-level{transition:all 3s;margin-top:-88px;width: 180px;height: 90px;position:absolute;top:100%; left:50%;margin-left:-90px;background:url(../img/level/actuall-level.png) no-repeat top center;z-index:12;}
 #level .level_block .pillar .scale{width: 180px;height: 508px;position:absolute;top:0; left:50%;margin-left:-90px;background:url(../img/level/scale.png) no-repeat top center;margin-top:44px;z-index:15;}
 #level .level_block .pillar .bottom{width: 180px;height: 48px;position:absolute;bottom:0; left:50%;margin-left:-90px;background:url(../img/level/bottom.png) no-repeat top center;z-index:20;}
 #level h2 b{color: #8dd5e4;font-weight:normal;}
+#level .level_block .start{width:100%; border-bottom:2px solid #1a252e;height:30px;position:absolute;left:0;bottom:47px;}
+#level .level_block .soft{width:100%; height:2px;background:#1a252e;position:absolute;left:0;top:50%;}
+#level .level_block .hard{width:100%; height:2px;background:#1a252e;position:absolute;left:0;top:44px;}
+#level .level_block .level_line{transition:all 3s;width:100%; height:2px;background:#00cde2;position:absolute;left:0;top:100%;margin-top: -44px;}
+#level .level_block .l{position:absolute;left:20%;bottom:0;color:#334758;font-size:1.4em;}
+#level .level_block .level_line .l{background:#0f101a;border:1px solid #00cde2;border-radius:3px;color:#00cde2;padding-top:5px;padding-bottom:5px;padding-left:15px;padding-right:15px;bottom:-15px;}
+#level .level_block .r{position:absolute;left:80%;bottom:0;color:#334758;font-size:1.4em;}
+#level .level_block .level_line .r{background:url(../img/level/level_bg.png) no-repeat top center;width:136px;height:40px;text-align:center;bottom:-18px;padding-top:7px;}
 
-
-#exchanges{padding-top:48px;position:relative;width:100%;}
+#exchanges{padding-top:48px;position:relative;width:100%;min-height: 300px;}
 
 #video{}
 
