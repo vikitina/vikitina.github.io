@@ -36,4 +36,19 @@ $('header .socials .lang').click(function(){
 		$(this).addClass('opened_lang');
 	}
 });
+
+ var link = $('.video_link');
+    var player = $('.video_player');
+
+    link.on('click', function (e) {
+        e.preventDefault();
+        link.css({
+            'display': 'none'
+        });
+        player.css({
+            'display': 'initial'
+        });
+        player.attr('src', 'https://www.youtube.com/embed/5D7yijz4x5Q?autoplay=1');
+    });
+
 });
