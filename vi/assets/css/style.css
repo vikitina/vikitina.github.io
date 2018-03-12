@@ -103,6 +103,9 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #level .level_block .level_line .r{background:url(../img/level/level_bg.png) no-repeat top center;width:136px;height:40px;text-align:center;bottom:-18px;padding-top:7px;}
 
 #exchanges{padding-top:48px;position:relative;width:100%;min-height: 300px;}
+#exchanges ul li{text-align: center}
+#exchanges ul li a{text-align:center;display:block;}
+#exchanges ul img{max-width:100%;max-height:64px;}
 
 #video{padding-top:80px;padding-bottom: 80px}
 #video .main{width: 1000px; height: 562px;margin:0 auto;position:relative;} 
@@ -165,7 +168,11 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 
 #roadmap{padding-top:80px;}
 
-#partners{padding-top:80px;}
+
+#partners{padding-top:80px;position:relative;width:100%;min-height: 300px;}
+#partners ul li{text-align: center}
+#partners ul li a{text-align:center;display:block;}
+#partners ul img{max-width:100%;max-height:64px;}
 
 #main_second{position:relative;padding-bottom:60px;}
 #main_second p{text-align:center;color: #acaec0;font-size:1.4em;}
