@@ -118,8 +118,18 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #about .wp{margin:0 auto;  width: 311px;height: 48px;display:block;font-size:1.4em;padding-top:7px;margin-top:30px;}
 
 #docs{padding-top:64px;}
+#docs ul{ width: 700px; height: 256px;margin:0 auto;}
+#docs ul li{ float:left;width: 300px; height: 256px; background-color: #0f101a;margin-right:100px;}
+#docs ul li:last-child{margin-right:0;}
+#docs ul li a{display:block;border: solid 1px #333651;border-radius: 4px;padding-top:16px;padding-bottom: 16px;margin-bottom:24px;}
+#docs ul li a:hover{text-decoration: none;}
+#docs ul li a span{  letter-spacing: 1.2px;text-align: center;color: #00cde2;font-size:1.4em;text-align:center;display:block;color: #00cde2;}
+#docs ul li a em{display:block;width:112px;height:96px;margin:0 auto;margin-top:30px;margin-bottom:19px;}
+#docs ul li.op a em{background:url(../img/images/icon_doc1.png) no-repeat center center;}
+#docs ul li.pr a em{background:url(../img/images/icon_doc2.png) no-repeat center center;}
+#docs ul li a .btn--frame{display:block;color: #22d79a; margin:0 auto; width: 240px;height: 48px;border-radius: 4px;border: solid 1px #22d79a;font-size:1.4em;padding-top:7px;text-align:center;}
 
-#advantages{}
+#advantages{padding-top:85px;}
 #advantages .row > div{height:210px;margin-bottom:70px;}
 #advantages .via-page-advantages-wrap-icon{text-align: center;height:140px;}
 #advantages .via-page-advantages-wrap-icon img{margin: 0 auto;}
@@ -131,6 +141,9 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #faq dl dt{color: #00cde2;font-weight:normal;}
 #faq dl dd{display:none;color: #acaec0;}
 #faq dl.opened dd{display:block;}
+
+#media{padding-top:80px;}
+
 
 #main_second{position:relative;padding-bottom:60px;}
 #main_second p{text-align:center;color: #acaec0;font-size:1.4em;}
