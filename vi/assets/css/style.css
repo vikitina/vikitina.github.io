@@ -31,10 +31,11 @@ header .socials .lang span{display: block;padding-left:15px;}
 header .socials .lang em{width: 14px;height: 10px; display:block; position:absolute;background: url(../img/images/triangle_lang.png) no-repeat top left;right:10px;top:11px;}
 header .socials .opened_lang{height:auto;}
 header .socials .opened_lang em{background-position: right top;}
-header .socials .lang ul{position:relative;display:none;width:100%;}
+header .socials .lang ul{position:relative;display:none;width:100%;margin-top:7px;}
 header .socials .lang li{cursor:pointer;width:100%;padding-top:4px;padding-bottom:4px;padding-left:15px;}
 header .socials .lang li:hover{background:#ccc;}
 header .socials .lang li a{color: #acaec0;display: block;width:100%;}
+header .socials .lang li a:hover{color: #0f101a;text-decoration: none}
 header .socials .opened_lang ul{display:block;}
 
 header  nav.navbar {float:left;padding-left: 0;padding-right: 0;height:49%;padding-top:0;padding-bottom:0;}
@@ -123,7 +124,12 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #about::before{content:" ";display:block;width:800px;height:420px;margin:0 auto;background:url(../img/images/city.png) no-repeat center top;margin-top:60px;background-size:cover;}
 #about h2{margin-top:60px;}
 #about p{width:90%;text-align:center;margin:0 auto;color: #acaec0;font-size:1.4em;line-height:1.8em;}
-#about .wp{margin:0 auto;  width: 311px;height: 48px;display:block;font-size:1.4em;padding-top:7px;margin-top:30px;}
+
+
+#how{padding-top:80px;}
+#how div {width:929px;margin: 0 auto;}
+#how div img{max-width:100%;}
+#how .wp{margin:0 auto;  width: 311px;height: 48px;display:block;font-size:1.4em;padding-top:7px;margin-top:30px;}
 
 #docs{padding-top:64px;}
 #docs ul{ width: 700px; height: 256px;margin:0 auto;}
@@ -146,9 +152,11 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #faq{}
 #faq::before{content:" ";display:block;width:420px;height:420px;margin:0 auto;background:url(../img/images/face.png) no-repeat center top;margin-bottom: 55px;margin-top:60px;background-size:cover;}
 #faq dl{width: 800px;border-radius: 4px;border: solid 1px #333651;margin: 0 auto;line-height:1.6em;margin-bottom:10px;padding:15px;font-size:1.4em;}
-#faq dl dt{color: #00cde2;font-weight:normal;}
+#faq dl dt{margin-bottom:10px;color: #00cde2;font-weight:normal;position:relative;}
+#faq dl dt:after{content:" ";width: 14px;height: 10px; display:block; position:absolute;background: url(../img/images/triangle_lang.png) no-repeat top left;right:10px;top:11px;}
 #faq dl dd{display:none;color: #acaec0;}
 #faq dl.opened dd{display:block;}
+#faq dl.opened dt:after{background-position:top right;}
 
 #media{padding-top:80px;}
 #media ul{font-size:1.4em;line-height: 1.6em;letter-spacing: 1.9px;margin-bottom: 30px;}
@@ -170,6 +178,9 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 .team li .via-page-employees-wrap-avatar img{width:100%;}
 .team li .via-page-employees-wrap-desc-name{display:block;text-align: center;font-size:1.4em;color: #acaec0;margin-top:20px;}
 .team li .via-page-employees-wrap-desc-position{display:block;text-align: center;font-size:1.4em;color: #00cde2;margin-top:24px;}
+.team li .via-page-employees-wrap-desc-social{text-align:center;margin-top:24px;}
+.team li .via-page-employees-wrap-desc-social a{margin-right:10px;}
+.team li .via-page-employees-wrap-desc-social a:last-child{margin-right:0;}
 
 #roadmap{padding-top:80px;}
 #roadmap .roadmap_container{margin: 0 auto; width:1000px;background:url(../img/images/line_roadmap.png) repeat-y top center;}

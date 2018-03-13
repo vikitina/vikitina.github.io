@@ -48,6 +48,13 @@ $('header .socials .lang').click(function(){
 	}
 });
 
+$(document).click(function(event){
+
+  if (!$(event.target).closest('.lang').length){
+      $('header .socials .lang').removeClass('opened_lang');
+  }
+});
+
  var link = $('.video_link');
     var player = $('.video_player');
 
@@ -61,5 +68,14 @@ $('header .socials .lang').click(function(){
         });
         player.attr('src', 'https://www.youtube.com/embed/5D7yijz4x5Q?autoplay=1');
     });
+
+$('#faq dl').click(function(){
+    if ($(this).hasClass('opened')) {
+    $(this).removeClass('opened');
+  }else{
+
+    $(this).addClass('opened');
+  }
+});
 
 });
