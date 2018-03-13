@@ -7,7 +7,13 @@ var target_level = $('#level');
 var targetPos_level = target_level.offset().top;
 var scrollToElem_level = targetPos_level - winHeight +300;
 
+var target_top_timer = $('#top_timer');
+var targetPos_top_timer = target_top_timer.offset().top;
+var scrollToElem_top_timer = targetPos_top_timer - winHeight +310;
 
+var target_bottom_timer = $('#bottom_timer');
+var targetPos_bottom_timer = target_bottom_timer.offset().top;
+var scrollToElem_bottom_timer = targetPos_bottom_timer - winHeight;
 
 $(window).scroll(function(){
   var winScrollTop = $(this).scrollTop();
@@ -23,6 +29,11 @@ $(window).scroll(function(){
      $('#level .level_block .pillar .actuall-level').addClass('level--top');
     
      
+  }
+  if((winScrollTop > scrollToElem_top_timer) && (winScrollTop < scrollToElem_bottom_timer) ){
+       $('.fixed_timer').addClass('fixed_timer_active');
+  }else{
+       $('.fixed_timer').removeClass('fixed_timer_active');
   }
 });
 

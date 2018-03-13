@@ -190,3 +190,27 @@ footer .socials_nets li a{}
 footer .socials_nets li a img{} 
 footer address{text-align: left;color: #ffffff;}
 footer .copy{width:100%;text-align:center;color: #ffffff;font-size:1.4em;}
+
+.fixed_timer{width:100%; height:0px;position: fixed;bottom:0;left:0;background:#27293e;opacity:0;z-index:10000;transition: all 0.5s;padding:0;margin:0;}
+.fixed_timer_active{opacity:1;height:70px;}
+.fixed_timer h3{text-align: center;color: #22d79a;font-size: 1.4em;margin-top: 18px;}
+.fixed_timer .timer{width: 187px;height: 50px;margin: 0 auto;margin-top: 7px;}
+.fixed_timer .timer li{float:left;margin-right:0px;position:relative;}
+.fixed_timer .timer li span{}
+.fixed_timer .timer li .value{position:relative;text-align: center;color: #00cde2;width: 45px;height: 38px;display:block;font-size:2em;}
+.fixed_timer .timer li::after{content:":";position:absolute;top:3px;color: #00cde2;right: -3px;top: -3px;font-size: 2em;}
+.fixed_timer .timer li:last-child::after{content:" ";}
+.fixed_timer .timer li .unit{text-align: center;color: #acaec0;display:block;font-size: 0.8em;margin-top: -4px;}
+.fixed_timer .time_scale{width:100%;height:2px;background:#32364f;position:relative;margin-top:34px;}
+.fixed_timer .time_level{width:100%;height:2px;background:#42b3d1;position:absolute;top:0;left:0;width:75%;}
+.fixed_timer .btn--green{width: 203px;
+height: 39px;
+text-align: center;
+font-size: 1.2em;
+font-weight: bold;
+padding-top: 7px;
+margin: 0 auto;
+    margin-top: 0px;
+margin-top: 12px;
+display: block;}	    
+
