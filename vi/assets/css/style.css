@@ -172,7 +172,22 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 .team li .via-page-employees-wrap-desc-position{display:block;text-align: center;font-size:1.4em;color: #00cde2;margin-top:24px;}
 
 #roadmap{padding-top:80px;}
+#roadmap .roadmap_container{margin: 0 auto; width:1000px;background:url(../img/images/line_roadmap.png) repeat-y top center;}
+#roadmap .roadmap_container li{width:100%;position:relative;float:left;margin-bottom:24px;}
 
+
+#roadmap .roadmap_container li dl{width:475px;position:relative;float:left;}
+#roadmap .roadmap_container li:nth-child(even) dl{float:right;}
+#roadmap .roadmap_container li dl::before{content:" ";display:block;position:absolute;width:26px;height:26px;background:url(../img/images/roadmap_point.png) no-repeat top right;top:50%;margin-top:-13px;right:-38px;}
+#roadmap .roadmap_container li.active dl::before{background-position: left 0;}
+#roadmap .roadmap_container li:nth-child(even) dl::before {left:-38px;right:unset;}
+#roadmap .roadmap_container li dl dt{width:100%;height:40px;background: #8dd5e4;color: #0f101a;padding-left:16px;border-radius: 3px 3px 0 0;font-size:1.4em;padding-top:6px;}
+#roadmap .roadmap_container li dl dd{background-color: #262840;padding-left:16px;padding-right:16px;color: #acaec0;position:relative;border-radius: 0 0 3px 3px;letter-spacing: 0.15em;font-size:1.4em;padding-top: 10px;
+line-height: 1.6em;padding-bottom:10px;}
+#roadmap .roadmap_container li dl::after{content:" ";position:absolute;width:7px;height:14px;background:url(../img/images/corner.png) no-repeat top left;right:0;top:50%;margin-top:-7px;display:block;margin-right: -7px;}
+#roadmap .roadmap_container li:nth-child(even) dl::after{background-position: top right;left:-7px;}
+#roadmap .roadmap_container li.last{float:none;width:100%;height:1px;background:none;}
+#roadmap .roadmap_container li.last::before{background:none;}
 
 #partners{padding-top:80px;position:relative;width:100%;min-height: 300px;}
 #partners ul li{text-align: center}
