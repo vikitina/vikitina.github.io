@@ -15,7 +15,7 @@ header{height: 176px;background-color: #0f101a;padding-top:24px;padding-bottom: 
 header .logo{float:left;  width: 120px; height: 120px;transition:all 0.5s;}
 header .logo img{height:100%;}
 header .nav--block{float:right;display:flex;flex-direction: column;justify-content:space-between;padding-top:24px;height:100%;}
-header .nav--block hr{width:100%;  height: 2px;border-top: solid 1px #333651;transition:all 0.5s;}
+header .nav--block hr{width:100%;  height: 2px;border-top: solid 1px #333651;transition:all 0.5s;margin-top: 32px; margin-bottom: 8px;}
 header .navbar-toggler{}
 header .socials{display:flex;flex-direction: row;justify-content:space-around;height:50%;padding-right: 80px; position: relative;}
 header .socials .blog{float:left;margin-right: 46px;font-size: 1.2em;font-weight: bold;}
@@ -117,8 +117,9 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #video .main{width: 1000px; height: 562px;margin:0 auto;position:relative;} 
 #video .main li{width:100%;height:100%;position:absolute;top:0;left:0;}
 .video_player{width:100%;height:100%;}
-#video .list{width:1000px;height:168px;overflow-x:auto;margin:0 auto;margin-top:40px;}
+#video .list{height:168px;margin:0 auto;float:left;width:2000px;overflow-x:auto;}
 #video .list li{float:left;margin-right:20px;cursor:pointer;width:300px;height:168px;border-radius:3px;border:1px solid green;}
+#video .video_list_container{width:1000px;height:168px;overflow:hidden;margin-top:40px;}
 
 #about{}
 #about::before{content:" ";display:block;width:800px;height:420px;margin:0 auto;background:url(../img/images/city.png) no-repeat center top;margin-top:60px;background-size:cover;}
@@ -214,9 +215,9 @@ footer{height: 277px;background-color: #060609;padding-top:80px;}
 footer .logo{}
 footer .logo a{display: block;float:left;}
 footer .logo a img{width:120px;}
-footer .mail{width:100%;text-align:center;float:left;}
+footer .mail{width:100%;text-align:center;float:left;color: #22d79a;font-size:1.4em;margin-bottom:20px;}
 footer .socials_nets{float:left;}
-footer .socials_nets li{float:left;}
+footer .socials_nets li{float:left;margin-right:15px;}
 footer .socials_nets li a{}
 footer .socials_nets li a img{} 
 footer address{text-align: left;color: #ffffff;}

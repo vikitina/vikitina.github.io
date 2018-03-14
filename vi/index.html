@@ -8,9 +8,10 @@
     <meta name="author" content="">
     <title>Viarium</title>
     <link  rel="stylesheet" href='./assets/fonts/fonts.css' />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
 </head>
 <body>
 <header>
@@ -199,7 +200,8 @@
                          <img src="/my_assets/video/poster.jpg" alt="" />
                      </a>    
 		     	</li>
-		     </ul><!-- main  -->
+		     </ul><!-- main  -->    
+		     <div class="mCustomScrollbar video_list_container" data-mcs-theme="minimal" data-mcs-axis="x"> 
 		     <ul class="list">
 		     	 <li></li>
                  <li></li>
@@ -209,6 +211,7 @@
                  <li></li>
 
 		     </ul>
+		     </div>
 		</div>     
 	</section>
 	<section id="about">
@@ -695,11 +698,13 @@
 	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="time_scale"><div class="time_level"></div></li>
 	<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="" class="btn--green">Купить токены</a></li>		    
 </ul>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/script_new.js"></script>
+   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-slim.min.js"><\/script>')</script>-->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./assets/js/script_new.js"></script>
 </body>
 
 </html>         
