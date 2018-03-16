@@ -78,4 +78,31 @@ $('#faq dl').click(function(){
   }
 });
 
+$('.expander').click(function(){
+    var target = '.'+$(this).attr('data-target');
+
+ /*   var target_for_close = '.'+$('.expander').attr('data-target');
+    $(target_for_close).removeClass('expander_opened');
+    $('.expander').removeClass('opened');
+
+   */ 
+    if($(target).hasClass('opened')){
+         $(this).removeClass('expander_opened');
+         $(target).removeClass('opened');
+     /*   $('body').removeClass('fixed_body');*/
+          
+    }else{
+         $(target).addClass('opened');
+         $(this).addClass('expander_opened');
+         $('body').addClass('fixed_body');
+         /*if((this).hasClass('mob_toggler_navbar')){
+                   $('body').addClass('fixed_body');
+          }*/          
+    }
+
+
+
+      
+});
+
 });

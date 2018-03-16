@@ -1,10 +1,132 @@
 @media (max-width: 767px) {
+.mob{display:block;}
+header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;}	
+.header_fixed{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;z-index:100000;padding-top: 0px;padding-bottom: 0px;}
+header .logo,
+header .nav--block{display:none;}
+header .mob_toggler_navbar{cursor:pointer;border:none;position:absolute;top:10px;left:8px;width:26px;height: 28px;background:url(../img/images/btn_mobile.png) no-repeat top left;}
+header .signin_mob{display:inline-block;position:absolute;right:8px;top:8px;height: 24px;padding-top:0;cursor:pointer;}
+
+header .expand_part_for_nav{display:none;width:100%;background:#262940;border-top:1px solid #186854;position:fixed;top:40px;left:0;z-index:10000;height:100%;}
+header .expand_part_for_nav.opened{display: block;}
+header .expand_part_for_nav .menu{width:100%;}
+header .expand_part_for_nav .menu li{padding-left:16px;padding-right:16px;height:38px;}
+header .expand_part_for_nav .menu li.active a{border-bottom:1px solid #419bf9;}
+header .expand_part_for_nav .menu li a{display:block;border-bottom:1px solid #31344f; font-weight:bold;color:#9698aa; font-size:1.4em;height:100%;padding-top:6px;}
+header .expand_part_for_nav .menu li a:hover{text-decoration:none;border-bottom:1px solid #419bf9;}
+header .expand_part_for_nav .lang{display:table;margin:0 auto;margin-top:24px;}
+header .expand_part_for_nav .lang li{font-size:1.2em;display:table-cell;padding-right: 25px;}
+header .expand_part_for_nav .lang li:last-child{padding-right:0;}
+header .expand_part_for_nav .lang li a{padding-left:17px;padding-right:17px;padding-top:2px;padding-bottom:2px;border:1px solid #31344f;color: #a5a7b9;display:block;text-decoration:none;border-radius: 3px;overflow: hidden;}
+header .expand_part_for_nav .lang li.active a{background:#acaebf;border-color:#acaebf; color: #1c1f36;}
+header .expand_part_for_nav .socials_nets{display:table;margin:0 auto;width:80%;margin-top:26px;}
+header .expand_part_for_nav .socials_nets li{display:table-cell;}
+header .expand_part_for_nav .socials_nets li a{margin-right:5px;}
+header .expand_part_for_nav .socials_nets li:last-child a{margin-right:0px;}
+header .expand_part_for_nav .blog{margin:0 auto; display: table;margin-top:28px;height: 27px;padding-bottom: unset;padding-top:2px;}
+
+header .expand_part_for_login{display:none;padding-left:16px;padding-right:16px;padding-top:16px;padding-bottom: 16px;background:#333651;border-radius:5px; position:fixed;top:50px;right:10px;}
+header .expand_part_for_login li{display:table-cell;padding-right:20px;padding-left:20px;border-right:1px solid #279b7e;}
+header .expand_part_for_login li:last-child{border-right:none;}
+header .expand_part_for_login li a{color:#279b7e;text-decoration:none;font-size:1.2em;}
+header .expand_part_for_login.opened{display:table;}
+
+header .mob_toggler_navbar.expander_opened{background-position: top right;}
+
+.fixed_body{overflow-y: hidden;}
+
+.timer_block {width: 100%;}
+
+#token .cols{margin-bottom:40px;}
+#exchanges .cols{margin-bottom:20px;}
+
+#video table{width:100%}
+#video .container{width:100%;}
+#video .main {width: 100%;height:300px}
+#video .container_video{width:100%;}
+
+#about::before {width: 89%;height: 201px;}
+
+#faq dl{width:100%;}
+
+#roadmap .roadmap_container{width:100%;}
+
+#how div.desktop{display:none;}
+
+#docs ul {width: 100%;margin: 0 auto;}
+#docs ul li {
+    float: left;
+    width: 100%;
+    height: 256px;
+    background-color: #0f101a;
+    margin-right: 0;
+    margin-bottom: 20px;
 
 }
 
 /*---------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
+.mob{display:block;}
+header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;}	
+.header_fixed{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;z-index:100000;padding-top: 0px;padding-bottom: 0px;}
+header .logo,
+header .nav--block{display:none;}
+header .mob_toggler_navbar{cursor:pointer;border:none;position:absolute;top:10px;left:8px;width:26px;height: 28px;background:url(../img/images/btn_mobile.png) no-repeat top left;}
+header .signin_mob{display:inline-block;position:absolute;right:8px;top:8px;height: 24px;padding-top:0;cursor:pointer;}
 
+header .expand_part_for_nav{display:none;width:100%;background:#262940;border-top:1px solid #186854;position:fixed;top:40px;left:0;z-index:10000;height:100%;}
+header .expand_part_for_nav.opened{display: block;}
+header .expand_part_for_nav .menu{width:100%;}
+header .expand_part_for_nav .menu li{padding-left:16px;padding-right:16px;height:38px;}
+header .expand_part_for_nav .menu li.active a{border-bottom:1px solid #419bf9;}
+header .expand_part_for_nav .menu li a{display:block;border-bottom:1px solid #31344f; font-weight:bold;color:#9698aa; font-size:1.4em;height:100%;padding-top:6px;}
+header .expand_part_for_nav .menu li a:hover{text-decoration:none;border-bottom:1px solid #419bf9;}
+header .expand_part_for_nav .lang{display:table;margin:0 auto;margin-top:24px;}
+header .expand_part_for_nav .lang li{font-size:1.2em;display:table-cell;padding-right: 25px;}
+header .expand_part_for_nav .lang li:last-child{padding-right:0;}
+header .expand_part_for_nav .lang li a{padding-left:17px;padding-right:17px;padding-top:2px;padding-bottom:2px;border:1px solid #31344f;color: #a5a7b9;display:block;text-decoration:none;border-radius: 3px;overflow: hidden;}
+header .expand_part_for_nav .lang li.active a{background:#acaebf;border-color:#acaebf; color: #1c1f36;}
+header .expand_part_for_nav .socials_nets{display:table;margin:0 auto;width:80%;margin-top:26px;}
+header .expand_part_for_nav .socials_nets li{display:table-cell;}
+header .expand_part_for_nav .socials_nets li a{margin-right:5px;}
+header .expand_part_for_nav .socials_nets li:last-child a{margin-right:0px;}
+header .expand_part_for_nav .blog{margin:0 auto; display: table;margin-top:28px;height: 27px;padding-bottom: unset;padding-top:2px;}
+
+header .expand_part_for_login{display:none;padding-left:16px;padding-right:16px;padding-top:16px;padding-bottom: 16px;background:#333651;border-radius:5px; position:fixed;top:50px;right:10px;}
+header .expand_part_for_login li{display:table-cell;padding-right:20px;padding-left:20px;border-right:1px solid #279b7e;}
+header .expand_part_for_login li:last-child{border-right:none;}
+header .expand_part_for_login li a{color:#279b7e;text-decoration:none;font-size:1.2em;}
+header .expand_part_for_login.opened{display:table;}
+
+header .mob_toggler_navbar.expander_opened{background-position: top right;}
+
+.fixed_body{overflow-y: hidden;}
+
+.timer_block {width: 100%;}
+
+#token .cols{margin-bottom:40px;}
+#exchanges .cols{margin-bottom:20px;}
+
+#video table{width:100%}
+#video .container{width:100%;}
+#video .main {width: 100%;height:300px}
+
+#about::before {width: 100%;}
+
+#faq dl{width:100%;}
+
+#roadmap .roadmap_container{width:100%;}
+
+#how div.desktop{display:none;}
+
+#docs ul {width: 100%;margin: 0 auto;}
+#docs ul li {
+    float: left;
+    width: 100%;
+    height: 256px;
+    background-color: #0f101a;
+    margin-right: 0;
+    margin-bottom: 20px;
 
 }
 /*---------------------------------------------------------------------------------------------*/
