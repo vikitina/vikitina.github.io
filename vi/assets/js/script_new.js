@@ -55,7 +55,7 @@ $(document).click(function(event){
   }
 });
 
- var link = $('.video_link');
+/* var link = $('.video_link');
     var player = $('.video_player');
 
     link.on('click', function (e) {
@@ -67,7 +67,7 @@ $(document).click(function(event){
             'display': 'initial'
         });
         player.attr('src', 'https://www.youtube.com/embed/5D7yijz4x5Q?autoplay=1');
-    });
+    });*/
 
 $('#faq dl').click(function(){
     if ($(this).hasClass('opened')) {
@@ -89,20 +89,31 @@ $('.expander').click(function(){
     if($(target).hasClass('opened')){
          $(this).removeClass('expander_opened');
          $(target).removeClass('opened');
-     /*   $('body').removeClass('fixed_body');*/
+       $('body').removeClass('fixed_body');
           
     }else{
          $(target).addClass('opened');
          $(this).addClass('expander_opened');
-         $('body').addClass('fixed_body');
-         /*if((this).hasClass('mob_toggler_navbar')){
+         
+       if($(this).hasClass('mob_toggler_navbar')){
                    $('body').addClass('fixed_body');
-          }*/          
+                
+          }          
     }
 
 
 
       
+});
+
+
+$('#video .video_list_container .list li').click(function(){
+ $('#video .main li.active').removeClass('active');
+ $( "#video .video_list_container .list li.active" ).removeClass('active');
+ var num_elem =  $( "#video .video_list_container .list li" ).index( $(this) );
+ var arr_elem = $('#video .main li');
+ var elem = arr_elem[num_elem];
+ $(elem).addClass('active');
 });
 
 });
