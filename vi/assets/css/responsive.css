@@ -47,7 +47,25 @@ header .mob_toggler_navbar.expander_opened{background-position: top right;}
 
 #faq dl{width:100%;}
 
-#roadmap .roadmap_container{width:100%;}
+#roadmap .roadmap_container{width:100%;background:none;}
+#roadmap .roadmap_container li dl{position: relative;width:80%;padding-left:40px;}
+#roadmap .roadmap_container li:nth-child(even) dl{padding-left:unset;padding-right:40px;}
+#roadmap .roadmap_container li dl .gorizon{display:block;position: absolute;width:75%;top:-24px;height:4px;left:24%;padding:0;background: url(../img/images/roadmap_horizon.png) repeat-x top left;}
+#roadmap .roadmap_container li:nth-child(even) dl .gorizon{left:unset;right:30%;width:63%;}
+#roadmap .roadmap_container li:first-child dl .gorizon{display:none;}
+#roadmap .roadmap_container li dl .corner_top{display:block;position: absolute;width:54px;height:47px;top: -23px;right: -47px;background:url(../img/images/roadmap_corner_top_right.png) no-repeat top left;}
+#roadmap .roadmap_container li:nth-child(even) dl .corner_top{left:-30px;right: unset;background:url(../img/images/roadmap_corner_top_left.png) no-repeat top left;width:54px;height:47px;}
+#roadmap .roadmap_container li:first-child dl .corner_top{display:none;}
+#roadmap .roadmap_container li dl .vertical{z-index:10;display:block;position: absolute;width:4px;height: 88%;top: 5px;right:-31px;background: url(../img/images/roadmap_vertical.png) repeat-y top left;padding:0;padding-top:10px;padding-bottom: 10px}
+#roadmap .roadmap_container li:nth-child(even) dl .vertical{left:-30px;right: unset;height:71%;top:22px;}
+#roadmap .roadmap_container li dl .corner_bot{display:block;position: absolute;width:58px;height:41px;bottom:-28px;right:-30px;background:url(../img/images/roadmap_corner_bot_right.png) no-repeat top left;}
+#roadmap .roadmap_container li:nth-child(even) dl .corner_bot{left:-32px;right: unset;background:url(../img/images/roadmap_corner_bot_left.png) no-repeat top left;}
+
+#roadmap .roadmap_container li:last-child dl .corner_bot{display:none;}/*!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#roadmap .roadmap_container li dl::before {right: -43px;}
+#roadmap .roadmap_container li:nth-child(even) dl::before {left: -42px;}
+
 
 #how div.desktop{display:none;}
 
@@ -58,7 +76,7 @@ header .mob_toggler_navbar.expander_opened{background-position: top right;}
     height: 256px;
     background-color: #0f101a;
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 20px;}
 
 }
 
@@ -112,7 +130,7 @@ header .mob_toggler_navbar.expander_opened{background-position: top right;}
 
 #faq dl{width:100%;}
 
-#roadmap .roadmap_container{width:100%;}
+
 
 #how div.desktop{display:none;}
 
@@ -176,7 +194,7 @@ header .mob_toggler_navbar.expander_opened{background-position: top right;}
 
 #faq dl{width:100%;}
 
-#roadmap .roadmap_container{width:100%;}
+
 
 #how div.desktop{display:none;}
 
@@ -190,8 +208,9 @@ header .mob_toggler_navbar.expander_opened{background-position: top right;}
     margin-bottom: 20px;}
 
 }
+
 /*---------------------------------------------------------------------------------------------*/
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
 .mob{display:block;}
 header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;}	
 .header_fixed{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;z-index:100000;padding-top: 0px;padding-bottom: 0px;}
@@ -240,7 +259,7 @@ header .mob_toggler_navbar.expander_opened{background-position: top right;}
 
 #faq dl{width:100%;}
 
-#roadmap .roadmap_container{width:100%;}
+
 
 #how div.desktop{display:none;}
 
