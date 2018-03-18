@@ -200,6 +200,26 @@ footer .socials_nets{margin-bottom: 40px}
 footer address{margin-bottom: 40px;line-height: 2em}
 footer .copy{padding-bottom: 40px;}
 
+
+.fixed_timer{height: 96px;display:block;}
+.fixed_timer .desktop_h3{display:none;}
+.fixed_timer .mobile_h3{display:table; width:100%;font-size: 1.2em;margin-top: 8px;letter-spacing: 0.1em;}
+.fixed_timer .mobile_h3 span{display:table-cell;}
+.fixed_timer .mobile_h3 span.vm{color: #00cde2;}
+.fixed_timer .mob_time_scale{display: block;height:4px;width:100%;}
+.fixed_timer .mob_time_scale .time_scale {margin-top: 0px;}
+
+
+
+.fixed_timer ul.timer {width: 192px;margin: 0 auto;height: 50px;}
+.fixed_timer ul.timer li::after {right: -3px;top: 4px;font-size: 1.6em;}
+.fixed_timer ul.timer li .value {font-size: 1.9em;width: 47px;height: 30px;}
+.fixed_timer ul.timer li .unit {font-size: 0.7em;margin-top: 3px;text-transform: uppercase;}
+.fixed_timer .timer_block_mob{width:49%;float:left;display:block;}
+.fixed_timer .btn_block{width:49%;float:right;display:block;}
+.fixed_timer .desktop_time_scale{display:none;}
+.fixed_timer .btn--green {width: 165px;height: 32px;font-size: 1.3em;padding: 0; padding-top: 2px;}
+
 }
 
 /*---------------------------------------------------------------------------------------------*/
