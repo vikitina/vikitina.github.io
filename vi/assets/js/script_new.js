@@ -116,4 +116,25 @@ $('#video .video_list_container .list li').click(function(){
  $(elem).addClass('active');
 });
 
+$(".navbar .navbar-nav .nav-item, .expand_part_for_nav .menu li").on('click', function (e) {
+        e.preventDefault();
+        var elem = $(this).find('a');
+        var hash = $(elem).attr("href");
+        var target = $(hash);
+
+        $('.navbar .navbar-nav .active').removeClass('active');
+        $('.expand_part_for_nav .menu .active').removeClass('active');
+        
+        $('.navbar .navbar-nav .nav-item a[href="'+hash+'"]').parent().addClass('active');
+        $('.expand_part_for_nav .menu li a[href="'+hash+'"]').parent().addClass('active');
+
+        $('header .expand_part_for_nav.opened').removeClass('opened');
+        $('header .mob_toggler_navbar.expander_opened').removeClass('expander_opened');
+        $('body').removeClass('fixed_body');
+
+        $("html, body").animate({
+            scrollTop: target.offset().top - 75
+        }, 1000);
+});
+
 });

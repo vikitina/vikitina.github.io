@@ -19,31 +19,31 @@
 <div class="expand_part_for_nav mob">
                    <ul class="menu">
                         <li class="active">
-                             <a href="#">Токен</a>
+                             <a href="#token">Токен</a>
                         </li>
                         <li>
-                             <a href="#">Видео</a>
+                             <a href="#video">Видео</a>
                         </li>
                         <li>
-                             <a href="#">О проекте</a>
+                             <a href="#about">О проекте</a>
                        </li>
                         <li>
-                             <a href="#">Документы</a>
+                             <a href="#docs">Документы</a>
                        </li>                       
                         <li>
-                             <a href="#">FAQ</a>
+                             <a href="#faq">FAQ</a>
                        </li>                       
                         <li>
-                             <a href="#">Мы в прессе</a>
+                             <a href="#media">Мы в прессе</a>
                        </li>                       
                         <li>
-                             <a href="#">Roadmap</a>
+                             <a href="#roadmap">Roadmap</a>
                        </li>        
                         <li>
-                             <a href="#">Команда</a>
+                             <a href="#advisors">Команда</a>
                        </li>                                     
                         <li>
-                             <a href="#">Контакты</a>
+                             <a href="#contacts">Контакты</a>
                        </li>                        
                     </ul>
                     <ul class="lang">
@@ -96,31 +96,31 @@
              <div class="collapse navbar-collapse" id="navbarCollapse">
                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                             <a class="nav-link" href="#">Токен</a>
+                             <a class="nav-link" href="#token">Токен</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link" href="#">Видео</a>
+                             <a class="nav-link" href="#video">Видео</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link" href="#">О проекте</a>
+                             <a class="nav-link" href="#about">О проекте</a>
                        </li>
                         <li class="nav-item">
-                             <a class="nav-link" href="#">Документы</a>
+                             <a class="nav-link" href="#docs">Документы</a>
                        </li>                       
                         <li class="nav-item">
-                             <a class="nav-link" href="#">FAQ</a>
+                             <a class="nav-link" href="#faq">FAQ</a>
                        </li>                       
                         <li class="nav-item">
-                             <a class="nav-link" href="#">Мы в прессе</a>
+                             <a class="nav-link" href="#media">Мы в прессе</a>
                        </li>                       
                         <li class="nav-item">
-                             <a class="nav-link" href="#">Roadmap</a>
+                             <a class="nav-link" href="#roadmap">Roadmap</a>
                        </li>        
                         <li class="nav-item">
-                             <a class="nav-link" href="#">Команда</a>
+                             <a class="nav-link" href="#advisors">Команда</a>
                        </li>                                     
                         <li class="nav-item">
-                             <a class="nav-link" href="#">Контакты</a>
+                             <a class="nav-link" href="#contacts">Контакты</a>
                        </li>                        
                     </ul>
 
@@ -585,9 +585,10 @@
     		<li class="last clear"></li>
     	</ul>
     </section>       
-    <section id="advisors" class="team desktop_team">
+    <section id="advisors" class="team">
       <div class="container">
     	<h2>Советники</h2>
+    	<div class="desktop_team">
         <ul class="row">
           <li class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
             <div class="via-page-employees-wrap">
@@ -622,12 +623,9 @@
               </div>
             </div>
           </li>          
-          </ul>      	
-      </div>	
-    </section> 
-    <section id="advisors" class="advisors_mob mob">
-      <div class="container">
-    	<h2>Советники</h2>
+          </ul>
+          </div>
+         <div class="advisors_mob mob">   
     	<div class="mCustomScrollbar team_list_container" data-mcs-theme="minimal" data-mcs-axis="x">
         <ul class="row list">
           <li class="col-lg-4 col-md-3">
@@ -664,12 +662,16 @@
             </div>
           </li>          
           </ul> 
-          </div>     	
+          </div>     
+
+
+          </div>
       </div>	
-    </section>     
-    <section id="team" class="team desktop_team">
+    </section>   
+    <section id="team" class="team">
       <div class="container">
     	<h2>Команда</h2>
+       <div class="desktop_team">
         <ul class="row">
 
           <li class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
@@ -771,12 +773,9 @@
             </div>
           </li>
         </ul> 
-        </div>   	
-    </section>   
-    <section id="team" class="team_mob mob">
-      <div class="container">
-    	<h2>Команда</h2>
-    	<div class="mCustomScrollbar team_list_container" data-mcs-theme="minimal" data-mcs-axis="x">
+        </div>
+      <div class="team_mob mob">  
+      <div class="mCustomScrollbar team_list_container" data-mcs-theme="minimal" data-mcs-axis="x">
         <ul class="row list">
           <li class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
             <div class="via-page-employees-wrap">
@@ -876,9 +875,11 @@
               </div>
             </div>
           </li>          </ul> 
-          </div>     	
-      </div>	
-    </section>         
+          </div> 
+          </div>
+        </div>   	
+    </section>   
+        
     <section id="partners">
     	<div class="container">
 		   <h2>Партнёры</h2>
@@ -918,7 +919,7 @@
 
 
 
-<footer>
+<footer id="contacts">
    <div class="container">
      <div class="row">
 	   <div class="logo col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="/"><img src="assets/img/images/viarium.png" alt="" /></a></div>

@@ -42,7 +42,7 @@ header .socials .opened_lang ul{display:block;}
 header  nav.navbar {float:left;padding-left: 0;padding-right: 0;height:49%;padding-top:0;padding-bottom:0;}
 header  nav .navbar-nav{float:left;}
 header  nav .navbar-nav li.nav-item{float:left;}
-header  nav .navbar-nav li.active{}
+header  nav .navbar-nav li.active a{border-bottom:1px solid #22d79a;}
 header  nav .navbar-nav li.nav-item a.nav-link{color:#acaec0;padding-top:0;padding-bottom:0;letter-spacing: 0.1em;font-size:1.2em;}
 .header_fixed{background:#272940;height:80px;position: fixed;top:0;left:0;width:100%;z-index:10000;padding-top: 12px;padding-bottom: 6px;}
 .header_fixed .logo{float:left;  width: 120px; height: 60px;}
