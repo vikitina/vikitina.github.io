@@ -1,4 +1,4 @@
-body{background-color: #0f101a;font-size:14px;font-family:"Roboto-Light",Arial;max-width:100%;width:100%;}
+body{background-color: #0f101a;font-size:14px;font-family:"Roboto-Light",Arial;max-width:100%;width:100%;overflow-x: hidden;}
 
 ul{margin:0;padding:0;list-style: none;}
 .btn--green{height: 32px;padding-top:4px;padding-bottom:7px;padding-left: 31px;padding-right: 31px;  color: #0f101a;text-decoration:none;  border-radius: 4px;background-color: #22d79a;}
@@ -133,7 +133,8 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 
 
 #about{}
-#about::before{content:" ";display:block;width:800px;height:420px;margin:0 auto;background:url(../img/images/city.png) no-repeat center top;margin-top:60px;background-size:cover;}
+#about .img{display:block;max-width:800px;width:80%;margin:0 auto;margin-top:60px;}
+#about .img img{width:100%;}
 #about h2{margin-top:60px;}
 #about p{width:90%;text-align:center;margin:0 auto;color: #acaec0;font-size:1.4em;line-height:1.8em;}
 
@@ -162,7 +163,8 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #advantages p{text-align:center; color: #acaec0;font-size:1.4em;width:70%;margin:0 auto;}
 
 #faq{}
-#faq::before{content:" ";display:block;width:420px;height:420px;margin:0 auto;background:url(../img/images/face.png) no-repeat center top;margin-bottom: 55px;margin-top:60px;background-size:cover;}
+#faq .img{display:block;max-width:420px;width:70%;margin:0 auto;margin-bottom: 55px;margin-top:60px;}
+#faq .img img{width:100%;}
 #faq dl{width: 800px;border-radius: 4px;border: solid 1px #333651;margin: 0 auto;line-height:1.6em;margin-bottom:10px;padding:15px;font-size:1.4em;}
 #faq dl dt{margin-bottom:10px;color: #00cde2;font-weight:normal;position:relative;}
 #faq dl dt:after{content:" ";width: 14px;height: 10px; display:block; position:absolute;background: url(../img/images/triangle_lang.png) no-repeat top left;right:10px;top:11px;}
