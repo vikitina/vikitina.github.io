@@ -75,11 +75,13 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 
 
 
-#main p{text-align:center;color: #8dd5e4;font-size:1.2em;}
+#main p{text-align:center;color:  #acaec0;font-size:1.2em;}
+#main p b{font-weight:normal;color: #8dd5e4;}
+ 
 #main .timer_block{margin-bottom:48px;}
 
 #token{padding-top:64px;}
-#token table{margin:0 auto;border:none;width:400px;font-size:1.4em;}
+#token table{margin:0 auto;border:none;width: 90%;font-size:1.4em;}
 #token table tr{height: 56px;border-bottom: 1px solid #262840;;}
 #token table tr td{color: #8dd5e4; text-align:right;}
 #token table tr td.b{color: #acaec0; text-align: left}
@@ -91,7 +93,7 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #token h2{margin-bottom: 48px;}
 #token .btn--green{margin:0 auto;  width: 311px;height: 48px;display:block;font-size:1.4em;text-align:center;font-weight:bold;margin-top:49px;padding-top: 10px;}
 
-#level{position:relative;padding-top:77px;}
+#level{position:relative;padding-top:77px;width:100%;}
 #level .level_block{width:100%; height:508px;position:relative;}
 #level .level_block .pillar{width: 180px;height: 508px;position:absolute;top:0; left:50%;margin-left:-90px;overflow:hidden;}
 #level .level_block .pillar .shape{width: 180px;height: 508px;position:absolute;top:0; left:50%;margin-left:-90px;background:url(../img/level/shape.png) no-repeat top center;z-index:1;}
@@ -119,11 +121,11 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #video > table td{overflow:hidden;}
 #video > table .margin_side{width:15%;}
 #video > table .center_container{width:70%;}
-#video .video_list_container{width:100%;height:168px;overflow:hidden;position:absolute !important;}
+#video .video_list_container{width:100%;height:168px;overflow:hidden;position:absolute !important;top:0;}
 #video .video_list_container .list{height:168px;width:4000px;float:left;}
-#video .video_list_container .list li{margin-right:50px;cursor:pointer;float:left;width:300px;height:168px;border-radius:3px;border:1px solid green;display:block;}
+#video .video_list_container .list li{margin-right:50px;cursor:pointer;float:left;width:300px;height:168px;border-radius:3px;display:block;overflow: hidden;}
 #video .video_list_container .list li.active{display:none;}
-#video .td_video_list_container{height:168px;}
+#video .td_video_list_container{height:168px;position: relative;}
 #video .main{width: 100%; height: 562px;margin:0 auto;position:relative;}
 #video .main li{width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;}
 #video .main li.active{z-index:10;}
@@ -169,7 +171,7 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #faq dl.opened dt:after{background-position:top right;}
 
 #media{padding-top:80px;}
-#media ul{font-size:1.4em;line-height: 1.6em;letter-spacing: 1.9px;margin-bottom: 30px;}
+#media ul{font-size:1.4em;line-height: 1.6em;letter-spacing: 0.1em;margin-bottom: 30px;}
 #media ul a:hover{text-decoration:none;}
 #media li{ height: 488px;margin-bottom:30px;}
 #media li .via-page-smi-wrap{background-color: #262840;border-radius: 4px;height:100%;overflow: hidden;}
@@ -230,12 +232,12 @@ footer .logo{}
 footer .logo a{display: block;float:left;}
 footer .logo a img{width:120px;}
 footer .mail{width:100%;text-align:center;float:left;color: #22d79a;font-size:1.4em;margin-bottom:20px;}
-footer .socials_nets{float:left;}
-footer .socials_nets li{float:left;margin-right:15px;}
+footer .socials_nets{display:table;width:100%;}
+footer .socials_nets li{display:table-cell;text-align: center;}
 footer .socials_nets li a{}
 footer .socials_nets li a img{} 
-footer address{text-align: left;color: #ffffff;}
-footer .copy{width:100%;text-align:center;color: #ffffff;font-size:1.4em;}
+footer address{text-align: left;color: #ffffff;float:right;opacity: 0.75;font-size:1.2em;letter-spacing: 0.1em;}
+footer .copy{width:100%;text-align:center;color: #ffffff;font-size:1.2em;opacity: 0.5;letter-spacing: 0.1em;}
 
 .fixed_timer{width:100%; height:0px;position: fixed;bottom:0;left:0;background:#27293e;opacity:0;z-index:10000;transition: all 0.5s;padding:0;margin:0;}
 .fixed_timer_active{opacity:1;height:70px;}
