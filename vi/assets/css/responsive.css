@@ -267,6 +267,10 @@ footer .mail{margin-bottom: 40px;}
 footer .socials_nets{margin-bottom: 40px}
 footer address{margin-bottom: 40px;line-height: 2em}
 footer .copy{padding-bottom: 40px;}
+
+#how div.desktop{display:block;}
+#how div.mob{display:none;}
+
 }
 
 /*--------------------------------------------------------------------------------------------*/
@@ -487,6 +491,10 @@ footer .copy{padding-bottom: 40px;}
 .fixed_timer .btn_block{width:49%;float:right;display:block;}
 .fixed_timer .desktop_time_scale{display:none;}
 .fixed_timer .btn--green {width: 165px;height: 32px;font-size: 1.3em;padding: 0; padding-top: 2px;}
+
+#how div.desktop{display:none;}
+#how div.mob{display:block;}
+
 
 }
 /*---------------------------------------------------------------------------------------------*/
@@ -717,6 +725,9 @@ footer .copy{padding-bottom: 40px;}
 .fixed_timer .btn_block{width:49%;float:right;display:block;}
 .fixed_timer .desktop_time_scale{display:none;}
 .fixed_timer .btn--green {width: 165px;height: 32px;font-size: 1.3em;padding: 0; padding-top: 2px;}
+
+#how div.desktop{display:none;}
+#how div.mob{display:block;}
 
 }
 
