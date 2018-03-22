@@ -133,11 +133,15 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 
 
 #about{}
-#about .img{display:block;max-width:800px;width:80%;margin:0 auto;margin-top:60px;}
+#about .img{display:block;max-width:800px;width:80%;margin:0 auto;margin-top:60px;position: relative;}
 #about .img img{width:100%;}
 #about h2{margin-top:60px;}
 #about p{width:90%;text-align:center;margin:0 auto;color: #acaec0;font-size:1.4em;line-height:1.8em;}
-
+#about .img .animate{position: absolute;/*opacity:0;*/}
+#about .img .l2{top:5%;}
+#about .img .l3{top:10%;}
+#about .img .l4{top:15%;}
+#about .img .l5{top:20%;}
 
 #how{padding-top:80px;}
 #how div.desktop {width:929px;margin: 0 auto;}
