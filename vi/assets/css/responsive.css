@@ -4,7 +4,7 @@
 
 @media (max-width: 1200px) {
 .mob{display:block;}
-header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;border-bottom: 1px solid rgba(34, 215, 154, 0.5);}	
+header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;border-bottom: 1px solid rgba(34, 215, 154, 0.5);}    
 .header_fixed{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;z-index:100000;padding-top: 0px;padding-bottom: 0px;}
 header .logo,
 header .nav--block{display:none;}
@@ -68,7 +68,8 @@ h2 {font-size: 1.4em;letter-spacing: 0.1em;margin-bottom: 29px;}
 
 .timer_block {width: 100%;}
 .timer_block ul.timer li .value{font-size:2em;}
-.timer_block ul.timer {width: 233px;margin: 0 auto;height: 95px;}
+.timer_block ul.timer {width:396px;;margin: 0 auto;height: 95px;}
+.timer_block ul.timer li{width:75px;}
 .timer_block ul.timer li::after {right: -16px;top: 4px;font-size: 2em;}
 .timer_block ul.timer li .value {font-size: 2.5em;width: 38px;height: 40px;}
 .timer_block ul.timer li .unit {font-size: 0.9em; margin-top: 6px;}
@@ -105,12 +106,12 @@ h2 {font-size: 1.4em;letter-spacing: 0.1em;margin-bottom: 29px;}
 
 }
 
-/*--------------------------------------------------------------------------------------------*/	 
+/*--------------------------------------------------------------------------------------------*/     
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
 .mob{display:block;}
-header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;border-bottom: 1px solid rgba(34, 215, 154, 0.5);}	
+header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;border-bottom: 1px solid rgba(34, 215, 154, 0.5);}    
 .header_fixed{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;z-index:100000;padding-top: 0px;padding-bottom: 0px;}
 header .logo,
 header .nav--block{display:none;}
@@ -199,7 +200,7 @@ h2 {font-size: 1.4em;letter-spacing: 0.1em;margin-bottom: 29px;}
 
 .timer_block {width: 100%;}
 .timer_block ul.timer li .value{font-size:2em;}
-.timer_block ul.timer {width: 233px;margin: 0 auto;height: 95px;}
+.timer_block ul.timer {width: 396px;margin: 0 auto;height: 95px;}
 .timer_block ul.timer li::after {right: -16px;top: 4px;font-size: 2em;}
 .timer_block ul.timer li .value {font-size: 2.5em;width: 38px;height: 40px;}
 .timer_block ul.timer li .unit {font-size: 0.9em; margin-top: 6px;}
@@ -276,7 +277,7 @@ footer .copy{padding-bottom: 40px;}
 /*--------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
 .mob{display:block;}
-header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;border-bottom: 1px solid rgba(34, 215, 154, 0.5);}	
+header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;border-bottom: 1px solid rgba(34, 215, 154, 0.5);}    
 .header_fixed{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;z-index:100000;padding-top: 0px;padding-bottom: 0px;}
 header .logo,
 header .nav--block{display:none;}
@@ -370,7 +371,7 @@ h2 {font-size: 1.4em;letter-spacing: 0.1em;margin-bottom: 29px;}
 
 .timer_block {width: 100%;}
 .timer_block ul.timer li .value{font-size:2em;}
-.timer_block ul.timer {width: 233px;margin: 0 auto;height: 95px;}
+.timer_block ul.timer {width: 396px;margin: 0 auto;height: 95px;}
 .timer_block ul.timer li::after {right: -16px;top: 4px;font-size: 2em;}
 .timer_block ul.timer li .value {font-size: 2.5em;width: 38px;height: 40px;}
 .timer_block ul.timer li .unit {font-size: 0.9em; margin-top: 6px;}
@@ -500,7 +501,7 @@ footer .copy{padding-bottom: 40px;}
 /*---------------------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
 .mob{display:block;}
-header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;border-bottom: 1px solid rgba(34, 215, 154, 0.5);}	
+header{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;padding-top: 4px;padding-bottom: 0px;z-index:100000;border-bottom: 1px solid rgba(34, 215, 154, 0.5);}    
 .header_fixed{height:40px;background-color: #0f101a;position:relative;width:100%;position:fixed;top:0;left:0;z-index:100000;padding-top: 0px;padding-bottom: 0px;}
 header .logo,
 header .nav--block{display:none;}
@@ -572,10 +573,10 @@ h2 {font-size: 1.4em;letter-spacing: 0.1em;margin-bottom: 29px;}
 #level .level_block .soft{}
 #level .level_block .hard{top:27px;}
 #level .level_block .level_line{margin-top: -28px;}
-#level .level_block .l{position:absolute;left:20%;bottom:0;color:#334758;font-size:1.2em;}
-#level .level_block .level_line .l{padding-top:2px;padding-bottom:2px;padding-left:10px;padding-right:10px;bottom:-15px;position: absolute;left:20px;}
-#level .level_block .r{position:absolute;left:80%;bottom:0;color:#334758;font-size:1.2em;}
-#level .level_block .level_line .r{width: 88px;height: 26px;bottom: -12px;padding-top: 2px;background-size: cover;position: absolute;right: 31px;left:unset;}
+#level .level_block .l{position:absolute;left:1%;bottom:0;color:#334758;font-size:1.2em;}
+#level .level_block .level_line .l{padding-top:0px;padding-bottom:0px;padding-left:3px;padding-right:3px;bottom:-9px;left:3%;font-size: 0.9em;}
+#level .level_block .r{position:absolute;left:unset;right:1%;bottom:0;color:#334758;font-size:1.1em;}
+#level .level_block .level_line .r{width: 75px;height: 22px;bottom: -10px;padding-top: 0px;right: 3%;background-size: cover;}
 
 
 #partners{margin-bottom:40px;}
@@ -599,19 +600,22 @@ h2 {font-size: 1.4em;letter-spacing: 0.1em;margin-bottom: 29px;}
 .fixed_body{overflow-y: hidden;}
 
 .timer_block {width: 100%;}
+.timer_block h3{font-size:1.2em;}
 .timer_block ul.timer li .value{font-size:2em;}
-.timer_block ul.timer {width: 233px;margin: 0 auto;height: 95px;}
-.timer_block ul.timer li::after {right: -16px;top: 4px;font-size: 2em;}
+.timer_block ul.timer {width: 250px;margin: 0 auto;height: 95px;}
+.timer_block ul.timer li::after {right: -10px;top: 4px;font-size: 2em;}
+.timer_block ul.timer li{width:51px;margin-right:12px;}
 .timer_block ul.timer li .value {font-size: 2.5em;width: 38px;height: 40px;}
 .timer_block ul.timer li .unit {font-size: 0.9em; margin-top: 6px;}
 .timer_block .rate .block_btns {flex-direction: column;}
-.timer_block .rate .block_btns .btn--green {margin: auto;margin-bottom:20px;}
-.timer_block .rate .block_btns .btn--frame {margin: auto;}
+.timer_block .rate .block_btns .btn--green {margin: auto;margin-bottom:20px;width:90%;}
+.timer_block .rate .block_btns .btn--frame {margin: auto;width:90%;}
 #main_second .timer_block {margin-bottom: 30px;}
 #main_second p {font-size: 1.2em;margin-bottom: 7px;}
 #main_second {padding-bottom: 33px;}
 
 #token .cols{margin-bottom:40px;}
+#token .btn--green{width:90%;}
 #exchanges .cols{margin-bottom:20px;}
 
 #video > table .margin_side{width:0;}
@@ -646,6 +650,7 @@ h2 {font-size: 1.4em;letter-spacing: 0.1em;margin-bottom: 29px;}
 
 
 #how div.desktop{display:none;}
+#how .wp{width:100%;}
 
 #docs ul {width: 100%;margin: 0 auto;}
 #docs ul li {float: left;width: 100%;height: 256px;background-color: #0f101a;margin-right: 0;margin-bottom: 20px;}
@@ -698,6 +703,7 @@ line-height: 1.6em;}
 #media ul{font-size:1.2em;}
 #media li{ height: auto;}
 #media .via-page-smi-wrap-desc-link{margin-bottom:20px;}
+#media .more{width:100%}
 
 footer{height: auto;padding-top: 40px;}
 footer .logo{text-align:center;margin-bottom: 40px;}
@@ -712,19 +718,19 @@ footer .copy{padding-bottom: 40px;}
 
 .fixed_timer{height: 96px;display:block;}
 .fixed_timer .desktop_h3{display:none;}
-.fixed_timer .mobile_h3{display:table; width:100%;font-size: 1.2em;margin-top: 8px;letter-spacing: 0.1em;}
+.fixed_timer .mobile_h3{display:table; width:100%;font-size: 0.9em;margin-top: 8px;letter-spacing: 0.1em;}
 .fixed_timer .mobile_h3 span{display:table-cell;}
 .fixed_timer .mobile_h3 span.vm{color: #00cde2;}
 .fixed_timer .mob_time_scale{display: block;height:4px;width:100%;}
 .fixed_timer .mob_time_scale .time_scale {margin-top: 0px;}
-.fixed_timer ul.timer {width: 192px;margin: 0 auto;height: 50px;}
-.fixed_timer ul.timer li::after {right: -3px;top: 4px;font-size: 1.6em;}
-.fixed_timer ul.timer li .value {font-size: 1.9em;width: 47px;height: 30px;}
-.fixed_timer ul.timer li .unit {font-size: 0.7em;margin-top: 3px;text-transform: uppercase;}
+.fixed_timer ul.timer {width: 167px;margin: 10px auto 0;height: 45px;}
+.fixed_timer ul.timer li::after {right: -3px;top: 2px;font-size: 1.1em;}
+.fixed_timer ul.timer li .value {font-size: 1.3em;width: 41px;height: 21px;}
+.fixed_timer ul.timer li .unit {font-size: 0.5em;margin-top: 3px;text-transform: uppercase;}
 .fixed_timer .timer_block_mob{width:49%;float:left;display:block;}
-.fixed_timer .btn_block{width:49%;float:right;display:block;}
+.fixed_timer .btn_block{width:43%;float:right;display:block;}
 .fixed_timer .desktop_time_scale{display:none;}
-.fixed_timer .btn--green {width: 165px;height: 32px;font-size: 1.3em;padding: 0; padding-top: 2px;}
+.fixed_timer .btn--green {width: 100%;height: 22px;font-size: 1em;padding: 0; padding-top: 1px;margin:19px auto 0;}
 
 #how div.desktop{display:none;}
 #how div.mob{display:block;}
