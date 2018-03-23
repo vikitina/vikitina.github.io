@@ -14,7 +14,7 @@ ul{margin:0;padding:0;list-style: none;}
 
 header{height: 176px;background-color: #0f101a;padding-top:24px;padding-bottom: 32px;transition:all 0.5s;}
 header .logo{float:left; height: 120px;transition:all 0.5s;}
-header .logo img{height:100%;}
+header .logo img{height:100%;max-width: 100%;}
 header .nav--block{float:right;display:flex;flex-direction: column;justify-content:space-between;padding-top:24px;height:100%;}
 header .nav--block hr{width:100%;  height: 2px;border-top: solid 1px #333651;transition:all 0.5s;margin-top: 32px; margin-bottom: 8px;}
 header .mob_toggler_navbar{}
