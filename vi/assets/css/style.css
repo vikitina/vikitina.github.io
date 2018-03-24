@@ -12,7 +12,7 @@ ul{margin:0;padding:0;list-style: none;}
 .bg_bottom img{max-width:100%;}
 .mob{display:none;}
 
-header{height: 176px;background-color: #0f101a;padding-top:24px;padding-bottom: 32px;transition:all 0.5s;}
+header{height: 176px;background-color: #0f101a;padding-top:24px;padding-bottom: 32px;transition:all 0.5s;position:absolute;width:100%;}
 header .logo{float:left; height: 120px;transition:all 0.5s;display:block;}
 header .logo img{height:100%;max-width: 100%;}
 header .nav--block{float:right;display:flex;flex-direction: column;justify-content:space-between;padding-top:24px;height:100%;}
@@ -54,7 +54,7 @@ header.header_fixed .socials .lang{background:#272940;}
 
 h1{text-align:center;color:#fff;font-weight:normal;font-size: 2.7em;font-weight: normal;line-height: 1.3em;margin-bottom: 41px;}
 h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-height: 1.3em;margin-bottom: 41px;}
-#main{padding-top:40px;position:relative;width:100%;}
+#main{padding-top:216px;position:relative;width:100%;}
 
 .timer_block{width: 800px;border-radius: 4px;background-color: #262840;margin:0 auto;padding-top:20px;}
 .timer_block h3{text-align: center;color: #22d79a;font-size: 1.4em;}
@@ -139,10 +139,10 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #about p{width:90%;text-align:center;margin:0 auto;color: #acaec0;font-size:1.4em;line-height:1.8em;}
 
 #about .img .animate{position: absolute;/*opacity:0;*/}
-#about .img .l2{top:-500px;}
-#about .img .l3{top:-1000px;}
-#about .img .l4{top:-1500px;}
-#about .img .l5{top:-2000px;}
+#about .img .l2{top:-500px;opacity:0;}
+#about .img .l3{top:-1000px;opacity:0;}
+#about .img .l4{top:-1500px;opacity:0;}
+#about .img .l5{top:-2000px;opacity:0;}
 
 
 #how{padding-top:80px;}
