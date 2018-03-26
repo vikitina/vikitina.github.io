@@ -9,7 +9,8 @@ $(document).ready(function(){
 	var topPosStart  = target_city.offset().top - 2000;          //начало анимации сверху
     var botPosEnd    = target_city.offset().top + 2000;                    //начало анимации снизу
                                  
-    var topPosMiddle = target_city.offset().top-80-winHeight/3;                               //середина анимации, должно все собраться - верх
+    //var topPosMiddle = target_city.offset().top-80-winHeight/3;                               //середина анимации, должно все собраться - верх
+    var topPosMiddle = target_city.offset().top - 160; 
     var botPosMiddle = target_city.offset().top - 160; //середина анимации, должно все собраться - низ
 
 
