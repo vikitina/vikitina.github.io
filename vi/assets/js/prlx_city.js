@@ -9,15 +9,15 @@ $(document).ready(function(){
 	var topPosStart  = target_city.offset().top - 2000;          //начало анимации сверху
     var botPosEnd    = target_city.offset().top + 2000;                    //начало анимации снизу
                                  
-    //var topPosMiddle = target_city.offset().top-80-winHeight/3;                               //середина анимации, должно все собраться - верх
-    var topPosMiddle = target_city.offset().top - 160; 
-    var botPosMiddle = target_city.offset().top - 160; //середина анимации, должно все собраться - низ
+    var topPosMiddle = target_city.offset().top+70-winHeight+$('#city').height(); //середина анимации, должно все собраться - верх
+    //var topPosMiddle = target_city.offset().top - 120; 
+    var botPosMiddle = target_city.offset().top - 70-50; //середина анимации, должно все собраться - низ
 
 
 
-    var topPosOpacity = topPosMiddle - 300;
-    var botPosOpacity = botPosMiddle + 300;
-    var opacity_step = 1/300;
+    var topPosOpacity = topPosMiddle - 500;
+    var botPosOpacity = botPosMiddle + 500;
+    var opacity_step = 1/500;
 
 
 
@@ -28,7 +28,7 @@ $(document).ready(function(){
     var k_l4 = ($('#about .img .l4').attr('data-speed') * 1)/(topPosMiddle-topPosStart);
     var k_l5 = ($('#about .img .l5').attr('data-speed') * 1)/(topPosMiddle-topPosStart);
     //начальное положение
-        if(winScrollTop < topPosStart){
+   if(winScrollTop < topPosStart){
                  $.each($('#about .img .animate'), function(){
                        $(this).css('top', ($(this).attr('data-speed') * 1) + 'px' );
                 });
@@ -63,13 +63,38 @@ $(document).ready(function(){
                 });
                 
      } 
-
+     if (winScrollTop >=topPosOpacity && winScrollTop <= topPosMiddle){
+        var cur_opacity = (topPosMiddle - winScrollTop)*opacity_step;
+                 $.each($('#about .img .animate'), function(){
+                       $(this).css('opacity', cur_opacity );
+                });        
+     }
+     if (winScrollTop <=botPosOpacity && winScrollTop >= botPosMiddle){
+        var cur_opacity = (winScrollTop - botPosMiddle )*opacity_step;
+                 $.each($('#about .img .animate'), function(){
+                       $(this).css('opacity', cur_opacity );
+                });        
+     }     
+     if (winScrollTop >=topPosMiddle && winScrollTop <= botPosMiddle){
+        
+                 $.each($('#about .img .animate'), function(){
+                       $(this).css('opacity', '1' );
+                });        
+     }
+     if (winScrollTop >=botPosOpacity || winScrollTop <= topPosOpacity){
+        var cur_opacity = (winScrollTop - botPosMiddle )*opacity_step;
+                 $.each($('#about .img .animate'), function(){
+                       $(this).css('opacity', cur_opacity );
+                });        
+     }
       alert($('#about .img .l2').css('top'));
 
-    $('body').append('<div style="position:absolute;top:'+topPosStart+'px;left:0;width:100%;height:4px;background:red;"></div>');
-    $('body').append('<div style="position:absolute;top:'+botPosEnd+'px;left:0;width:100%;height:4px;background:red;"></div>');
-    $('body').append('<div style="position:absolute;top:'+topPosMiddle+'px;left:0;width:100%;height:4px;background:green;"></div>');
-    $('body').append('<div style="position:absolute;top:'+botPosMiddle+'px;left:0;width:100%;height:4px;background:green;"></div>');
+    $('body').append('<div style="position:absolute;top:'+topPosStart+'px;left:0;width:100%;height:4px;background:red;z-index:9999999999;"></div>');
+    $('body').append('<div style="position:absolute;top:'+botPosEnd+'px;left:0;width:100%;height:4px;background:red;z-index:9999999999;"></div>');
+    $('body').append('<div style="position:absolute;top:'+topPosMiddle+'px;left:0;width:100%;height:4px;background:white;z-index:9999999999;"></div>');
+    $('body').append('<div style="position:absolute;top:'+botPosMiddle+'px;left:0;width:100%;height:4px;background:green;z-index:9999999999;"></div>');
+    $('body').append('<div style="position:absolute;top:'+topPosOpacity+'px;left:0;width:100%;height:4px;background:blue;z-index:9999999999;"></div>');
+    $('body').append('<div style="position:absolute;top:'+botPosOpacity+'px;left:0;width:100%;height:4px;background:blue;z-index:9999999999;"></div>');
 console.log('topPosStart '+topPosStart);
 console.log('botPosEnd '+botPosEnd);
 
@@ -83,7 +108,7 @@ function onScroll(){
 }
 
 var update = function(){
-    console.log('3------update'+prev_pos);
+   
         if(winScrollTop >= topPosStart && winScrollTop <= topPosMiddle){
                  if (prev_pos < winScrollTop){
                         $('.sreeny').val('вниззззз '+winScrollTop);
@@ -102,7 +127,7 @@ var update = function(){
                         }
                 }
         }
-        if(winScrollTop >= topPosMiddle && winScrollTop <= botPosMiddle){
+        if(winScrollTop >topPosMiddle && winScrollTop < botPosMiddle){
                        $('.sreeny').val('стоим '+winScrollTop);
                        parallaxScrollzero();
                        opacityZeroZone();
@@ -153,7 +178,11 @@ function decrease_opacity(){
     var scrolled = Math.abs(winScrollTop - prev_pos);
     console.log('opacity!!!!!   cur val '+ $('#about .img .animate').css('opacity')*1 + ' scrolled '+ scrolled +' opacity_step '+opacity_step);
     $.each($('#about .img .animate'), function(){
-         $(this).css('opacity', $(this).css('opacity')*1 - scrolled*opacity_step );
+         if(($(this).css('opacity')*1 - scrolled*opacity_step)>0){
+            $(this).css('opacity', $(this).css('opacity')*1 - scrolled*opacity_step );
+        }else{
+            $(this).css('opacity', '0' );
+        }
     });
 
 }
