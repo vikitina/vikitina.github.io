@@ -169,8 +169,15 @@ h2{text-align: center;color:#fff;font-size: 2.7em;font-weight: normal;line-heigh
 #advantages p{text-align:center; color: #acaec0;font-size:1.4em;width:70%;margin:0 auto;}
 
 #faq{}
-#faq .img{display:block;max-width:420px;width:70%;margin:0 auto;margin-bottom: 55px;margin-top:60px;}
+
+#faq .img{display:block;max-width:1000px;width:70%;margin:0 auto;margin-bottom: 55px;margin-top:60px;position: relative;}
 #faq .img img{width:100%;}
+#faq .img .animate{position: absolute;/*opacity:0;*/}
+#faq .img .l2{top:500px;opacity:0;}
+#faq .img .l3{top:1000px;opacity:0;}
+#faq .img .l4{top:1500px;opacity:0;}
+#faq .img .l5{top:2000px;opacity:0;}
+
 #faq dl{width: 800px;border-radius: 4px;border: solid 1px #333651;margin: 0 auto;line-height:1.6em;margin-bottom:10px;padding:15px;font-size:1.4em;}
 #faq dl dt{margin-bottom:10px;color: #00cde2;font-weight:normal;position:relative;}
 #faq dl dt:after{content:" ";width: 14px;height: 10px; display:block; position:absolute;background: url(../img/images/triangle_lang.png) no-repeat top left;right:10px;top:11px;}
