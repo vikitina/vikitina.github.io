@@ -6,6 +6,7 @@ $(document).ready(function(){
 	var winScrollTop = $(window).scrollTop();
     var target_city = $('#city');
     var target_head = $('#head');
+    var target_top = $('#top');
     var moving = false;
     var opacity = 0;
     
@@ -20,6 +21,11 @@ $(document).ready(function(){
                                  
     var topPosMiddle_h = (target_head.offset().top - (winHeight - $('#head').height())/2) - 15;//-winHeight+$('#head').height(); //середина анимации, должно все собраться - верх
     var botPosMiddle_h = (target_head.offset().top - (winHeight - $('#head').height())/2) + 15; //середина анимации, должно все собраться - низ
+
+    var topPosStart_t  = 0;         //начало анимации сверху
+    var botPosEnd_t    = target_top.height();                    //начало анимации снизу
+                                 
+
 
     var topPosOpacity = topPosMiddle - 500;
     var botPosOpacity = botPosMiddle + 500;
@@ -261,7 +267,18 @@ window.addEventListener('scroll', function ( event ) {
                 }
         }
         
-        
+ /*===================================top=========================================*/        
+
+        if(winScrollTop >= topPosStart_t && winScrollTop <= botPosEnd_t){
+                 if (prev_pos < winScrollTop){
+                        $('.sreeny').val('вниззззз '+winScrollTop);
+                        parallaxScrolldecrease_up('#main');
+                 }else{
+                        $('.sreeny').val('up '+winScrollTop);
+                        parallaxScrollincrease_down('#main');
+                } 
+
+        }       
 
 prev_pos = winScrollTop;
 
