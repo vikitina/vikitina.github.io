@@ -12,14 +12,14 @@ $(document).ready(function(){
 	var topPosStart  = target_city.offset().top-winHeight;         //начало анимации сверху
     var botPosEnd    = target_city.offset().top + $('#city').height();                    //начало анимации снизу
                                  
-    var topPosMiddle = target_city.offset().top+70-winHeight+$('#city').height(); //середина анимации, должно все собраться - верх 
-    var botPosMiddle = target_city.offset().top - 70-50; //середина анимации, должно все собраться - низ
+    var topPosMiddle = (target_city.offset().top - (winHeight - $('#city').height())/2) - 15; //середина анимации, должно все собраться - верх 
+    var botPosMiddle = (target_city.offset().top - (winHeight - $('#city').height())/2) + 15; //середина анимации, должно все собраться - низ
 
     var topPosStart_h  = target_head.offset().top-winHeight;         //начало анимации сверху
     var botPosEnd_h    = target_head.offset().top + $('#head').height();                    //начало анимации снизу
                                  
-    var topPosMiddle_h = target_head.offset().top- 70-50;//-winHeight+$('#head').height(); //середина анимации, должно все собраться - верх
-    var botPosMiddle_h = target_head.offset().top - 70; //середина анимации, должно все собраться - низ
+    var topPosMiddle_h = (target_head.offset().top - (winHeight - $('#head').height())/2) - 15;//-winHeight+$('#head').height(); //середина анимации, должно все собраться - верх
+    var botPosMiddle_h = (target_head.offset().top - (winHeight - $('#head').height())/2) + 15; //середина анимации, должно все собраться - низ
 
     var topPosOpacity = topPosMiddle - 500;
     var botPosOpacity = botPosMiddle + 500;
