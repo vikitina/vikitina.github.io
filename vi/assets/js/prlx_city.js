@@ -18,8 +18,8 @@ $(document).ready(function(){
     var topPosStart_h  = target_head.offset().top-winHeight;         //начало анимации сверху
     var botPosEnd_h    = target_head.offset().top + $('#head').height();                    //начало анимации снизу
                                  
-    var topPosMiddle_h = target_head.offset().top+70-winHeight+$('#head').height(); //середина анимации, должно все собраться - верх
-    var botPosMiddle_h = target_head.offset().top - 70-50; //середина анимации, должно все собраться - низ
+    var topPosMiddle_h = target_head.offset().top- 70-50;//-winHeight+$('#head').height(); //середина анимации, должно все собраться - верх
+    var botPosMiddle_h = target_head.offset().top - 70; //середина анимации, должно все собраться - низ
 
     var topPosOpacity = topPosMiddle - 500;
     var botPosOpacity = botPosMiddle + 500;
@@ -27,7 +27,9 @@ $(document).ready(function(){
 
     var topPosOpacity_h = topPosMiddle_h - 500;
     var botPosOpacity_h = botPosMiddle_h + 500;
-    var opacity_step = 1/500;
+    var opacity_step_h = 1/500;
+
+
 
 
     //начальное положение
@@ -68,13 +70,13 @@ $(document).ready(function(){
                 
      } 
      if (winScrollTop >=topPosOpacity && winScrollTop <= topPosMiddle){
-        var cur_opacity = (topPosMiddle - winScrollTop)*opacity_step;
+        var cur_opacity = 1 - (topPosMiddle - winScrollTop)*opacity_step;
                  $.each($('#about .img .animate'), function(){
                        $(this).css('opacity', cur_opacity );
                 });        
      }
      if (winScrollTop <=botPosOpacity && winScrollTop >= botPosMiddle){
-        var cur_opacity = (winScrollTop - botPosMiddle )*opacity_step;
+        var cur_opacity = 1 - (winScrollTop - botPosMiddle )*opacity_step;
                  $.each($('#about .img .animate'), function(){
                        $(this).css('opacity', cur_opacity );
                 });        
@@ -86,9 +88,8 @@ $(document).ready(function(){
                 });        
      }
      if (winScrollTop >=botPosOpacity || winScrollTop <= topPosOpacity){
-        var cur_opacity = (winScrollTop - botPosMiddle )*opacity_step;
                  $.each($('#about .img .animate'), function(){
-                       $(this).css('opacity', cur_opacity );
+                       $(this).css('opacity', 0 );
                 });        
      }
 
@@ -130,13 +131,13 @@ $(document).ready(function(){
                 
      } 
      if (winScrollTop >=topPosOpacity_h && winScrollTop <= topPosMiddle_h){
-        var cur_opacity = (topPosMiddle_h - winScrollTop)*opacity_step;
+        var cur_opacity = 1 - (topPosMiddle_h - winScrollTop)*opacity_step_h;
                  $.each($('#faq .img .animate'), function(){
                        $(this).css('opacity', cur_opacity );
                 });        
      }
      if (winScrollTop <=botPosOpacity_h && winScrollTop >= botPosMiddle_h){
-        var cur_opacity = (winScrollTop - botPosMiddle_h )*opacity_step;
+        var cur_opacity = 1 - (winScrollTop - botPosMiddle_h )*opacity_step_h;
                  $.each($('#faq .img .animate'), function(){
                        $(this).css('opacity', cur_opacity );
                 });        
@@ -148,9 +149,9 @@ $(document).ready(function(){
                 });        
      }
      if (winScrollTop >=botPosOpacity_h || winScrollTop <= topPosOpacity_h){
-        var cur_opacity = (winScrollTop - botPosMiddle_h )*opacity_step;
+       
                  $.each($('#faq .img .animate'), function(){
-                       $(this).css('opacity', cur_opacity );
+                       $(this).css('opacity', 0 );
                 });        
      }
 
