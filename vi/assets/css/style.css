@@ -15,10 +15,10 @@ ul{margin:0;padding:0;list-style: none;}
 #main .img{display:block;width:100%;margin:0 auto;margin-bottom: 55px;margin-top:60px;position: relative;position:absolute;top:0;left:0;z-index:-1;}
 #main .img img{width:100%;}
 #main .img .animate{position: absolute;/*opacity:0;*/}
-#main .img .l1{top:10px;}
-#main .img .l2{top:10px;}
-#main .img .l3{top:20px;}
-#main .img .l4{top:30px;}
+#main .img .l1{top:-100px;}
+#main .img .l2{top:-200px;}
+#main .img .l3{top:-50px;}
+#main .img .l4{top:0px;}
 #main .img .l5{top:40px;}
 #top .base{z-index: 10;}
 
