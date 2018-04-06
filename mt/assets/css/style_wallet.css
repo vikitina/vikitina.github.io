@@ -1,0 +1,71 @@
+body::before{position:absolute;content: " ";top:-149px; left:0; background:url(../img/bg_tmp_2.png) no-repeat center top; height:1160px;width: 100%;z-index:-1;}
+body{position:relative;}
+html,body {height: 100%;}
+.container { max-width: 1200px;}
+.without_padding{padding-left: 0 !important; padding-right: 0 !important;}
+
+header{height: 150px;width:100%;position: fixed;top:0;left:0;z-index:1000;opacity:0.5;}
+
+header .blue_line{width:100%;height:50px;background: #122874;padding-top:10px;}
+header .blue_line .container{height:100%;}
+header .blue_line .container nav {position: relative;z-index: 1;padding-left: 8px;height:100%;}
+header .blue_line .container nav > a {position: relative;display: inline-block;padding: .5em 1.4em 0;color: #fff;text-decoration: none;margin: 0 -.3em;height: 100%;text-transform: uppercase;font-size: 14px;font-weight: bold;} 
+header .blue_line .container nav > a::before {border: .1em solid rgba(0,0,0,.4);}
+header .blue_line .container nav a::before {content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; border:1px solid #1798d6; border-bottom: none; border-radius: .4em .4em 0 0; background: #122874; transform: scale(1.1, 1.2) perspective(.5em) rotateX(2deg); transform-origin: bottom; }
+header .blue_line .container nav a.selected { z-index: 2;color:#122874;}
+header .blue_line .container nav a.selected::before { background-color: #eee; margin-bottom: -.08em; border-color:#fff; }
+
+header .white_line{width:100%;height:100px;background: #fff;}
+header .white_line .container{display:table;width:100%;}
+header .white_line .logo_container{display:table-cell;width:33%;vertical-align: middle;}
+header .white_line .logo{margin-top:13px;display: inline-block;}
+header .white_line h1.dashboard {text-align:center;padding-top: 58px;display:table-cell;background: url(../img/bg_dashboard_title.png) no-repeat center 14px;font-size:20px;margin:0;color: #69cd51;}
+header .white_line .right_block_container{display:table-cell;width:33%;text-align: right;}
+header .white_line .right_block_container .sign{display:inline-block;background: url(../img/alarm_sign.png) no-repeat center center;width:16px; height:20px;}
+header .white_line .right_block_container .persona{display:inline-block;}
+
+.wrapper{display:table;height:100%;margin-top: 150px;opacity: 0.5;width:100%;}
+
+main{display: table-row;height:100%;width:100%;background:#e6eafa url(../img/bg_breadcrumbs.png) repeat-x top left;position:relative;}
+main::before{content:" ";position:absolute;height: 50px;width:100%;background:#e6eafa url(../img/bg_breadcrumbs.png) repeat-x top left;bottom: 0;left: 0;}
+main .breadcrumbs{width:100%;height: 50px;margin:0;padding:0;list-style: none;padding-top: 10px;}
+main .breadcrumbs li{float:left;margin:0;padding: 0;position:relative;margin-right:12px;}
+main .breadcrumbs li:last-child{margin-right:0;}
+main .breadcrumbs li::after{content:"/";position:absolute;top:5px;right:-8px;color:#99a7b1;font-size:12px;}
+main .breadcrumbs li:last-child::after{content:" ";}
+main .breadcrumbs li a{color:#99a7b1; font-size: 12px; text-decoration:underline;}
+main .breadcrumbs_bot{margin-top:177px;}
+
+main h2{font-size: 50px;margin-top:30px;text-align:center;}
+main h3{font-size: 30px;text-align:center;margin-top:8px;font-weight:normal;font-weight:bold;}
+
+.list_of_currencies{width:100%;display:table;padding:0;margin:0;margin-top: 21px;margin-bottom: 25px;}
+.list_of_currencies li{width:100%;display:table;width:100%;background:#fff;border-bottom: 1px solid #e6eafa;height:92px;}
+.list_of_currencies li.header{background: #f3f5fd;color:#041243;height:60px;}
+.list_of_currencies li.header div{display: table-cell;color:#041243;text-align: center;vertical-align: middle;font-weight:bold;font-size: 32px;}
+.list_of_currencies li.header div.you_have{width:49%;}
+.list_of_currencies li.header div.you_can{width:51%;padding-left: 32px}
+.list_of_currencies li .sum{padding-top: 30px;position:relative;font-size:33px;display: table-cell;width:23%;color:#1798d6;font-weight:bold;padding-left: 79px;}
+.list_of_currencies li .sum::before{position:absolute; top: 19px;left: 80px;color:#667b86;font-size:16px;}
+.list_of_currencies li .last_update{display: table-cell;width:22%;vertical-align: top;padding-left: 29px;background: url(../img/last_update.png) no-repeat left 48px;color: #909fa7;padding-top: 29px;line-height: 22px;}
+.list_of_currencies li .you_can_block{display: table-cell;width:48%;vertical-align: top;padding-top: 33px;}
+.list_of_currencies li .you_can_block > div{padding-left: 41px; color:#1798d6; text-decoration:underline;font-size: 20px;margin-right: 28px;}
+.list_of_currencies li .you_can_block .sm_contract{display: inline-block;background: url(../img/sm_contract.png) no-repeat left center;}
+.list_of_currencies li .you_can_block .send{display: inline-block;background: url(../img/send.png) no-repeat left center;}
+.list_of_currencies li .you_can_block .request{display: inline-block;background: url(../img/request.png) no-repeat left center;}
+.list_of_currencies li.mtrc .sum{background: url(../img/mtrc.png) no-repeat 29px  27px;}  
+.list_of_currencies li.mtrc .sum::before{content:"MTRc";}   
+.list_of_currencies li.eth .sum{background: url(../img/eth.png) no-repeat 29px 27px;}
+.list_of_currencies li.eth .sum::before{content:"ETH";}
+.list_of_currencies li.btc .sum{background: url(../img/btc.png) no-repeat 29px 27px;}
+.list_of_currencies li.btc .sum::before{content:"BTC";}
+
+.exchange_tokens_container{text-align: center;}
+.exchange_tokens{font-size:20px;display:inline-block;padding-right: 64px;margin: 0 auto;position: relative;color:#1798d6;background: url(../img/i_withdraw.png) no-repeat left center; padding-left: 40px;}
+.exchange_tokens::after{padding-left:10px;padding-right:10px;border-radius:10px;position: absolute;right: 0; content: "soon";display: block; top: 8px;background:#ffaa00;color:#000;font-size: 16px;height: 17px;line-height: 13px;}
+
+footer{height:230px;width:100%;background:#122874;font-size:12px; color:#fff;padding-top:40px;}
+footer .about_mt{color:#1798d6; text-decoration:underline;font-size: 20px; display:block;margin-top:16px;}
+footer address{margin-top:-5px;color:#fff;margin-bottom: -4px;}
+footer p{color: #1798d6;}
+
