@@ -397,7 +397,7 @@ function parallaxScrollincrease_down(container){
 
 
 function parallaxScrollzero(){
-     $('#about .img .l1').css('top','0px');
+  $('#about .img .l1').css('top','0px');
   $('#about .img .l2').css('top','0px');
   $('#about .img .l3').css('top','0px');
   $('#about .img .l4').css('top','0px');
