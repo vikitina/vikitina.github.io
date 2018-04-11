@@ -8,4 +8,11 @@ $(function(){
 	                    $(this).addClass('persona_open');
 	            }
 	});
+	$('header .blue_line .nav_mob').click(function(){
+		if($(this).hasClass('nav_mob_opened')){
+			$(this).removeClass('nav_mob_opened');
+		}else{
+            $(this).addClass('nav_mob_opened');
+		}
+	});
 });

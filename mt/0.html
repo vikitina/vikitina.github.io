@@ -12,22 +12,24 @@
     <!-- Bootstrap core CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/css/style_wallet.css" rel="stylesheet" />
-
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
   </head>
 
   <body>
   <header>
     <div class="blue_line">
           <div class="container">
-                <nav>
+                <nav class="desktop">
                       <a href="#">Company</a>
                       <a href="#">Product</a>
                       <a href="#" class="selected">Wallet</a>
                       <a href="#">Services</a>
                 </nav>
 
+
                 <div class="right_block">
-                      <a href="" class="help"><i class="help"></i></a>
+                      <a href="" class="help desktop"><i class="help"></i></a>
+                      <a href="" class="help_mob mob"><i class="chat"></i>Support</a>
                       <div class="lang">
                               <em></em>
                               <span>English</span>
@@ -37,18 +39,28 @@
                               </ul>
                       </div><!-- lang  -->
                 </div><!--  right_block  -->
-          </div>
+          </div><!-- container  -->
+                <div class="nav_mob mob">
+                     <span></span>
+                     <ul>
+                         <li><a href="#">Company</a></li>
+                         <li><a href="#">Product</a></li>
+                         <li><a href="#" class="selected">Wallet</a></li>
+                         <li><a href="#">Services</a></li>
+                     </ul>
+
+                </div><!-- nav_mob  -->          
     </div><!--  blue_line  -->
-    <div class="white_line">
+    <div class="white_line desktop">
           <div class="container">    
-                <div class="logo_container"><a class="logo"><img src="./assets/img/mt_logo.png" /></a></div>
+                <div class="logo_container desktop"><a class="logo"><img src="./assets/img/mt_logo.png" /></a></div>
                 <h1 class="dashboard">Dashboard</h1>
                 <div class="right_block_container">
                         <div class="sign"> </div>
                         <div class="persona">
                               <em></em>
                               <div class="img"><img src="./assets/img/no_userpic.png" alt="" /></div>
-                              <div class="name">
+                              <div class="name desktop">
                                   <span>John&nbsp;Konstantinopolsky</span>
                                   <i>Private Wallet</i>
                               </div><!--  name -->
@@ -115,12 +127,13 @@
                             <a href="" target="_blank"><i class="fb"></i></a>
                             <a href="" target="_blank"><i class="twitter"></i></a>
                             <a href="" target="_blank"><i class="icon_4"></i></a>
+                            <br class="mob" />
                             <a href="" target="_blank"><i class="reddit"></i></a>
                             <a href="" target="_blank"><i class="github"></i></a>
                             <a href="" target="_blank"><i class="youtube"></i></a>
                             <a href="" target="_blank"><i class="google"></i></a>                            
                       </div>
-                      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 without_padding">
+                      <div class="col-lg-3 col-md-3 col-sm-7 col-xs-7 without_padding">
 
                             <address>
                                 Contacts: Kemp&nbsp;House,&nbsp;160&nbsp;City&nbsp;Road,&nbsp;London,&nbsp;UK,&nbsp;EC1V&nbsp;2NX<br />
