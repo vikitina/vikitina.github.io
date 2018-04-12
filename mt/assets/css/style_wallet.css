@@ -76,7 +76,7 @@ header .white_line .right_block_container .persona .popup .block a:hover{text-de
 
 .wrapper{display:table;height:100%;width:100%;/*opacity:0.5;*/}
 
-main{display: table-row;height:100%;width:100%;background:#e6eafa url(../img/bg_breadcrumbs.png) repeat-x left 150px;position:relative;}
+main{display: table;height:100%;width:100%;background:#e6eafa url(../img/bg_breadcrumbs.png) repeat-x left 150px;position:relative;}
 main::before{content:" ";position:absolute;height: 50px;width:100%;background:#e6eafa url(../img/bg_breadcrumbs.png) repeat-x top left;bottom: 0;left: 0;}
 main > .container{position:relative;min-height:100%;padding-bottom: 76px;margin-top: 150px;}
 
