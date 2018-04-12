@@ -10,7 +10,7 @@
     <title>ModuleTrade</title>
 
     <!-- Bootstrap core CSS -->
-    <link  rel="stylesheet" href='./assets/fonts/fonts.css' />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/css/style_wallet.css" rel="stylesheet" />
     <link href="./assets/css/responsive.css" rel="stylesheet" />
@@ -21,7 +21,7 @@
     <div class="blue_line">
           <div class="container">
                 <nav class="desktop">
-                      <a href="#">Company</a>
+                      <a href="#">About</a>
                       <a href="#">Product</a>
                       <a href="#" class="selected">Wallet</a>
                       <a href="#">Services</a>
@@ -29,8 +29,8 @@
 
 
                 <div class="right_block">
-                      <a href="" class="help desktop"><i class="help"></i></a>
-                      <a href="" class="help_mob mob"><i class="chat"></i>Support</a>
+                   
+                      <a href="" class="help_mob"><i class="chat"></i>Support</a>
                       <div class="lang">
                               <em></em>
                               <span>English</span>
@@ -44,7 +44,7 @@
                 <div class="nav_mob mob">
                      <span></span>
                      <ul>
-                         <li><a href="#">Company</a></li>
+                         <li><a href="#">About</a></li>
                          <li><a href="#">Product</a></li>
                          <li><a href="#" class="selected">Wallet</a></li>
                          <li><a href="#">Services</a></li>
@@ -55,7 +55,9 @@
     <div class="white_line desktop">
           <div class="container">    
                 <div class="logo_container desktop"><a class="logo"><img src="./assets/img/mt_logo.png" /></a></div>
-                <h1 class="dashboard">Dashboard</h1>
+                <!--<h1 class="dashboard">Dashboard</h1>-->
+                <h2 class="hello fs_big">Hello, John!<br />In your MT-Wallet <a href=""><i></i></a></h2>
+                  
                 <div class="right_block_container">
                         <div class="sign"> </div>
                         <div class="persona">
@@ -103,15 +105,15 @@
                     <ul class="breadcrumbs">
                           <li><a href="#">ModulTrade</a></li>
                           <li><a href="#">Wallet</a></li>
-                          <li><a href="#">Dashboard</a></li>
+                          <li>Dashboard</li>
                     </ul>
 
-                    <h2 class="hello">Hello, John!</h2>
-                    <h2>In your MT-Wallet...</h2>
+                    
                     <div class="wallet_block row">
                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="w_block">
-                                     <h3>You have <i class="reload"></i></h3>
+                                     <h3>You have <i class="reload mob"></i></h3>
+                                     <div class="last_update"><span>Last update 2018.01.10 12:00 PM</span></div>
                                      <ul class="list_of_currencies">
                                            <li class="mtrc"><span class="sum">170'567.08</span></li>
                                            <li class="eth"><span class="sum">234.45678</span></li>
@@ -129,8 +131,8 @@
                                     </div>
                                     <div class="row">
                                           <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'><a href="" class="blue payonsmc"></a></div>
-                                         <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'><a href="" class="blue exchangetoken"></a></div>
-                                         <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'><a href="" class="blue buyselltokens"></a></div>
+                                         <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'><a href="" class="blue soon exchangetoken"></a></div>
+                                         <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'><a href="" class="blue soon buyselltokens"></a></div>
                                     </div>
 
                                      </div>
@@ -139,13 +141,14 @@
                           </div>
                     </div><!-- row -->
 
-                    <a href="" class="you_trade"><span><i class="case"></i>Tou trade on ModulTrade Platform</span></a>
+                    <div class="youtrade_container"><a href="" class="you_trade"><span><i class="case"></i>You trade on ModulTrade Platform</span></a></div>
 
 
                     
                     <div class="exchanges_container">
+                    <h2>You trade MTRc at</h2>
                        <div class="container">
-                       <h2>You trade MTRc at</h2>
+                       
                         <div class="exchanges">
                          <div class="row">
                               <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'><a href=""><img src='./assets/img/ex_idex.png' alt="Idex" /></a></div>
@@ -158,16 +161,59 @@
                     </div> 
 
                     <div class="сalculator_container">
+                     <h2>You calculate MTRc value</h2>
                        <div class="container">
-                             <h2>You calculate MTRc value</h2>
+                            <div class="calculator_block">
+                                <ul class="row">
+                                     <li class='col-lg-6 col-md-6 col-sm-12 col-xs-12 left'>
+                                           <label>You sell</label>
+                                           <div class="complex_container">
+                                                  <div class="form_input">
+                                                        <input type="text" />
+                                                  </div>
+                                                  <div class="form_select">
+                                                 
+                                                     <select>
+                                                       <option selected>MTRc</option>
+                                                       <option>ETH</option>
+                                                       <option>BTC</option>
+                                                     </select>
+                                                  </div>   
 
-                             <div class="calculator_bg">
+                                           </div><!-- complex_container  -->
+
+                                     </li>
+                                     <li class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                                           <label>You get</label>
+                                           <div class="complex_container">
+                                                  <div class="form_input">
+                                                        <input type="text" />
+                                                  </div>
+                                                  <div class="form_select">
+                                                                                                  
+                                                     <select>
+                                                       <option selected>MTRc</option>
+                                                       <option>ETH</option>
+                                                       <option>BTC</option>
+                                                     </select>
+                                                  </div>
+
+                                           </div><!-- complex_container  -->
+
+                                     </li>
+                                </ul>
                                
-                                     <div class="calculator_block">
-                               
+                             <div class="row low_row">
+                                    <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                                           <span>Based on rates from</span>
 
                                     </div>
+                                    <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 right'>
+                                           <span>Last update 2018.01.10 12:00 PM</span>
+                                    </div>
                              </div>
+                            </div>
+                             
                        </div>
 
                     </div>                     
@@ -175,7 +221,7 @@
                     <ul class="breadcrumbs breadcrumbs_bot">
                           <li><a href="#">ModulTrade</a></li>
                           <li><a href="#">Wallet</a></li>
-                          <li><a href="#">Dashboard</a></li>
+                          <li>Dashboard</li>
                     </ul>                    
                 </div><!--  container -->    
           </main>
@@ -204,10 +250,7 @@
                                 Email:&nbsp;<a href="mailto:tokensale@modultrade.io">tokensale@modultrade.io</a><br />
                                 Modultrade © 2017
                             </address>
-                            <p>
-                                MTRcs are tokens in ModulTrade’s value ecosystem. They are not refundable, nor are they securities or for speculation. There is no promise of future performance. There is no suggestion or promise that MTRc has or will hold a particular value. 
-
-                            </p>
+                            
 
                       </div>
 

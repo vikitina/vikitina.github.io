@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/datepicker.css" rel="stylesheet" />
     <link href="./assets/css/style_wallet.css" rel="stylesheet" />
     <link href="./assets/css/responsive.css" rel="stylesheet" />
   </head>
@@ -55,46 +56,9 @@
     <div class="white_line desktop">
           <div class="container">    
                 <div class="logo_container desktop"><a class="logo"><img src="./assets/img/mt_logo.png" /></a></div>
-                <!--<h1 class="dashboard">Dashboard</h1>-->
-                <h2 class="hello fs_big">Hello, John!<br />In your MT-Wallet</h2>
-                  
                 <div class="right_block_container">
                         <div class="sign"> </div>
-                        <div class="persona">
-                              <em></em>
-                              <div class="img"><img src="./assets/img/no_userpic.png" alt="" /></div>
-                              <div class="name desktop">
-                                  <span>John&nbsp;Konstantinopolsky</span>
-                                  <i>Private Wallet</i>
-                              </div><!--  name -->
-                              <div class="popup">
-                                           <div class="name_block">
-                                                <div class="img_p"><img src="./assets/img/no_userpic_big.png" alt="" /></div>
-                                                <div class="name_p">
-                                                    <span>John&nbsp;Konstantinopolsky</span>
-                                                    <i>Private Wallet</i>
-                                                </div>
 
-                                                <div class="clear"></div>
-                                           </div><!--  name_block -->
-
-                                           <div class="btns_line">
-                                                 <a href="" class="edit_profile">Edit Profile</a>
-                                                 <a href="" class="logout">Logout</a>
-                                           </div><!-- btns_line  -->
-                                           <div class="block">
-                                                <a href="">Your ETH-address for withdrawal</a>
-                                           </div><!-- block   -->
-                                           <div class="block">
-                                                <a href="">2FA settings</a>
-                                           </div><!-- block   -->
-                                           <div class="block">
-                                                <a href="">MTRc withdrawal request</a>
-                                           </div><!-- block   -->                                                                                      
-
-                                </div><!-- popup  -->
-                             <div class="clear"></div>
-                        </div><!--  persona  -->
                 </div>
           </div><!-- container  -->
     </div>
@@ -105,16 +69,90 @@
                     <ul class="breadcrumbs">
                           <li><a href="#">ModulTrade</a></li>
                           <li><a href="#">Wallet</a></li>
-                          <li>Dashboard</li>
+                          <li>Sign Up and Create New Wallet</li>
                     </ul>
 
+ <!-- ************************************************************************************** -->  
+                     <h1>Sign Up and Create New Wallet</h1>
+                     <div class="centered_text"><a href="" class="sign-up-in_link">I have an Account and Wallet!</a></div>
+
+                     <div class="centered_block_w">
+                        <div class="form">
+                           <form>
+                               <ul>
+                                 <li>
+                                      <label>Name*</label>
+                                      <div class="form_input">
+                                            <input type="text" />
+                                      </div>
+                                 </li>
+                                 <li>
+                                      <label>Surname*</label>
+                                      <div class="form_input">
+                                            <input type="text" />
+                                      </div>
+                                 </li>
+                                 <li>
+                                      <label>Birthday*</label>
+                                      <div class="form_input">
+                                            <i class="calendar"></i>
+                                            <input type="text" data-toggle="datepicker" />
+                                      </div>
+                                 </li>
+                                 <li>
+                                      <label>Email*</label>
+                                      <div class="form_input">
+                                            <input type="text" />
+                                      </div>
+                                 </li>
+                                 <li>
+                                      <label>Phone*</label>
+                                      <div class="form_input">
+                                            <input type="text" />
+                                      </div>
+                                 </li>
+                                 <li>
+                                      <label>Password</label>
+                                      <div class="form_input">
+                                            <input type="password" />
+                                      </div>
+                                 </li>
+                                 <li>
+                                      <label>Password confirmation</label>
+                                      <div class="form_input">
+                                            <input type="password" />
+                                      </div>
+                                 </li>
+                                 <li class="captcha">
+                                     
+
+                                 </li>                                                                                                                   <li class="agree">
+                                      <label>
+                                      <div class="checkbox">
+                                            <i></i>
+                                            <input type="checkbox" />
+                                      </div>
+                                      Hereby i confirm that I read <a href="">Terms & Conditions</a></label>
+                                 </li>
+                                 <li class="submit">
+                                     
+                                      <div class="form_submit">
+                                            <button type="submit">Sign Up and <br />Create New Wallet</button>
+                                      </div>
+                                 </li>                                                                                                                                                     
+                               </ul>
+                           </form>
+                         </div>  <!-- form  -->
+                     </div><!-- centered_block_w  -->
 
 
+
+ <!-- ************************************************************************************** -->  
 
                     <ul class="breadcrumbs breadcrumbs_bot">
                           <li><a href="#">ModulTrade</a></li>
                           <li><a href="#">Wallet</a></li>
-                          <li>Dashboard</li>
+                          <li>Sign Up and Create New Wallet</li>
                     </ul>                    
                 </div><!--  container -->    
           </main>
@@ -160,6 +198,7 @@
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/datepicker.min.js"></script>
     <script src="./assets/js/script_new_wallet.js"></script>
   </body>
 </html>

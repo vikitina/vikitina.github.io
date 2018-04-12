@@ -16,3 +16,12 @@ $(function(){
 		}
 	});
 });
+
+$(function () {
+    $('[data-toggle="datepicker"]').datepicker({
+        autoHide: true,
+        autoPick: true,
+        format: 'dd.mm.yyyy',
+        zIndex: 999,
+    });
+});
