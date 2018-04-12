@@ -1,4 +1,4 @@
-body::before{position:absolute;content: " ";top:2px; left:0; background:url(../img/bg_tmp_main.png) no-repeat center top; height:2264px;width: 100%;z-index:-1;}
+/*body::before{position:absolute;content: " ";top:2px; left:0; background:url(../img/bg_tmp_main.png) no-repeat center top; height:2264px;width: 100%;z-index:-1;}*/
 body{position:relative;font-family: 'Lato', Arial;}
 .fs_small{font-size:14px}
 .fs_middle{font-size:20px}
