@@ -18,6 +18,7 @@
 
   <body>
   <header>
+
     <div class="blue_line">
           <div class="container">
                 <nav class="desktop">
@@ -31,25 +32,64 @@
                 <div class="right_block">
                    
                       <a href="" class="help_mob"><i class="chat"></i>Support</a>
-                      <div class="lang">
+                      <div class="lang desktop">
                               <em></em>
                               <span>English</span>
                               <ul>
                                    <li><a href="">CN</a></li>
                                    <li class="active"><a href="">EN</a></li>
                               </ul>
-                      </div><!-- lang  -->
+                      </div><!-- lang  -->                      
+                      <div class="sign_mob"> </div>
+                        <div class="persona_mob mob">
+                              <em></em>
+                              <div class="img"><img src="./assets/img/no_userpic.png" alt="" /></div>
+                              <div class="popup">
+                                           <div class="name_block">
+                                                <div class="img_p"><img src="./assets/img/no_userpic_big.png" alt="" /></div>
+                                                <div class="name_p">
+                                                    <span>John&nbsp;Konstantinopolsky</span>
+                                                    <i>Private Wallet</i>
+                                                </div>
+
+                                                <div class="clear"></div>
+                                           </div><!--  name_block -->
+
+                                           <div class="btns_line">
+                                                 <a href="" class="edit_profile">Edit Profile</a>
+                                                 <a href="" class="logout">Logout</a>
+                                           </div><!-- btns_line  -->
+
+                                           <div class="block">
+                                                <a href="">2FA settings</a>
+                                           </div><!-- block   -->
+                                                                                      
+
+                                </div><!-- popup  -->
+                             <div class="clear"></div>
+                        </div><!--  persona  -->                      
+                    <div class="clear"></div>
                 </div><!--  right_block  -->
           </div><!-- container  -->
                 <div class="nav_mob mob">
                      <span></span>
                      <ul>
-                         <li><a href="#">About</a></li>
+                         <li><a href="#" class="selected">Wallet</a>
+                            <ul class="inner_menu"> 
+                                  <li class="selected">Dashboard</li>
+                                  <li>You can:</li>
+                                  <li><a href=# class="outerlink"><span>Trade on MT-Market</span></a></li>
+                                  <li><a href=#> Send Tokens</a></li>
+                                  <li><a href=#>Receive Tokens</a></li>
+                                  <li><a href=#>Pay on MT Smart-Contract</a></li>
+                                  <li><a href=#>Exchange Tokens</a></li>
+                                  <li><a href=#>Buy/Sell Tokens ($,€)</a></li>
+                            </ul>
+                         </li>
+                         <li><a href="#">About company</a></li>
                          <li><a href="#">Market</a></li>
-                         <li><a href="#" class="selected">Wallet</a></li>
                          <li><a href="#">Services</a></li>
                      </ul>
-
                 </div><!-- nav_mob  -->          
     </div><!--  blue_line  -->
     <div class="white_line desktop">
@@ -63,7 +103,7 @@
                                   <li class="selected"><a href=# class="main_link">Dashboard</a></li>
                                   <li>You can:</li>
                                   <li><a href=# class="outerlink"><span>Trade on MT-Market</span></a></li>
-                                  <li><a href=#> Send Tokens</a></li>
+                                  <li><a href=#>Send Tokens</a></li>
                                   <li><a href=#>Receive Tokens</a></li>
                                   <li><a href=#>Pay on MT Smart-Contract</a></li>
                                   <li><a href=#>Exchange Tokens</a></li>
@@ -113,29 +153,14 @@
     <div class="wrapper">
           <main>
                 <div class="container">
-                    <ul class="breadcrumbs">
+                    <ul class="breadcrumbs desktop">
                           <li><a href="#">ModulTrade</a></li>
                           <li><a href="#">Wallet</a></li>
                           <li>Pay on Smart-contract</li>
                     </ul>
  <!-- ************************************************************************************** -->  
-                <h2 class="hello fs_big mob">Hello, John!<br />In your MT-Wallet 
-                         <div class="inner_menu_trigger">
-                            <i></i>
-                            <ul class="inner_menu"> 
-                                  <li class="selected"><a href=#>Dashboard</a></li>
-                                  <li>You can:</li>
-                                  <li><a href=# class="outerlink"><span>Trade on MT-Market</span></a></li>
-                                  <li><a href=#> Send Tokens</a></li>
-                                  <li><a href=#>Receive Tokens</a></li>
-                                  <li><a href=#>Pay on MT Smart-Contract</a></li>
-                                  <li><a href=#>Exchange Tokens</a></li>
-                                  <li><a href=#>Buy/Sell Tokens ($)</a></li>
-                                  
-                            </ul>
-                        </div>
-                </h2> 
-                    <h1>Pay on Smart-contract</h1>
+                <h2 class="hello fs_big mob">Hello, John!<br />In your MT-Wallet... </h2> 
+                    <h1>You Pay on Smart-contract</h1>
                     <div class="centered_block_w centered_block_w_simple">
                         <div class="form">
                            <form>
@@ -144,7 +169,7 @@
                                  <li class="with_right_text">
                                       
                                         <div class="elements_container">
-                                            <label>You send</label>
+                                            <label>Amount</label>
                                             <div class="complex_container">
                                                   <div class="form_input">
                                                         <input type="text" />
@@ -168,7 +193,7 @@
                                            <div class="clear"></div>
                                  </li> 
                                  <li>
-                                      <label>Pay free in</label>
+                                      <label>Pay fee in</label>
                                        <div class="radio_group">
                                              <input type="hidden" />
                                              <span class="toggle_radio checked" data-value="MTRc">MTRc</span>
@@ -193,7 +218,7 @@
                                  </li>     
                                  <li class="submit">
                                       <div class="form_submit pay_sm_contract">
-                                            <input type="submit" value="Pay on MT Smart-contract" />
+                                            <button>Pay on MT Smart-contract</button>
                                       </div>
                                  </li>  
 
@@ -203,14 +228,10 @@
                         </div>  <!-- centered_block_w  -->
 
  <!-- ************************************************************************************** -->  
-                    <ul class="breadcrumbs breadcrumbs_bot">
-                          <li><a href="#">ModulTrade</a></li>
-                          <li><a href="#">Wallet</a></li>
-                          <li>Pay on Smart-contract</li>
-                    </ul>                    
+                                     
                 </div><!--  container -->    
           </main>
-          <div class="bg_breadcrumbs_bot"></div>
+          
           <footer>
                 <div class="container">
                    <div class="row">
@@ -232,7 +253,7 @@
                       <div class="col-lg-3 col-md-3 col-sm-7 col-xs-7 without_padding">
 
                             <address>
-                                Contacts: Kemp&nbsp;House,&nbsp;160&nbsp;City&nbsp;Road,&nbsp;London,&nbsp;UK,&nbsp;EC1V&nbsp;2NX<br />
+                                Contacts: Kemp&nbsp;House,&nbsp;160 City&nbsp;Road,&nbsp;London, UK,&nbsp;EC1V&nbsp;2NX<br />
                                 Email:&nbsp;<a href="mailto:support@modultrade.io">support@modultrade.io</a><br />
                                 Modultrade © 2017
                             </address>

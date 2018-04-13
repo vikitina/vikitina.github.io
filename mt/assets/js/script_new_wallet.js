@@ -8,11 +8,23 @@ $(function(){
 	                    $(this).addClass('persona_open');
 	            }
 	});
+	
+		$('header .persona_mob').click(function(){
+
+	            if($(this).hasClass('persona_mob_open')){
+
+	                    $(this).removeClass('persona_mob_open');
+	            }else{
+	                    $(this).addClass('persona_mob_open');
+	            }
+	});
 	$('header .blue_line .nav_mob').click(function(){
 		if($(this).hasClass('nav_mob_opened')){
 			$(this).removeClass('nav_mob_opened');
+			$('body').removeClass('fixed');
 		}else{
             $(this).addClass('nav_mob_opened');
+            $('body').addClass('fixed');
 		}
 	});
 });

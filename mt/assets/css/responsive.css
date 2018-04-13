@@ -3,15 +3,26 @@
  .desktop{display: none !important;}
  .mob{display: block !important;}
  header {height:50px;}
- header .blue_line .nav_mob{cursor:pointer;position:absolute;top: 6px;left: 5px;}
- header .blue_line .nav_mob span{width:40px;height:40px;background:url(../img/mob_menu_btn.png) no-repeat center center;display:block;z-index:1000;}
- header .blue_line .nav_mob ul{display:none;position:fixed;margin:0;padding:0;list-style:none;width:100%;height:100%;background:#f3f5fd;z-index:1000;left: 0px;top: 50px;}
- header .blue_line .nav_mob ul li{padding-top:10px;padding-bottom:10px;border-bottom: 1px solid #dce2f8;padding-left:25px;padding-left:25px;}
- header .blue_line .nav_mob ul li a{color:#708090;text-decoration:none;display:block;}
- header .blue_line .nav_mob ul li a.selected{color:#1798d6;}
- header .blue_line .nav_mob_opened ul{display:block;}
+ header .blue_line .nav_mob{position:absolute;top: 10px;left: 10px;}
+ header .blue_line .nav_mob > span{cursor:pointer;border:1px solid #1798d6;border-radius:30px;width:30px;height:30px;background:url(../img/mob_menu_btn.png) no-repeat center center;display:block;z-index:1000;}
+ header .blue_line .nav_mob > ul{display:none;position:fixed;margin:0;padding:0;list-style:none;width:100%;height:100%;background:#f2f5fe;z-index:1000;left: 0px;top: 50px;}
+ header .blue_line .nav_mob > ul > li{border-bottom: 1px solid #dce2f8;}
+ header .blue_line .nav_mob > ul > li > a{color:#708090;text-decoration:none;display:block;padding-left:25px;text-transform:uppercase;padding-top:15px;padding-bottom:15px;}
+ header .blue_line .nav_mob > ul > li > a.selected{background:#fff;}
+ header .blue_line .nav_mob_opened > ul{display:block;height:100%;overflow:auto;}
 
-  header .blue_line .container .right_block .help_mob i {width:16px;height:13px;position:absolute;display:block;top:7px;left:7px;background:url(../img/i_chat.png) no-repeat left center;}
+ header .blue_line .nav_mob .inner_menu{list-style:none;margin:0;padding:0;border-top: 1px solid #dce2f8;}
+ header .blue_line .nav_mob .inner_menu li{color:#708090;border-bottom:1px solid #dce2f8;text-align:left;font-size:14px;padding-left:50px;padding-right:15px;padding-top:15px;padding-bottom:15px;}
+ header .blue_line .nav_mob .inner_menu li:last-child{border-bottom:none;}
+ header .blue_line .nav_mob .inner_menu li a{font-weight:normal;color:#708090;display:block;padding-left:25px;}
+ header .blue_line .nav_mob .inner_menu li a.main_link{}
+ header .blue_line .nav_mob .inner_menu li a:hover{text-decoration:none;color:#708090;}
+ header .blue_line .nav_mob .inner_menu li.selected {color:#1798d6;}
+ header .blue_line .nav_mob .inner_menu li a.outerlink span{position:relative;display:inline-block;}
+ header .blue_line .nav_mob .inner_menu li a.outerlink span::after{content:" ";position:absolute;right: -30px;top:0; width:20px;height:20px;background:url(../img/outer_link.png) no-repeat top left;}
+
+
+ header .blue_line .container .right_block .help_mob i {width:16px;height:13px;position:absolute;display:block;top:7px;left:7px;background:url(../img/i_chat.png) no-repeat left center;}
  header .blue_line .container .right_block .lang{display:inline-block;top: 0px;}
 
  header .white_line {height: 50px;}
@@ -24,16 +35,16 @@
  footer{height:auto;text-align:center;padding-bottom:100px;}
 
  footer .about_mt{margin-top:16px;}
- footer address{margin-top:40px;margin-bottom: unset;}
+ footer address{width: 80%;margin: 40px auto 0;}
  footer p{color: #1798d6;}
 .socials{padding-top:40px;padding-left: 23px;}
 .socials a:last-child{margin-right: 8px}
 
 .centered_block_w{width:100%;}
 .centered_block_w .form{width:86%;}
-.centered_block_w .form form ul li.submit .form_submit button{width:288px;}
+.form form ul li.submit .form_submit button{width:288px;}
 
-h2.hello {margin: 0 auto;margin-top: 7px;width: 80%;padding-bottom:40px;}
+h2.hello {margin: 0 auto;margin-top: 7px;width: 80%;padding-bottom:20px;}
 .inner_menu_trigger{right:50%;margin-right: -15px;bottom: 0;top:unset;}
 .inner_menu_trigger ul {width: 300px;top: 30px;right: -150px;}
 
@@ -65,12 +76,70 @@ h2.hello {margin: 0 auto;margin-top: 7px;width: 80%;padding-bottom:40px;}
     padding-left: 15px;
 
 }
-.low_row .right {
-
-    text-align: left;
-
-}
+.low_row .right {text-align: left;}
 .low_row > div{margin-bottom:20px;}
+
+
+.persona_mob{display:inline-block !important;position:relative;cursor:pointer;}
+.persona_mob em{display:block;width:11px;height:7px;position:absolute;right:-8px;top:16px;background:url(../img/triangle_w.png) no-repeat left top;}
+.persona_mob_open em{background-position:left bottom;}
+.persona_mob .img{width:31px;height:31px;display:inline-block;float:left;margin-right: 8px;margin-top: 0;}
+.persona_mob .img img{max-width:100%;}
+.persona_mob .name{display:inline-block;float:right;text-align:left;margin-right: 16px;}
+.persona_mob .name span{display:block;font-size:14px;color:#1798d6;width:120px;overflow:hidden;}
+.persona_mob .name i{display:block;color:#071545;font-size:14px;font-style: normal;margin-top: -3px;}
+.persona_mob .popup{display:none;position:absolute;top: 40px;right: 0;width: 253px;background: #f3f5fd;box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.4);}
+.persona_mob_open .popup{display:block;}
+.persona_mob .popup .name_block{text-align:left;margin-top:13px;margin-bottom: 16px;}
+.persona_mob .popup .name_block .img_p{float:left;margin-left: 33px;margin-right: 10px;margin-top: -13px;}
+.persona_mob .popup .name_p .img_p img{}
+.persona_mob .popup .name_block .name_p{margin-top: 26px;}
+.persona_mob .popup .name_block .name_p span{display:block;margin-bottom:-3px;}
+.persona_mob .popup .name_block .name_p i{display:block;font-style: normal;}
+.persona_mob .popup .btns_line{text-align:center;padding-left: 21px;margin-bottom: 15px;}
+.persona_mob .popup .btns_line a{box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.4);font-size:16px;display:inline-block;padding-left:15px;padding-right:15px;padding-top:4px;padding-bottom:4px;border-radius:15px;}
+.persona_mob .popup .btns_line a:hover{text-decoration:none;}
+.persona_mob .popup .edit_profile{background:#1798d6;color:#fff;margin-right:10px;}
+.persona_mob .popup .logout{background:#fff;color:#708090;}
+.persona_mob .popup .block{padding-top:10px;padding-bottom:10px;border-top:1px solid #ccc;text-align:left;padding-left:33px;}
+.persona_mob .popup .block a{color:#708090;font-size:18px;}
+.persona_mob .popup .block a:hover{text-decoration:none;}
+
+.sign_mob{margin-right: 8px;display:inline-block !important;background: url(../img/alarm_sign.png) no-repeat center center;width:16px; height:20px;}
+
+.right_block{}
+.right_block .sign_mob{float:left;margin-top:7px;margin-right: 15px;}
+.right_block .persona_mob{float:left;}
+.right_block .help_mob{float:left;margin-right: 11px;}
+header .blue_line .container .right_block {right: 20px;}
+
+h2.hello{font-size:20px;margin-bottom:0px;padding-bottom:0;margin-top: 12px;}
+h1{font-size:20px;margin-top:10px;}
+
+
+.form form ul li.submit .pay_sm_contract button{font-size:14px;background: #1798d6;position:relative;width: 100%;height: 59px;padding-left:20px;padding-right:0}
+.form form ul li.submit .pay_sm_contract{position:relative}
+.form form ul li.submit .pay_sm_contract button::after{content:" ";position:absolute;display:block;top: 20px;left: 18px;width: 16px;height: 18px;background-size:cover !important;background: url(../img/pay_sm_contract.png) no-repeat 0 0;}
+
+
+main {background: #e6eafa;}
+main > .container::before{content:" ";width:100%;height:1px;top:0;left:0;display: block;}
+.form form ul li.submit .pay_sm_contract input {padding-left: 47px;padding-right: 18px;position:relative;}
+
+.form form ul li.with_right_text .elements_container { width: 100%;}
+.form form ul li.with_right_text p{width: 100%;padding-top: 11px;}
+
+.complex_container {height: 48px;}
+.complex_container .form_select select {font-size: 12px;}
+.complex_container .form_select::after{width: 12px;height: 6px;background-size:cover;}
+.form_input {height: 48px;}
+.form form ul li.with_right_text .elements_container .complex_container .form_select {padding-right: 23px;padding-top: 12px;}
+.form form ul li.with_right_text .elements_container .complex_container .form_select::after {top: 23px;right: 8px;}
+
+.persona_mob .popup .name_block .img_p {margin-left: 0;margin-right: 0;width: 100%;text-align: center;}
+.persona_mob .popup .name_block .name_p {text-align: center;}
+
+body.fixed{overflow-y:hidden;}
 
 }
     
