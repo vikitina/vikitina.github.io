@@ -55,6 +55,19 @@ $(function () {
     });
 
 	});
+$(function(){
+
+	$('.checkbox_label').mouseup(function(){
+    
+		if($(this).find('.checkbox').hasClass('checkbox_checked')){
+             $(this).find('.checkbox').removeClass('checkbox_checked');
+             $(this).find('.checkbox input').val('');
+		}else{
+             $(this).find('.checkbox').addClass('checkbox_checked');
+             $(this).find('.checkbox input').val(1);
+		}
+	});
+});
 
 /*
                                          <div class="radio_group">

@@ -106,6 +106,8 @@ h2.hello{font-family: 'Lato',Arial;font-weight: normal;margin-top: 7px;position:
 .inner_menu_trigger ul li a.main_link{padding-left: 0;}
 .inner_menu_trigger ul li a:hover{text-decoration:none;color:#708090;}
 .inner_menu_trigger ul li.selected a{color:#1798d6;font-weight:bold;}
+.inner_menu_trigger ul li a.outerlink span{position:relative;}
+.inner_menu_trigger ul li a.outerlink span::after{content:" ";position:absolute;right: -30px;top:0; width:20px;height:20px;background:url(../img/outer_link.png) no-repeat top left;}
 
 
 h2{font-size: 30px;margin-top: -10px;text-align:center;color:#041243;}
@@ -225,6 +227,7 @@ select::-ms-expand {   display: none;}
 .form form ul li.submit .send{}
 .form form ul li.submit .send input{background: #1798d6 url(../img/submit_send.png) no-repeat 24px 14px;color: #fff;font-size: 30px;padding-left: 74px;padding-right: 24px;padding-top: 12px;padding-bottom: 12px;border: none;border-radius: 34px;}
 
+.form form ul li.with_right_text{margin-bottom: 28px;}
 .form form ul li.with_right_text p{width: 37%;float: right;font-size: 11px;color: #748791;padding-top: 33px;margin-bottom: 0;}
 .form form ul li.with_right_text p a{text-decoration:underline;}
 .form form ul li.with_right_text .elements_container{width:60%;float:left;}
