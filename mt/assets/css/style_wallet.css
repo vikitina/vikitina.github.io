@@ -226,6 +226,7 @@ select::-ms-expand {   display: none;}
 
 .form form ul li.submit .send{}
 .form form ul li.submit .send input{background: #1798d6 url(../img/submit_send.png) no-repeat 24px 14px;color: #fff;font-size: 30px;padding-left: 74px;padding-right: 24px;padding-top: 12px;padding-bottom: 12px;border: none;border-radius: 34px;}
+.form form ul li.submit .pay_sm_contract input{box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.2);background: #1798d6 url(../img/pay_sm_contract.png) no-repeat 24px 14px;color: #fff;font-size: 30px;padding-left: 74px;padding-right: 24px;padding-top: 12px;padding-bottom: 12px;border: none;border-radius: 34px;}
 
 .form form ul li.with_right_text{margin-bottom: 28px;}
 .form form ul li.with_right_text p{width: 37%;float: right;font-size: 11px;color: #748791;padding-top: 33px;margin-bottom: 0;}
