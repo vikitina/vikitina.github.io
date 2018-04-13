@@ -1,7 +1,7 @@
 /*---------------------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
  .desktop{display: none !important;}
- .mob{display: block;}
+ .mob{display: block !important;}
  header {height:50px;}
  header .blue_line .nav_mob{cursor:pointer;position:absolute;top: 6px;left: 5px;}
  header .blue_line .nav_mob span{width:40px;height:40px;background:url(../img/mob_menu_btn.png) no-repeat center center;display:block;z-index:1000;}
@@ -11,9 +11,7 @@
  header .blue_line .nav_mob ul li a.selected{color:#1798d6;}
  header .blue_line .nav_mob_opened ul{display:block;}
 
- header .blue_line .container .right_block .help_mob{color: #1798d6;padding-top: 6px;padding-bottom: 4px;font-size: 12px;text-transform: uppercase;font-weight: bold;display:inline-block;position:relative;padding-left:30px;padding-right:15px;border: 1px solid #1798d6;border-radius:15px;}
- header .blue_line .container .right_block .help_mob:hover{text-decoration: none;}
- header .blue_line .container .right_block .help_mob i {width:16px;height:13px;position:absolute;display:block;top:7px;left:7px;background:url(../img/i_chat.png) no-repeat left center;}
+  header .blue_line .container .right_block .help_mob i {width:16px;height:13px;position:absolute;display:block;top:7px;left:7px;background:url(../img/i_chat.png) no-repeat left center;}
  header .blue_line .container .right_block .lang{display:inline-block;top: 0px;}
 
  header .white_line {height: 50px;}
@@ -34,4 +32,45 @@
 .centered_block_w{width:100%;}
 .centered_block_w .form{width:86%;}
 .centered_block_w .form form ul li.submit .form_submit button{width:288px;}
+
+h2.hello {margin: 0 auto;margin-top: 7px;width: 80%;padding-bottom:40px;}
+.inner_menu_trigger{right:50%;margin-right: -15px;bottom: 0;top:unset;}
+.inner_menu_trigger ul {width: 300px;top: 30px;right: -150px;}
+
+.сalculator_container .calculator_block { width: 100%;}
+.calculator_block ul li.left::after {
+    position: absolute;
+    background: #1798d6 url(../img/calc_exchange.png) no-repeat center center;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    content: " ";
+    right: 50%;
+    top: unset;
+    box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.2);
+    bottom: -42px;
+    transform: rotate(90);
 }
+.calculator_block ul li.left {
+
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 26px;
+
+}
+.calculator_block ul li {
+
+    padding-left: 15px;
+
+}
+.low_row .right {
+
+    text-align: left;
+
+}
+.low_row > div{margin-bottom:20px;}
+
+}
+    

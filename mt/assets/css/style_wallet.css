@@ -56,7 +56,7 @@ header .white_line .right_block_container .persona .img img{max-width:100%;}
 header .white_line .right_block_container .persona .name{display:inline-block;float:right;text-align:left;margin-right: 16px;}
 header .white_line .right_block_container .persona .name span{display:block;font-size:14px;color:#1798d6;width:120px;overflow:hidden;}
 header .white_line .right_block_container .persona .name i{display:block;color:#071545;font-size:14px;font-style: normal;margin-top: -3px;}
-header .white_line .right_block_container .persona .popup{display:none;position:absolute;top: 72px;right: 0;width: 372px;background: #fff;box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.4);}
+header .white_line .right_block_container .persona .popup{display:none;position:absolute;top: 72px;right: 0;width: 372px;background: #f3f5fd;box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.4);}
 header .white_line .right_block_container .persona_open .popup{display:block;}
 header .white_line .right_block_container .persona .popup .name_block{text-align:left;margin-top:13px;margin-bottom: 16px;}
 header .white_line .right_block_container .persona .popup .name_block .img_p{float:left;margin-left: 33px;margin-right: 10px;margin-top: -13px;}
@@ -93,13 +93,26 @@ main .breadcrumbs_bot{margin-top:177px;position:absolute;bottom:150px;left:15px;
 main h3{font-size: 30px;text-align:center;margin-top:8px;font-weight:normal;font-weight:bold;}
 
 h2.hello{font-family: 'Lato',Arial;font-weight: normal;margin-top: 7px;position:relative;}
-h2.hello a{position: absolute;width:30px;height:30px;display:block;top: 40px;right: 38px;}
-h2.hello a i{width:30px;height:30px;display:block;background:url(../img/tridot_circled.png) no-repeat top left;}
+
+.inner_menu_trigger{position: absolute;width:30px;height:30px;display:block;top: 40px;right: 38px;}
+.inner_menu_trigger i{cursor:pointer;width:30px;height:30px;display:block;background: #fff url(../img/tridot_circled.png) no-repeat center center;border: 1px solid #1798d6;border-radius:30px;}
+
+.inner_menu_trigger{}
+.inner_menu_trigger ul{display:none;z-index:100;list-style:none;padding:0;margin:0;width:300px;background:#f3f5fd;position:absolute;top:53px;right:0;box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.2);}
+.inner_menu_trigger.opened ul{display:block;}
+.inner_menu_trigger ul li{color:#708090;font-weight:bold;border-bottom:1px solid #dce2f8;text-align:left;font-size:14px;padding-left:15px;padding-right:15px;padding-top:20px;padding-bottom:20px;}
+.inner_menu_trigger ul li:last-child{border-bottom:none;}
+.inner_menu_trigger ul li a{font-weight:normal;color:#708090;display:block;padding-left:15px;}
+.inner_menu_trigger ul li a.main_link{padding-left: 0;}
+.inner_menu_trigger ul li a:hover{text-decoration:none;color:#708090;}
+.inner_menu_trigger ul li.selected a{color:#1798d6;font-weight:bold;}
+
+
 h2{font-size: 30px;margin-top: -10px;text-align:center;color:#041243;}
 
 .wallet_block{margin-top: -5px;margin-bottom: 26px;margin-top: 16px;}
 .wallet_block .w_block{background:#fff;}
-.wallet_block .w_block h3{border-bottom: 1px solid #e6eafa;position: relative;padding-top:13px;padding-bottom: 13px;margin-bottom: 6px;}
+.wallet_block .w_block h3{border-bottom: 1px solid #e6eafa;position: relative;padding-top:13px;padding-bottom: 13px;margin-bottom: 6px;color: #122874; font-size:30px;}
 .wallet_block .w_block h3 i.reload{right:17px;top:50%;margin-top:-7px;background:url(../img/last_update.png) no-repeat center center;width:20px;height:20px;display:block;position:absolute;}
 
 .wallet_block .w_block .list_of_currencies{width:100%;list-style:none;padding:0;margin:0;}
@@ -175,7 +188,7 @@ footer p{color: #1798d6;}
 
 
 
-h1{margin-top: 39px;text-align:center;margin-bottom:0;}
+h1{margin-top: 39px;text-align:center;margin-bottom:0;color: #122874;font-size:30px;}
 .sign-up-in_link{margin-top:7px;display: inline-block;text-decoration:underline;color:#6b808b;}
 .centered_text{text-align: center;}
 
@@ -244,7 +257,7 @@ select::-ms-expand {   display: none;}
 .radio_group span.toggle_radio::before{content:" ";width:30px;height:30px;position:absolute;left:0;right:0;background:url(../img/radiobtn.png) no-repeat bottom left;}
 .radio_group span.checked::before{background-position: top left;}
 
-.low_row .radio_group{margin-left:10px;}
+.radio_group{margin-left:10px;}
 
 
                                   

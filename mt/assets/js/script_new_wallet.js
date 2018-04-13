@@ -42,6 +42,20 @@ $(function () {
 
 	});
 
+$(function () {
+    $('.inner_menu_trigger i').click(function(){
+
+    	if ($(this).parent().hasClass('opened')){
+
+              $(this).parent().removeClass('opened');
+
+    	}else{
+             $(this).parent().addClass('opened');
+    	}
+    });
+
+	});
+
 /*
                                          <div class="radio_group">
                                              <input type="hidden" />
