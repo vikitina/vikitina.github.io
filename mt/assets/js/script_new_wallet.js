@@ -81,6 +81,28 @@ $(function(){
 	});
 });
 
+$(function(){
+
+
+	$('.input-group li').click(function(){
+
+           $('.input-group button').text($(this).text());
+	});
+                                                  
+});
+
+$(function(){
+
+        $('.form form .expert_feature span').click(function(){
+
+        	if($(this).parent().hasClass('expert_feature_opened')){
+        		$(this).parent().removeClass('expert_feature_opened')
+        	}else{
+        		$(this).parent().addClass('expert_feature_opened')
+        	}
+        });
+});
+
 /*
                                          <div class="radio_group">
                                              <input type="hidden" />

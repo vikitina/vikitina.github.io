@@ -117,9 +117,10 @@ h2.hello{font-size:20px;margin-bottom:0px;padding-bottom:0;margin-top: 12px;}
 h1{font-size:20px;margin-top:10px;}
 
 
-.form form ul li.submit .pay_sm_contract button{font-size:14px;background: #1798d6;position:relative;width: 100%;height: 59px;padding-left:20px;padding-right:0}
+.form form ul li.submit .pay_sm_contract button{font-size:14px;background: #1798d6;position:relative;width: 100%;height: 59px;padding-left:0;padding-right:0;padding-bottom: 5px;}
 .form form ul li.submit .pay_sm_contract{position:relative}
-.form form ul li.submit .pay_sm_contract button::after{content:" ";position:absolute;display:block;top: 20px;left: 18px;width: 16px;height: 18px;background-size:cover !important;background: url(../img/pay_sm_contract.png) no-repeat 0 0;}
+
+.form form ul li.submit .pay_sm_contract button .i_pay_on_sc {width: 27px;height: 27px;margin-right: 7px;top: 10px;}
 
 
 main {background: #e6eafa;}
@@ -140,6 +141,12 @@ main > .container::before{content:" ";width:100%;height:1px;top:0;left:0;display
 .persona_mob .popup .name_block .name_p {text-align: center;}
 
 body.fixed{overflow-y:hidden;}
+
+.form form .expert_feature ul li{width:100%;}
+
+.input-group .input-group-btn button{height: 48px;}
+.dropdown-toggle::after {font-size: 28px;top: 23px;right: 7px;}
+.input-group .input-group-btn ul{left: unset !important;right: -17px !important;}
 
 }
     

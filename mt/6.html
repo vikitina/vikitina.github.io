@@ -169,21 +169,24 @@
                                  <li class="with_right_text">
                                       
                                         <div class="elements_container">
-                                            <label>Amount</label>
-                                            <div class="complex_container">
-                                                  <div class="form_input">
-                                                        <input type="text" />
-                                                  </div>
-                                                  <div class="form_select">
-                                                                                                  
-                                                     <select>
-                                                       <option selected>MTRc</option>
-                                                       <option>ETH</option>
-                                                       <option>BTC</option>
-                                                     </select>
-                                                  </div>
-
-                                           </div><!-- complex_container  -->
+                                           <div class="input-group">
+                                                
+                                                      <label class="label_for_input">Amount</label>
+                                                      <input type="text" class="form-control" aria-label="...">
+                                               
+                                                
+                                                      <div class="input-group-btn">
+                                                      <label class="label_for_button">Currency</label>
+                                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MTRc <span class="caret"></span></button>
+                                                             <ul class="dropdown-menu">
+                                                                  <li><a href="#">MTRc</a></li>
+                                                                  <li><a href="#">ETH</a></li>
+                                                                  <li><a href="#">BTC</a></li>
+                                                             </ul>
+                                                       </div><!-- /btn-group -->
+                                               
+     
+                                              </div><!-- /input-group -->
                                            </div><!--  elements_container -->
                                            <p>
                                                  Use <a href="">minimum</a> or <a href="">maximum</a>
@@ -202,23 +205,40 @@
 
                                  </li>
                                  <li>
-                                      <label>to</label>
+                                      <label>To</label>
                                       <div class="form_input">
                                             <input type="text" placeholder="MTRc Smart-contract..." />
                                       </div>
 
                                  </li>   
-                                 <li class="agree">
-                                      <label class="checkbox_label">
-                                      <div class="checkbox">
-                                            <i></i>
-                                            <input type="checkbox" />
-                                      </div>
-                                      I confirm the smart is in the same currency (MTRc)</label>
-                                 </li>     
+                                 <li>
+                                       <div class="expert_feature">
+                                         <span>Show expert feature <i class="caret"></i></span>
+                                         <ul>
+                                           <li>
+                                             <label>Gas limit</label>
+                                             <div class="form_input">
+                                                  <input type="text" />
+                                             </div>     
+                                   
+                                           </li>
+                                           <li>
+                                             <label>Gas price</label>
+                                             <div class="form_input">
+                                                  <input type="text" />
+                                             </div>     
+                                   
+                                           </li>
+                                           <li>
+                                             <a href="">Reset to default</a>
+                                           </li>
+                                         </ul>
+                                         <div class="clear"></div>
+                                       </div><!--expert_feature -->
+                                 </li>
                                  <li class="submit">
                                       <div class="form_submit pay_sm_contract">
-                                            <button>Pay on MT Smart-contract</button>
+                                            <button><i class="i_pay_on_sc"></i>Pay on MT Smart-contract</button>
                                       </div>
                                  </li>  
 
