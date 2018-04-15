@@ -135,8 +135,11 @@ h2{font-size: 30px;margin-top: -10px;text-align:center;color:#041243;}
 .wallet_block .w_block .list_of_currencies li.btc .sum::before{content:"BTC";}
 
 .wallet_block .w_block .you_can{padding-left:30px;padding-right:30px;padding-top: 17px;}
-.wallet_block .w_block .you_can .sky{height: 109px;margin-bottom: 19px;display:block;border-radius:10px;}
-.wallet_block .w_block .you_can .blue{height: 172px;display:block;border-radius:10px;margin-bottom: 28px;}
+.wallet_block .w_block .you_can .sky{height: 109px;margin-bottom: 19px;display:block;border-radius:10px;text-align: center;padding-top: 20px;}
+.wallet_block .w_block .you_can .sky span{display:inline-block;text-align: left;font-size: 20px;
+line-height: 20px;}
+.wallet_block .w_block .you_can .blue{height: 172px;display:block;border-radius:10px;margin-bottom: 28px;text-align: center;padding-top: 20px;}
+.wallet_block .w_block .you_can .blue span{display:inline-block;text-align: center;font-size: 20px;line-height: 20px;}
 .wallet_block .w_block .you_can .soon{position:relative;}
 .wallet_block .w_block .you_can .soon::after{    position: absolute;
     content: "soon";
@@ -153,11 +156,18 @@ h2{font-size: 30px;margin-top: -10px;text-align:center;color:#041243;}
     font-size: 14px;
     line-height: 12px;
 }
-.send_tokens{background: #122874 url(../img/b_sendtokens.png) no-repeat center center;}
-.receive_token{background: #122874 url(../img/b_receivetoken.png) no-repeat center center;}
-.payonsmc{background: #1798d6 url(../img/b_payonsmc.png) no-repeat center center;}
-.exchangetoken{background: #1798d6 url(../img/b_exchangetoken.png) no-repeat center center;}
-.buyselltokens{background: #1798d6 url(../img/b_buyselltokens.png) no-repeat center center;}
+.send_tokens{background: #122874;color:#fff;} 
+.send_tokens i{background: url(../img/b_sendtokens.png) no-repeat center center;width:65px;height:64px;display:inline-block;margin-bottom: -10px;
+margin-right: 10px;}
+.receive_token {background: #122874;color:#fff;}
+.receive_token i{background: url(../img/b_receivetoken.png) no-repeat center center;width:65px;height:64px;display:inline-block;margin-bottom: -10px;
+margin-right: 10px;}
+.payonsmc {background: #1798d6;color:#fff;}
+.payonsmc i{background: #1798d6 url(../img/b_payonsmc.png) no-repeat center center;width:65px;height:64px;display:inline-block;}
+.exchangetoken {background: #1798d6;color:#fff;}
+.exchangetoken i{background: #1798d6 url(../img/b_exchangetoken.png) no-repeat center center;width:65px;height:64px;display:inline-block;}
+.buyselltokens {background: #1798d6;color:#fff;}
+.buyselltokens i{background: #1798d6 url(../img/b_buyselltokens.png) no-repeat center center;width:65px;height:64px;display:inline-block;}
 
 .youtrade_container{background:#fff;padding-top:30px;padding-bottom:28px;text-align:center;margin-bottom: 31px;}
 .you_trade{box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.2);text-align: center;background:#122874;display:block;margin:0 auto;color:#fff;text-decoration:none;padding-top: 20px;width:95%;padding-bottom: 15px;border-radius: 13px;}

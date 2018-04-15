@@ -148,5 +148,49 @@ body.fixed{overflow-y:hidden;}
 .dropdown-toggle::after {font-size: 28px;top: 23px;right: 7px;}
 .input-group .input-group-btn ul{left: unset !important;right: -17px !important;}
 
+.wallet_block .w_block .you_can .blue {height: 62px;margin-bottom: 28px;padding-top: 17px;}
+.blue i {background-size: cover;width: 24px;height: 26px;margin-bottom: -5px;margin-right: 10px;}
+.exchangetoken i{width:28px;}
+.buyselltokens i{width: 29px;height: 25px;}
+.wallet_block .w_block .you_can .sky {
+    height: 62px;
+    margin-bottom: 19px;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 13px;
+}
+.sky i {
+   
+    background-size: cover;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-bottom: -10px;
+    margin-right: 10px;
+    background-size: cover;
+}
+.you_trade span {
+    font-size: 20px;
+    position: relative;
+    padding-left: 111px;
+}
+.you_trade i.case {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background: url(../img/case.png) no-repeat center center;
+        background-size: auto auto;
+    position: absolute;
+    top: -12px;
+    left: 41px;
+    background-size: cover;
+}
+.wallet_block .w_block .you_can {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 17px;
+}
+
 }
     
