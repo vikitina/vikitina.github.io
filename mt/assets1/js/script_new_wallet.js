@@ -163,6 +163,12 @@ $(function(){
  
   });
 });
+$(function(){
+
+    var h = $(window).height()-150;
+    $('#main_screen').css('min-height',h+'px');
+
+});
 
 
 /*
