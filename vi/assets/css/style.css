@@ -1,5 +1,8 @@
 body{background-color: #0f101a;font-size:14px;font-family:"Roboto-Light",Arial;max-width:100%;width:100%;overflow-x: hidden;}
-
+.bg1{background-color: #0f232a;}
+.bg2{background-color: #101e27;}
+.bg3{background-color: #233849;}
+.bg4{background-color: #315064;}
 ul{margin:0;padding:0;list-style: none;}
 .btn--green{height: 32px;padding-top:4px;padding-bottom:7px;padding-left: 31px;padding-right: 31px;  color: #0f101a;text-decoration:none;  border-radius: 4px;background-color: #22d79a;}
 .btn--green:hover{text-decoration:none; color: #0f101a;}
@@ -282,3 +285,4 @@ footer .copy{width:100%;text-align:center;color: #ffffff;font-size:1.2em;opacity
 .fixed_timer .btn--green{width: 203px;height: 39px;text-align: center;font-size: 1.2em;font-weight: bold;padding-top: 7px;margin: 0 auto;margin-top: 12px;display: block;}	    
 .fixed_timer .mobile_h3{display:none;}
 .fixed_timer .mob_time_scale{display: none;}
+#docs ul li{background-color:transparent;}
