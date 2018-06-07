@@ -3,6 +3,7 @@ body{background-color: #0f101a;font-size:14px;font-family:"Roboto-Light",Arial;m
 .bg2{background-color: #101e27;}
 .bg3{background-color: #233849;}
 .bg4{background-color: #315064;}
+.bg5{background-color: #0e1c25;}
 ul{margin:0;padding:0;list-style: none;}
 .btn--green{height: 32px;padding-top:4px;padding-bottom:7px;padding-left: 31px;padding-right: 31px;  color: #0f101a;text-decoration:none;  border-radius: 4px;background-color: #22d79a;}
 .btn--green:hover{text-decoration:none; color: #0f101a;}

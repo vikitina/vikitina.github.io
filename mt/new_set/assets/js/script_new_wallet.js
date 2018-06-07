@@ -187,6 +187,58 @@ $('.lang').click(function(){
 });
 
 
+$(function(){
+
+    $('header .big_menu_btn').click(function(){
+       
+        $('.big_menu_block').addClass('big_menu_block_opened');
+        $('body').addClass('fixed');
+      
+    });
+});
+$(function(){
+
+    $('.big_menu_block .big_menu_content em').click(function(){
+
+        $('.big_menu_block').removeClass('big_menu_block_opened');
+        $('body').removeClass('fixed');
+        
+    });
+});
+
+$(function(){
+
+    $('.big_menu_block .big_menu_btn').click(function(){
+
+        $('.big_menu_block').removeClass('big_menu_block_opened');
+        $('body').removeClass('fixed');
+        
+    });
+});
+
+$(function(){
+
+     $('.radio_switcher li').click(function(){
+
+         var elem = '.' + $(this).data('type');
+         $('.data_form_opened').removeClass('data_form_opened');
+         $(elem).addClass('data_form_opened');
+     });
+});
+
+$(function(){
+
+     $('.accordeon_block dt').click(function(){
+
+            if($(this).parent().hasClass('opened')){
+
+               $(this).parent().removeClass('opened');
+            }else{
+
+              $(this).parent().addClass('opened');
+            }
+     });
+});
 /*
                                          <div class="radio_group">
                                              <input type="hidden" />

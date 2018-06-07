@@ -1,78 +1,67 @@
-<% current_path = url_for(:only_path => false) %>
+
 <!doctype html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>ModulTrade Wallet</title>
-  <meta name="description" content="In ModulTrade ecosystem micro, small and medium enterprises can meet, commit and execute trade globally Easily, Trustfully and Efficiently">
-  <link href="/favicon.ico" rel="icon">
-  <%= csrf_meta_tags %>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ModulTrade Wallet</title>
+    <meta name="description" content="In ModulTrade ecosystem micro, small and medium enterprises can meet, commit and execute trade globally Easily, Trustfully and Efficiently">
+    <link href="/favicon.ico" rel="icon">
+ 
 
-  <meta name="format-detection" content="telephone=no"/>
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> -->
-  <%= stylesheet_link_tag 'application' %>
-  <%= javascript_include_tag 'application.js' %>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <%= render 'shared/metrics/gtm_head' if %w(production development staging).include?(Rails.env) %>  
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/style_wallet.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+ 
 </head>
 
-<body data-env="<%= Rails.env %>" class="<%= "#{params[:controller]}_controller" %> <%= "#{params[:action]}_action" %>">
-<%= render 'shared/metrics/gtm_body' if %w(production development staging).include?(Rails.env) %>
+<body>
+
 <header>
 
   <div class="blue_line">
     <div class="container">
       <nav class="desktop">
-        <a href="https://modultrade.com/" target="_blank"><%= t('main_menu.about') %></a>
-        <a href="https://product.modultrade.com/" target="_blank"><%= t('main_menu.market') %></a>
-        <a href="/?lang=<%= I18n.locale %>" class="selected"><%= t('main_menu.wallet') %></a>
-        <% if false %>
-          <li><a href="#">Services</a></li>
-        <% end %>
+        <a href="https://modultrade.com/" target="_blank">About</a>
+        <a href="https://product.modultrade.com/" target="_blank">Market</a>
+        <a href="/?lang=<%= I18n.locale %>" class="selected">Wallet</a>
+ 
 
       </nav>
 
 
       <div class="right_block">
 
-        <a href="http://t.me/MT_WalletSupport" target="_blank" class="help_mob" id="support_btn"><i class="chat" id="support_btn_img"></i><%= t('main_menu.support') %></a>
+        <a href="http://t.me/MT_WalletSupport" target="_blank" class="help_mob" id="support_btn"><i class="chat" id="support_btn_img"></i>Support</a>
         <div class="lang_container">
           <div class="lang">
             <em></em>
-            <span>
-                <% if I18n.locale.to_s == 'zh-CN'  %>CN<% end %>
-                <% if I18n.locale == :ru  %>RU<% end %>
-                <% if I18n.locale == :en  %>EN<% end %>
-                <% if I18n.locale == :it  %>IT<% end %>
-                <% if I18n.locale == :fr  %>FR<% end %>
-                <% if I18n.locale == :ko  %>KR<% end %>
-            </span>
+            <span>EN</span>
         
             <ul>
-              <% if I18n.locale.to_s != 'zh-CN' %><li ><%= link_to 'CN', "#{current_path}?lang=zh-CN" %></li><%end%>
-              <% if I18n.locale != :ru %><li><%= link_to 'RU',  "#{current_path}?lang=ru" %> </li><%end%>
-              <% if I18n.locale != :en %><li><%= link_to 'EN',  "#{current_path}?lang=en" %></li><%end%>
-              <% if I18n.locale != :it %><li><%= link_to 'IT',  "#{@current_path}?lang=it" %></li><%end%>
-              <% if I18n.locale != :fr %><li><%= link_to 'FR',  "#{@current_path}?lang=fr" %></li><%end%>
-              <% if I18n.locale != :ko %><li><%= link_to 'KR',  "#{@current_path}?lang=ko" %></li><%end%>
+              <li><a href="#/?lang=zh-CN">CN</a></li>
+              <li><a href="#/?lang=ru">RU</a></li>
+              <li><a href="#/?lang=it">IT</a></li>
+              <li><a href="#/?lang=fr">FR</a></li>
+              <li><a href="#/?lang=ko">KR</a></li>
             </ul>
           </div><!-- lang  -->
           </div><!-- lang_container  -->
         
-        <% if false %>
-          <div class="sign_mob"></div>
-        <% end %>
-        <% if user_signed_in? %>
+
+
           <div class="persona_mob mob">
             <em></em>
-            <div class="img"><img src="/img/new_lk/no_userpic.png" alt=""/></div>
+            <div class="img"><img src="./assets/img/no_userpic.png" alt=""/></div>
             <div class="popup">
               <div class="name_block">
-                <div class="img_p"><img src="/img/new_lk/no_userpic_big.png" alt=""/></div>
+                <div class="img_p"><img src="./assets/img/no_userpic_big.png" alt=""/></div>
                 <div class="name_p">
                                                     <span>
-                                                         <%= current_user.name %><%= current_user.email if current_user.name == '' %>
+                                                         John Konstantinopolsky
                                                         
                                                     </span>
                   <!--<i>Private wallet</i>-->
@@ -82,56 +71,44 @@
               </div><!--  name_block -->
 
               <div class="btns_line">
-                <a href="/users/edit/?lang=<%= I18n.locale %>" class="edit_profile"><%= t('dashboard.edit_profile') %></a>
-                <a href="/users/sign_out/?lang=<%= I18n.locale %>" class="logout"><%= t('dashboard.logout') %></a>
+                <a href="/users/edit/?lang=<%= I18n.locale %>" class="edit_profile">Edit profile</a>
+                <a href="/users/sign_out/?lang=<%= I18n.locale %>" class="logout">Logout</a>
               </div><!-- btns_line  -->
 
               <div class="block">
 
-                <% if @totp.is_confirmed %>
-                  <% _class, link = @user.enter_two_fa ? ['two-fa__link two-fa__link--red', disable_enter_2fa_path] : ['two-fa__link two-fa__link--green', enable_enter_2fa_path] %>
-                  <%= form_tag link, method: :post do %>
-                    <% if @user.enter_two_fa %>
-                      <%= submit_tag t('dashboard.2fa_disable'), style: 'outline: none;' %>
-                    <% else %>
-                      <%= submit_tag t('dashboard.2fa_enable') , style: 'outline: none;' %>
-                    <% end %>
-                  <% end %>
-                <% else %>
-                  <a href="/2fa"><%= t('dashboard.2fa_settings') %></a>
-                <% end %>
+                  <a href="/2fa">2fa settings</a>
+                
               </div><!-- block   -->
 
 
             </div><!-- popup  -->
             <div class="clear"></div>
           </div><!--  persona  -->
-        <% end %>
+     
         <div class="clear"></div>
       </div><!--  right_block  -->
     </div><!-- container  -->
     <div class="nav_mob mob">
       <span></span>
       <ul>
-        <li><a href="/?lang=<%= I18n.locale %>" class="selected"><%== t('dashboard_menu.wallet') %></a>
+        <li><a href="/?lang=<%= I18n.locale %>" class="selected">Wallet</a>
           <ul class="inner_menu">
-            <li class="selected"><a href="/profile/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.dashboard') %></a></li>
-            <li><%= t('dashboard_menu.you_can') %>:</li>
+            <li class="selected"><a href="/profile/?lang=<%= I18n.locale %>">Dashboard</a></li>
+            <li>You can:</li>
             <li>
-              <a href="https://product.modultrade.com/" target="_blank" class="outerlink"><span><%= t('dashboard_menu.trade_on_market') %></span></a>
+              <a href="https://product.modultrade.com/" target="_blank" class="outerlink"><span>Trade on market</span></a>
             </li>
-            <li><a href="/send_mtrc/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.send_tokens') %></a></li>
-            <li><a href="/receive_tokens/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.receive_tokens') %></a></li>
-            <li><a href="/send_smc_mtrc/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.pay_on_smc') %></a></li>
-            <li><a><%= t('dashboard_menu.exchange_tokens') %></a></li>
-            <li><a><%= t('dashboard_menu.buy_sell_tokens') %></a></li>
+            <li><a href="/send_mtrc/?lang=<%= I18n.locale %>">Send tokens</a></li>
+            <li><a href="/receive_tokens/?lang=<%= I18n.locale %>">Receive tokens</a></li>
+            <li><a href="/send_smc_mtrc/?lang=<%= I18n.locale %>">Pay on smc</a></li>
+            <li><a>Exchange tokens</a></li>
+            <li><a>Buy sell tokens</a></li>
           </ul>
         </li>
-        <li><a href="https://modultrade.com/" target="_blank"><%= t('dashboard_menu.about_company') %></a></li>
-        <li><a href="https://product.modultrade.com/" target="_blank"><%= t('dashboard_menu.market') %></a></li>
-        <% if false %>
-          <li><a href="#">Services</a></li>
-        <% end %>
+        <li><a href="https://modultrade.com/" target="_blank">About company</a></li>
+        <li><a href="https://product.modultrade.com/" target="_blank">Market</a></li>
+
       </ul>
     </div><!-- nav_mob  -->
   </div><!--  blue_line  -->
@@ -139,62 +116,58 @@
     <div class="container">
       <div class="row">
         <div class="logo_container desktop col-lg-3 col-md-3 col-sm-3">
-          <a href="/?lang=<%= I18n.locale %>" class="logo"><img src="/img/new_lk/mt_logo.png"/></a>
+          <a href="/?lang=<%= I18n.locale %>" class="logo"><img src="./assets/img/mt_logo.png"/></a>
         </div>
         <!--<h1 class="dashboard">Dashboard</h1>-->
-        <% if user_signed_in? %>
+        
           <h2 class="hello fs_big col-lg-6 col-md-6 col-sm-6">
             <span class="spec">
-             <% if I18n.locale == :ko %>
-                   <%= current_user.name %><%= current_user.email if current_user.name == '' %><%= t('home.hello') %>
-             <% else %>
-                   <%= t('home.hello') %>,&nbsp;<%= current_user.name %><%= current_user.email if current_user.name == '' %>
-            <% end %>
+             
+                   Hello,&nbsp;John Konstantinopolsky
+            
               <em> </em></span>
             <div class="in_your_wallet">
               <div class="in_your_wallet__inner_text">
-                <%= t('home.in_your_wallet') %>
+                In your wallet...
               </div>
                 <div class="inner_menu_trigger">
                     <i></i>
                     <ul class="inner_menu">
-                           <li class="selected"><a href=# class="main_link"><a href="/profile/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.dashboard') %></a></li>
-                           <li><%= t('dashboard_menu.you_can') %>:</li>
+                           <li class="selected"><a href=# class="main_link"><a href="/profile/?lang=<%= I18n.locale %>">Dashboard</a></li>
+                           <li>You can:</li>
                            <li>
-                               <a href="https://product.modultrade.com/" target="_blank" class="outerlink"><span><%= t('dashboard_menu.trade_on_market') %></span></a>
+                               <a href="https://product.modultrade.com/" target="_blank" class="outerlink"><span>Trade on market</span></a>
                            </li>
-                           <li><a href='/send_mtrc/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.send_tokens') %></a></li>
-                           <li><a href='/receive_tokens/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.receive_tokens') %></a></li>
-                           <li><a href='/send_smc_mtrc/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.pay_on_smc') %></a></li>
-                           <li><a><%= t('dashboard_menu.exchange_tokens') %></a></li>
-                           <li><a><%= t('dashboard_menu.buy_sell_tokens') %></a></li>
+                           <li><a href='/send_mtrc/?lang=<%= I18n.locale %>'>Send tokens</a></li>
+                           <li><a href='/receive_tokens/?lang=<%= I18n.locale %>'>Receive tokens</a></li>
+                           <li><a href='/send_smc_mtrc/?lang=<%= I18n.locale %>'>Pay on smc</a></li>
+                           <li><a>Exchange tokens</a></li>
+                           <li><a>Buy/sell tokens</a></li>
 
                     </ul>
                 </div>
           </div>
           </h2>
-        <% end %>
+        
 
         <div class="right_block_container  col-lg-3 col-md-3 col-sm-3">
-          <% if false %>
-            <div class="sign"></div>
-          <% end %>
-          <% if user_signed_in? %>
+
+         
             <div class="persona">
               <em></em>
-              <div class="img"><img src="/img/new_lk/no_userpic.png" alt=""/></div>
+              <div class="img"><img src="./assets/img/no_userpic.png" alt=""/></div>
               <div class="name desktop">
                                   <span>
-                                    <%= current_user.name %>&nbsp;<%= current_user.surname %><%= current_user.email if current_user.name == '' %>
+                                   John Konstantinopolsky
                                     </span><em></em>
                 
               </div><!--  name -->
               <div class="popup">
                 <div class="name_block">
-                  <div class="img_p"><img src="/img/new_lk/no_userpic_big.png" alt=""/></div>
+                  <div class="img_p"><img src="./assets/img/no_userpic_big.png" alt=""/></div>
                   <div class="name_p">
                   <em></em>
-                    <span><%= current_user.name %>&nbsp;<%= current_user.surname %><%= current_user.email if current_user.name == '' %></span>
+                    <span>John&nbsp;Konstantinopolsky</span>
                     <!--<i>Private wallet</i>-->
                   </div>
 
@@ -202,30 +175,21 @@
                 </div><!--  name_block -->
 
                 <div class="btns_line">
-                  <a href="/users/edit/?lang=<%= I18n.locale %>" class="edit_profile"><%= t('dashboard.edit_profile') %></a>
-                  <a href="/users/sign_out/?lang=<%= I18n.locale %>" class="logout"><%= t('dashboard.logout') %></a>
+                  <a href="/users/edit/?lang=<%= I18n.locale %>" class="edit_profile">Edit profile</a>
+                  <a href="/users/sign_out/?lang=<%= I18n.locale %>" class="logout">Logout</a>
                 </div><!-- btns_line  -->
 
                 <div class="block">
-                  <% if @totp.is_confirmed %>
-                    <% _class, link = @user.enter_two_fa ? ['two-fa__link two-fa__link--red', disable_enter_2fa_path] : ['two-fa__link two-fa__link--green', enable_enter_2fa_path] %>
-                    <%= form_tag link, method: :post do %>
-                      <% if @user.enter_two_fa %>
-                        <%= submit_tag t('dashboard.2fa_disable'), style: 'outline: none;' %>
-                      <% else %>
-                        <%= submit_tag t('dashboard.2fa_enable'), style: 'outline: none;' %>
-                      <% end %>
-                    <% end %>
-                  <% else %>
-                    <a href="/2fa"><%= t('dashboard.2fa_settings') %></a>
-                  <% end %>
+                  
+                    <a href="/2fa">2fa settings</a>
+                 
                 </div><!-- block   -->
 
 
               </div><!-- popup  -->
               <div class="clear"></div>
             </div><!--  persona  -->
-          <% end %>
+         
         </div><!-- right-block - container-->
       </div>
     </div><!-- container  -->
@@ -234,25 +198,67 @@
 <div class="wrapper">
   <main>
     <div class="container">
-<% if false %>
+<!--
   <ul class="breadcrumbs">
     <li><a href="#">ModulTrade</a></li>
     <li><a href="#">Wallet</a></li>
     <li>Dashboard</li>
   </ul>
-<% end %>
-<% if user_signed_in? %>
+-->
+
 <h2 class="hello fs_big mob">
-  <%= t('home.hello') %>, <%= current_user.name %>&nbsp;<%= current_user.surname %><%= current_user.email if current_user.name == '' %>!
-  <br/><%= t('home.in_your_wallet') %>... </h2>
-<%end%>
-      <%= yield %>
+  Hello,John&nbsp;Konstantinopolsky!
+  <br/>In your wallet... </h2>
+
+
+
+     <!-- содержимое...  -->
+
+
     </div><!--  container -->
   </main>
 
-  <%= render 'shared/footer' %>
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <a href="/" class="footer_logo"><img src="./assets/img/mt_logo_f.png" alt=""/></a>
+        <a href="https://files.modultrade.com/wallet/MT-Wallet_UserGuide.pdf" target="blank" class="about_mt" id="user_guide_btn">User guide</a>
+        <a href="/MT_Wallet_Terms_of_Use.pdf" target="blank" class="about_mt" id="terms_of_use_btn">Terms of use</a>
+        <!--<a href="/docs/MT-Wallet-User-Guide.pdf" target="blank" class="about_mt">About MT Wallet</a>-->
+      </div>
+      <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 socials">
+        <a href="https://www.linkedin.com/company/16259600/" target="_blank"><i class="linkedin"></i></a>
+        <a href="https://www.facebook.com/modultrade/" target="_blank"><i class="fb"></i></a>
+        <a href="https://twitter.com/ModulTrade" target="_blank"><i class="twitter"></i></a>
+        <a href="https://angel.co/modultrade" target="_blank"><i class="icon_4"></i></a>
+        <br class="mob"/>
+        <a href="https://www.reddit.com/user/ModulTrade/" target="_blank"><i class="reddit"></i></a>
+        <a href="https://github.com/ModulTrade"><i class="github"></i></a>
+        <a href="https://www.youtube.com/channel/UCmrYHneVIDhZNnwJgHJEK5A" target="_blank"><i class="youtube"></i></a>
+        <a href="https://medium.com/@ModulTrade" target="_blank"><i class="google"></i></a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 without_padding">
+
+        <address>
+          Email:&nbsp;<a href="mailto:support@modultrade.com">support@modultrade.com</a>
+        </address>
+
+
+      </div>
+
+    </div>
+  </div>
+</footer>
 
 </div><!-- wrapper -->
 
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script_new_wallet.js"></script>
 </body>
 </html>
