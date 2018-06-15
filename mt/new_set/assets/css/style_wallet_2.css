@@ -28,13 +28,13 @@ header .white_line .right_block_container .persona em{background:url(../img/set_
 .big_menu_block .big_menu_content dl dd a{color:#84bcd5;}
 
 main.account{background:#f7f7fa;}
-main.account > .container{padding-bottom:0;margin-top:152px;}
+main.account > .container_for_signin{padding-bottom:0;margin-top:152px;width:100%;max-width: unset;}
 main.inner_account > .container{padding-bottom: 100px;margin-top: 180px;}
 main.account h1{font-weight:normal;}
 main.account .breadcrumbs_bot{bottom:200px;}
 .SignInWm{background:url(../img/SignInWm.jpg) no-repeat center top;background-size:cover;min-height:983px;}
 .SignUpWm{background:url(../img/SignUpWm.jpg) no-repeat center top;background-size:cover;min-height:983px;}
-.margin_150px{margin-top:150px;}
+.margin_150px{margin-top:30px;}
 .signin_account_form{width:70%;margin: 0 auto;padding-right: 20px;}
 
 
@@ -44,7 +44,7 @@ main.account .breadcrumbs_bot{bottom:200px;}
 .signin_account_form h1{color:#122874;margin-top: 68px;}
 .signin_account_form .sign-up-in_link{color:#1798d6;font-size: 18px;margin-bottom:51px;}
 .signin_account_form .form form ul li.submit .form_submit button.create_account{}
-.signin_account_form .form form ul li.submit .form_submit button.create_account{text-align:center; font-size:18px;height:56px;width:100%;}
+.signin_account_form .form form ul li.submit .form_submit button.create_account{text-align:center; font-size:18px;height:56px;width:100%;background: linear-gradient(90deg, #1798d6 0, #1798d6 50%, #1867ba 100%);box-shadow: 0 10px 20px 0 rgba(23,152,214,0.5); cursor: pointer;}
 .signin_account_form .form form ul li.submit .form_submit button.create_account i{display:inline-block;margin-right:10px;width:20px;height:20px;/*background:url(../img/svg/add.svg) no-repeat top left;background-size: cover;*/}
 .signin_account_form .form form ul li.submit .form_submit button.create_account i img {width:100%;height:100%;}
 .signin_account_form .form form ul li.submit .form_submit button.create_account span{}
@@ -106,7 +106,8 @@ footer .copy_block address a{display:inline-block;background:#1798d6;color:#1228
 footer .copy_block address a span{display:inline-block;font-size:12px;}
 footer .copy_block address a i{display: inline-block;background:url(../img/set_for_account/i_support.png) no-repeat top left;width:17px;height:13px;margin-right:5px;}
 
-.tabs_block {width:100%;height:41px;text-align:center;margin-top: 13px;}              
+.tabs_block {width:100%;height:41px;text-align:center;margin-top: 13px;}    
+.tabs_block .active_tab{display:none;}          
 .tabs_block ul {position: relative;z-index: 1;padding:0;margin:0;height:100%;list-style:none;}
 .tabs_block ul li{position: relative;display: inline-block;padding: .5em 1em 0;color: #fff;text-decoration: none;margin: 0 .1em;height: 100%;text-transform: uppercase;font-size: 14px;font-weight: bold;} 
 .tabs_block ul li::before {border: .1em solid rgba(0,0,0,.4);background-color:#1798d6;}
@@ -136,7 +137,7 @@ footer .copy_block address a i{display: inline-block;background:url(../img/set_f
 .danger_zone form{width:100%;}
 .danger_zone form input{background:none;border:1px solid #cc4a4a;width:40%;height:60px;color:#cc4a4a;margin: 0 auto;font-size:20px;border-radius: 60px;}
 
-.account_type_block{padding-left:61px;}
+.account_type_block{margin-bottom: 29px;}
 .account_type_block h3{color:#1a9ad7;font-size: 12px;text-align:left;margin-top: 5px;margin-bottom: 21px;}
 .account_type_block .account_type{display:inline-block;margin-right: 11px;}
 .account_type_block .account_type i{background:url(../img/svg/blue_tor.svg) no-repeat top left;width:30px;height:30px;display:inline-block;margin-bottom: -7px;margin-right: 10px;}
@@ -154,10 +155,11 @@ footer .copy_block address a i{display: inline-block;background:url(../img/set_f
 .avatar .avatar_block .curtain a img{width:33px;height:30px;margin-top: 15px;}
 .avatar .avatar_block .curtain a span{font-size:12px;color:#fff;text-decoration: underline;}
 
-.escalated_data_account_form{margin-top:-130px;padding-left:47px;}
+.left_big_col{padding-left:46px;}
+
 .account_form .data_account_form  ul li .form_input{height:40px;}
 .account_form .data_account_form  ul li .form_input input{font-weight:normal;font-size:14px;color:#1798d6 !important;font-weight:normal;}
-.account_form .data_account_form .two_col_form{padding-right:30px;}
+.account_form .data_account_form .two_col_form{padding-right:30px;padding-left:30px;}
 .account_form .data_account_form .two_col_form_r{padding-left: 0;padding-right:40px;}
 .account_form .data_account_form .zip{min-width:172px;width:50%;}
 .calendar_block{width:170px;}
@@ -169,6 +171,7 @@ footer .copy_block address a i{display: inline-block;background:url(../img/set_f
 .account_form .form_input_select i{width:20px;height:11px;display:block;background:url(../img/set_for_account/carret.png) no-repeat top left;position:absolute;top:15px;right:10px;}
 .account_form .form_input_select select{color:#1798d6 !important;font-weight:normal;font-size:14px;}
 .account_form  form ul li.submit_data_account_form{margin-top:53px;}
+.account_form  form ul li.submit_data_account_form .form_submit button{cursor:pointer;background: linear-gradient(90deg, #1798d6 0, #1798d6 50%, #1867ba 100%);box-shadow: 0 10px 20px 0 rgba(23,152,214,0.5) ;}
 .form_input input{border-radius:5px;}
 .form_input input:focus{border-color:#1798d6;}
 

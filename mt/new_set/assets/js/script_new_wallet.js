@@ -239,6 +239,20 @@ $(function(){
             }
      });
 });
+
+$(function(){
+
+  $('.tabs_block .active_tab').click(function(){
+
+      if($(this).parents('.tabs_block').hasClass('tabs_block_opened')){
+
+            $(this).parents('.tabs_block').removeClass('tabs_block_opened');
+      }else{
+
+            $(this).parents('.tabs_block').addClass('tabs_block_opened');
+      }
+  });
+});
 /*
                                          <div class="radio_group">
                                              <input type="hidden" />
