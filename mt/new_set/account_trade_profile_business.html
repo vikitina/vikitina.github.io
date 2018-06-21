@@ -13,7 +13,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-     <link href="./assets/css/datepicker.css" rel="stylesheet" />
+    <link href="./assets/css/datepicker.css" rel="stylesheet" />
     <link href="./assets/css/style_wallet.css" rel="stylesheet" />
     <link href="./assets/css/style_wallet_2.css" rel="stylesheet" />
     <link href="./assets/css/responsive.css" rel="stylesheet" />
@@ -151,6 +151,7 @@
     <div class="container">
         <h1>John's MT Account</h1>
         <div class="tabs_block">
+        <div class="active_tab"><span>Trade Profile</span><i></i></div>
           <ul>
               <li><a href="#">User Profile</a></li>
               <li class="active"><a href="#">Trade Profile</a></li>
@@ -160,46 +161,32 @@
         </div><!-- tabs_block -->
         <div class="tabs_container">
           
-               <div class="row">
-                   <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 account_type_block">
-                       <h3>Account type</h3>
-                       <div class="account_type"><i class="checked"></i><span>Business</span></div>
-                       <a href="#">Need Personal Account? Create new one!</a>
-                   </div><!--  account_type_block -->
-                   <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 avatar">
-                       <h3>Avatar</h3>
-                       <div class="avatar_block">
-                           <div class="img">
-                               <img src="./assets/img/svg/noavatar_business_profile.svg" alt="" />
 
-                               <div class="curtain">
-                                   <a href="#">
-                                      
-                                      <span>Upload Photo</span>
-                                   </a>
-                              </div>
-                           </div><!-- img -->
-                       </div><!-- avatar_block  -->
-                   </div><!-- avatar -->
-                </div>
-                   
-                   
-                      <div class="form account_form">
-                        <form>
-                           <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 data_account_form escalated_data_account_form">
-                             <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                  <ul>
-                                                  <li class="regnum_block">
+
+             <div class="form account_form">
+                 <form>
+                     <div class="data_account_form">
+                          <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 left_big_col">
+                                  
+
+                                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 account_type_block">
+                                             <h3>Account type</h3>
+                                             <div class="account_type"><i class="checked"></i><span>Business</span></div>
+                                             <a href="#">Need Personal Account?<br class="mob" /> Create new one!</a>
+                                       </div><!--  account_type_block  -->                                    
+
+                                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <ul>
+                                                 <li class="regnum_block">
                                                           <label>Company registration number</label>
                                                           <div class="form_input">
                                                                
                                                                 <input type="text" />
                                                           </div>
                                                   </li>                                    
-                                  </ul>
-                                </div>
-                             </div>
+                                           </ul>
+                                       </div>   
                              <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-md-12 two_col_form">
                                     <ul>
@@ -252,8 +239,26 @@
                                     </ul>                                     
 
                                 </div>
-                                </div>
-                                </div>
+                                </div><!-- row -->                                                                           
+                                </div><!-- 9 -->
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 avatar">
+                       <h3>Avatar</h3>
+                       <div class="avatar_block">
+                           <div class="img">
+                               <img src="./assets/img/svg/noavatar_business_profile.svg" alt="" />
+
+                               <div class="curtain">
+                                   <a href="">
+                                      <img src="./assets/img/svg/camera.svg" alt="" />
+                                      <br />
+                                      <span>Upload Photo</span>
+                                   </a>
+                              </div>
+                           </div><!-- img -->
+                       </div><!-- avatar_block  -->
+                   </div><!-- avatar -->
+
+
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-md-12">
                                   <ul>
                                     <li class="submit submit_data_account_form">
@@ -261,15 +266,19 @@
                                       <div class="form_submit">
                                             <button type="submit" class="create_account">
                                                  
-                                                 <span>Save</span>
+                                                 <span>Update Information</span>
                                             </button>
                                       </div>
                                    </li>                                                                                                                                                     
                                </ul>
-                                </div>
-                           </form>
-                       </div>                      
-                   
+                                </div>                                
+                          </div><!-- row -->
+
+                      </div> <!-- data_account_form  -->    
+                 </form>
+             </div><!-- account_form   -->         
+
+        
         </div><!-- tabs_container -->
 
 
@@ -280,7 +289,7 @@
    <div class="container">
                     <ul class="breadcrumbs breadcrumbs_bot">
                           <li><a href="#">MT Accounts</a></li>
-                          <li>Create new MT Account</li>
+                          <li>Trade Profile</li>
                     </ul> 
 
    </div>
