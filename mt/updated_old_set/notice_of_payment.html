@@ -1,0 +1,273 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ModulTrade Wallet</title>
+    <meta name="description" content="In ModulTrade ecosystem micro, small and medium enterprises can meet, commit and execute trade globally Easily, Trustfully and Efficiently">
+    <link href="/favicon.ico" rel="icon">
+ 
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/style_wallet.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
+ 
+</head>
+
+<body>
+
+<header>
+
+  <div class="blue_line">
+    <div class="container">
+      <nav class="desktop">
+        <a href="https://modultrade.com/" target="_blank">About</a>
+        <a href="https://product.modultrade.com/" target="_blank">Market</a>
+        <a href="/?lang=<%= I18n.locale %>" class="selected">Wallet</a>
+ 
+
+      </nav>
+
+
+      <div class="right_block">
+
+        <a href="http://t.me/MT_WalletSupport" target="_blank" class="help_mob" id="support_btn"><i class="chat" id="support_btn_img"></i>Support</a>
+        <div class="lang_container">
+          <div class="lang">
+            <em></em>
+            <span>EN</span>
+        
+            <ul>
+              <li><a href="#/?lang=zh-CN">CN</a></li>
+              <li><a href="#/?lang=ru">RU</a></li>
+              <li><a href="#/?lang=it">IT</a></li>
+              <li><a href="#/?lang=fr">FR</a></li>
+              <li><a href="#/?lang=ko">KR</a></li>
+            </ul>
+          </div><!-- lang  -->
+          </div><!-- lang_container  -->
+        
+
+
+          <div class="persona_mob mob">
+            <em></em>
+            <div class="img"><img src="./assets/img/no_userpic.png" alt=""/></div>
+            <div class="popup">
+              <div class="name_block">
+                <div class="img_p"><img src="./assets/img/no_userpic_big.png" alt=""/></div>
+                <div class="name_p">
+                                                    <span>
+                                                         John Konstantinopolsky
+                                                        
+                                                    </span>
+                  <!--<i>Private wallet</i>-->
+                </div>
+
+                <div class="clear"></div>
+              </div><!--  name_block -->
+
+              <div class="btns_line">
+                <a href="/users/edit/?lang=<%= I18n.locale %>" class="edit_profile">Edit profile</a>
+                <a href="/users/sign_out/?lang=<%= I18n.locale %>" class="logout">Logout</a>
+              </div><!-- btns_line  -->
+
+              <div class="block">
+
+                  <a href="/2fa">2fa settings</a>
+                
+              </div><!-- block   -->
+
+
+            </div><!-- popup  -->
+            <div class="clear"></div>
+          </div><!--  persona  -->
+     
+        <div class="clear"></div>
+      </div><!--  right_block  -->
+    </div><!-- container  -->
+    <div class="nav_mob mob">
+      <span></span>
+      <ul>
+        <li><a href="/?lang=<%= I18n.locale %>" class="selected">Wallet</a>
+          <ul class="inner_menu">
+            <li class="selected"><a href="/profile/?lang=<%= I18n.locale %>">Dashboard</a></li>
+            <li>You can:</li>
+            <li>
+              <a href="https://product.modultrade.com/" target="_blank" class="outerlink"><span>Trade on market</span></a>
+            </li>
+            <li><a href="/send_mtrc/?lang=<%= I18n.locale %>">Send tokens</a></li>
+            <li><a href="/receive_tokens/?lang=<%= I18n.locale %>">Receive tokens</a></li>
+            <li><a href="/send_smc_mtrc/?lang=<%= I18n.locale %>">Pay on smc</a></li>
+            <li><a>Exchange tokens</a></li>
+            <li><a>Buy sell tokens</a></li>
+          </ul>
+        </li>
+        <li><a href="https://modultrade.com/" target="_blank">About company</a></li>
+        <li><a href="https://product.modultrade.com/" target="_blank">Market</a></li>
+
+      </ul>
+    </div><!-- nav_mob  -->
+  </div><!--  blue_line  -->
+  <div class="white_line desktop">
+    <div class="container">
+      <div class="row">
+        <div class="logo_container desktop col-lg-3 col-md-3 col-sm-3">
+          <a href="/?lang=<%= I18n.locale %>" class="logo"><img src="./assets/img/mt_logo.png"/></a>
+        </div>
+        <!--<h1 class="dashboard">Dashboard</h1>-->
+        
+          <h2 class="hello fs_big col-lg-6 col-md-6 col-sm-6">
+            <span class="spec">
+             
+                   Hello,&nbsp;John Konstantinopolsky
+            
+              <em> </em></span>
+            <div class="in_your_wallet">
+              <div class="in_your_wallet__inner_text">
+                In your wallet...
+              </div>
+                <div class="inner_menu_trigger">
+                    <i></i>
+                    <ul class="inner_menu">
+                           <li class="selected"><a href=# class="main_link"><a href="/profile/?lang=<%= I18n.locale %>">Dashboard</a></li>
+                           <li>You can:</li>
+                           <li>
+                               <a href="https://product.modultrade.com/" target="_blank" class="outerlink"><span>Trade on market</span></a>
+                           </li>
+                           <li><a href='/send_mtrc/?lang=<%= I18n.locale %>'>Send tokens</a></li>
+                           <li><a href='/receive_tokens/?lang=<%= I18n.locale %>'>Receive tokens</a></li>
+                           <li><a href='/send_smc_mtrc/?lang=<%= I18n.locale %>'>Pay on smc</a></li>
+                           <li><a>Exchange tokens</a></li>
+                           <li><a>Buy/sell tokens</a></li>
+
+                    </ul>
+                </div>
+          </div>
+          </h2>
+        
+
+        <div class="right_block_container  col-lg-3 col-md-3 col-sm-3">
+
+         
+            <div class="persona">
+              <em></em>
+              <div class="img"><img src="./assets/img/no_userpic.png" alt=""/></div>
+              <div class="name desktop">
+                                  <span>
+                                   John Konstantinopolsky
+                                    </span><em></em>
+                
+              </div><!--  name -->
+              <div class="popup">
+                <div class="name_block">
+                  <div class="img_p"><img src="./assets/img/no_userpic_big.png" alt=""/></div>
+                  <div class="name_p">
+                  <em></em>
+                    <span>John&nbsp;Konstantinopolsky</span>
+                    <!--<i>Private wallet</i>-->
+                  </div>
+
+                  <div class="clear"></div>
+                </div><!--  name_block -->
+
+                <div class="btns_line">
+                  <a href="/users/edit/?lang=<%= I18n.locale %>" class="edit_profile">Edit profile</a>
+                  <a href="/users/sign_out/?lang=<%= I18n.locale %>" class="logout">Logout</a>
+                </div><!-- btns_line  -->
+
+                <div class="block">
+                  
+                    <a href="/2fa">2fa settings</a>
+                 
+                </div><!-- block   -->
+
+
+              </div><!-- popup  -->
+              <div class="clear"></div>
+            </div><!--  persona  -->
+         
+        </div><!-- right-block - container-->
+      </div>
+    </div><!-- container  -->
+  </div>
+</header>
+<div class="wrapper">
+  <main>
+    <div class="container">
+<!--
+  <ul class="breadcrumbs">
+    <li><a href="#">ModulTrade</a></li>
+    <li><a href="#">Wallet</a></li>
+    <li>Dashboard</li>
+  </ul>
+-->
+
+<h2 class="hello fs_big mob">
+  Hello,John&nbsp;Konstantinopolsky!
+  <br/>In your wallet... </h2>
+
+
+
+     <!-- содержимое...  -->
+     <h1 class="green">Success!</h1>
+     <div class="centered_block_g"><i></i>
+        <p class="main_text">Your request was successfully sent to the blockchain.</p>
+        <p>It may take up to 3 minutes for confirmation by Smart-contract.</p>
+        <p>You can check your transaction here:</p>
+        <a href="#" class="transaction_address">0x39bba33ba33ba33vba33ba33ba33ba33ba33</a>
+        <a href="#" class="btn_green_back"><i></i><span>Back to MT Market</span></a>
+        <br />
+        <a href="#" class="btn_blue_wallet">Your Wallet</a>
+     </div><!--  centered_block_g  -->
+
+    </div><!--  container -->
+  </main>
+
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <a href="/" class="footer_logo"><img src="./assets/img/mt_logo_f.png" alt=""/></a>
+        <a href="https://files.modultrade.com/wallet/MT-Wallet_UserGuide.pdf" target="blank" class="about_mt" id="user_guide_btn">User guide</a>
+        <a href="/MT_Wallet_Terms_of_Use.pdf" target="blank" class="about_mt" id="terms_of_use_btn">Terms of use</a>
+        <!--<a href="/docs/MT-Wallet-User-Guide.pdf" target="blank" class="about_mt">About MT Wallet</a>-->
+      </div>
+      <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 socials">
+        <a href="https://www.linkedin.com/company/16259600/" target="_blank"><i class="linkedin"></i></a>
+        <a href="https://www.facebook.com/modultrade/" target="_blank"><i class="fb"></i></a>
+        <a href="https://twitter.com/ModulTrade" target="_blank"><i class="twitter"></i></a>
+        <a href="https://angel.co/modultrade" target="_blank"><i class="icon_4"></i></a>
+        <br class="mob"/>
+        <a href="https://www.reddit.com/user/ModulTrade/" target="_blank"><i class="reddit"></i></a>
+        <a href="https://github.com/ModulTrade"><i class="github"></i></a>
+        <a href="https://www.youtube.com/channel/UCmrYHneVIDhZNnwJgHJEK5A" target="_blank"><i class="youtube"></i></a>
+        <a href="https://medium.com/@ModulTrade" target="_blank"><i class="google"></i></a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 without_padding">
+
+        <address>
+          Email:&nbsp;<a href="mailto:support@modultrade.com">support@modultrade.com</a>
+        </address>
+
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</div><!-- wrapper -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script_new_wallet.js"></script>
+</body>
+</html>
