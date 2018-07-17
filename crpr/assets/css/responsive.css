@@ -63,6 +63,12 @@
 
 .dev_first .tabs_container_for_code ul.tabs_menu_for_code li {padding: 7px 11px;}
 
+.first_block h1 {line-height: 38px;}
+.first_block h2 {margin-bottom: 38px;}
+.first_block .white_btn {margin-bottom: 40px;}
+
+.how p {width: 90%;}
+
 footer dl{text-align:center;margin-bottom:30px;}
 footer dl dt{margin-bottom:17px;}
 footer dl dd a{margin-bottom:10px;}
