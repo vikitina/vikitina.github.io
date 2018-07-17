@@ -124,6 +124,9 @@ footer dl dt{margin-bottom:27px;font-weight:normal;}
 footer dl dd{}
 footer dl dd a{display:block;margin-bottom:17px; color:#5c77ac;}
 footer .copyrights{text-align: right;position:relative;}
+footer .copyrights a{color:#5c77ac;margin-right:10px;}
+footer .copyrights a:last-child{margin-right:0;}
+footer .copyrights a:hover{color:#5c77ac;}
 footer .copyrights small{display:block;position:absolute;bottom:34px;right:0;}
 
 
