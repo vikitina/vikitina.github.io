@@ -51,10 +51,12 @@ h2{text-align:center;}
 
 .first_block{background: linear-gradient(to bottom, #3459a3 , #234995, #0f3887, #0c3483);padding-top: 260px; padding-bottom:280px;}
 .first_block img{max-width:100%;}
+.first_block h1{font-size:30px; margin-bottom:40px; line-height:50px;}
+.first_block h2{font-size:20px;text-align:left;margin-bottom:120px;}
 
 .how{margin-bottom:170px;}
 .how h2{width:90%; margin:0 auto; text-align:center;}
-.how p{width:90%; margin:0 auto; text-align:center; margin-top:30px;}
+.how p{width:60%; margin:0 auto; text-align:center; margin-top:30px;}
 .how .tabs_container{width:90%;margin:0 auto; margin-top:50px;}
 .how .tabs_container ul.tabs_menu{list-style:none;width:100%;padding-left:0;}
 .how .tabs_container ul.tabs_menu li{display:inline-block;text-align: center;width:33%; color:#98a9ca; border-right: 1px solid #24488f; height: 50px;padding-top:15px; cursor:pointer;}
@@ -89,7 +91,7 @@ h2{text-align:center;}
 .dev_first .tabs_container_for_code ul.tabs_menu_for_code li.selected span{color:#007ce1;}
 .dev_first .tabs_container_for_code ul.tabs_menu_for_code li.selected::before { background-color: #fff; margin-bottom: -.08em; border-color:#fff; }
 .dev_first .tabs_container_for_code ul.tabs_content_for_code{width:100%; height:330px;background:#fff;}
-.dev_first .tabs_container_for_code ul.tabs_content_for_code li{display:none;}
+.dev_first .tabs_container_for_code ul.tabs_content_for_code li{display:none;color:#000;}
 .dev_first .tabs_container_for_code ul.tabs_content_for_code li.selected{display:inline-block;}
 
 .we_are_trusted{list-style: none;display:table;padding:0;margin: 0;width: 100%; height:50px;margin-top:60px;}
