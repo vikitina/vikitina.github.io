@@ -61,6 +61,7 @@
 .have_a_quest .line_of_btns span{display:block;margin-top:20px;margin-bottom: 20px;font-size: 16px;}
 .have_a_quest { margin-bottom: 80px;}
 
+.dev_first .tabs_container_for_code ul.tabs_menu_for_code li {padding: 7px 11px;}
 
 footer dl{text-align:center;margin-bottom:30px;}
 footer dl dt{margin-bottom:17px;}
