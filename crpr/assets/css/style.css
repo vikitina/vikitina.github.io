@@ -14,6 +14,7 @@ html,body {height: 100%;}
 
 .wrapper{display:table;height:100%;width:100%;}
 .white_btn{display:inline-block; background: #fff; color: #000f25;padding-left: 40px;padding-right: 40px;padding-top: 20px;padding-bottom: 20px;font-size: 20px;border-radius: 10px;}
+.white_btn:hover{color: #000f25;}
 .blue_btn{display:inline-block; background: #007ce1; color:#fff;padding-left: 40px;padding-right: 40px;padding-top: 20px;padding-bottom: 20px;font-size: 20px;border-radius: 10px;}
 .transparent_btn{display:inline-block; background: none;border:1px solid #007ce1; color:#007ce1;padding-left: 40px;padding-right: 40px;padding-top: 20px;padding-bottom: 20px;font-size: 20px;border-radius: 10px;}
 
