@@ -606,3 +606,14 @@ h1.green{color:#5aaf36;margin-top:-22px;margin-bottom: 13px;}
 .form form ul li.submit .form_submit .btn_buy_mtrc span{color:#fff;display:inline-block;}
 .form form ul li.submit .form_submit .btn_buy_mtrc i{background:url(../img/btn_buy.png) no-repeat center center;width:32px;height:26px;display:inline-block;margin-right:10px;margin-bottom: -2px;}
 
+
+.form form ul li.submit .form_submit .btn_crypto_to_crypto i{background: url(../img/i_exchange.png) no-repeat left center; width: 33px; height: 25px; display: inline-block;margin-right: 10px; margin-bottom: -2px;}
+.form_input_select_higher i{top: 24px;}
+.form_crypto_to_crypto select{color: #122874 !important; cursor:pointer;}
+.form_crypto_to_crypto label{color: #122874;}
+.form_crypto_to_crypto input{color: #1798d6 !important;}
+.form_crypto_to_crypto .disabled{border-color:#bcc2d8; background: #e6eafa;}
+.form_crypto_to_crypto .disabled input{color: #708090 !important;}
+.form_crypto_to_crypto .form_input{margin-bottom: 20px;}
+.form_crypto_to_crypto .reset-default{color: #738690;}
+.form_crypto_to_crypto .reset-default b{color: #1798d6; font-weight: normal; text-decoration: underline; cursor: pointer;}
