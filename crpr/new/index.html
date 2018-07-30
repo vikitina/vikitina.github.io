@@ -35,10 +35,12 @@
      		</nav>
    		</div><!-- container  -->
 	</header>
+	<div class="bg_circle"></div>
+	<div class="sun"></div>
 	<main>
 		<section class="first">
+			
 			<div class="bg_wave"></div>
-			<div class="bg_circle"></div>
 			<div class="wrapper">
 				<div class="main_text">Launch your blockchain projects in a few weeks<br /> instead of months</div>
 				<div class="text">With multi-level technical solution for interaction with blockchains</div>
@@ -64,7 +66,7 @@
 			<div class="wrapper">
 				<div class="wwd_container">
 					<div class="wwd_col wwd_l_col">
-						<h3>What We Do</h3>
+						<h3><span>What We Do</span></h3>
 						<div class="text">
 							<p>We provide our API for a secure, fast and simple access to blockchains on an all levels of interactions: from infrastructure level to "Ready to go" products. 
 							</p><p>The wide range of our API implementations helps to cover all needed requirements of different products at any stage regardless of the developers level.
@@ -109,36 +111,29 @@
 		</section>
 		<section class="solutions">
 			<div class="wrapper">
+				<div class="bg_circle"></div>
 				<h2>Our Solutions</h2>
-				<ul>
-					<li class="sol_1">
-						<a href="">
-							<i></i>
-							<p>API for crypto and fiat payments</p>
-						</a>	
-					</li>
-					<li class="sol_2">
-						<a href="">
-							<i></i>
-							<p>Tokensale platform</p>
-						</a>	
-					</li>
-					<li class="sol_3">
-						<a href="">
-							<i></i>
-							<p>Token acceptance infrastructure</p>
-						</a>	
-					</li>
-					<li class="sol_4">
-						<a href="">
-							<i></i>
-							<p>Secure Whitelabel web wallet</p>
-						</a>
-					</li>
-				</ul>
+				<div class="solutions_list">
+					<a href="#" class="sol_1">
+						<i></i>
+						<p>API for crypto and fiat payments</p>
+					</a>
+					<a href="#"  class="sol_2">
+						<i></i>
+						<p>Tokensale platform</p>
+					</a>
+					<a href="#"  class="sol_3">
+						<i></i>
+						<p>Token acceptance infrastructure</p>
+					</a>
+					<a href="#"  class="sol_4">
+						<i></i>
+						<p>Secure Whitelabel web wallet</p>
+					</a>
+				</div>
 				<div class="line_spec">
 					<p>For special requirements</p>
-					<a href="" class="btn btn_blue">Tell us about your case</a>
+					<a href="" class="btn btn_blue"><span>Tell us about your case</span></a>
 				</div>
 			</div>	
 		</section>
@@ -155,9 +150,18 @@
                                     <div class="tabs_container tabs_container_for_code">
                                           <!--<span class="mob_list">Users</span>-->
                                           <ul class="tabs_menu tabs_menu_for_code">
-                                                <li data-tabcontainer="how_1" class="selected"><span>Users</span></li>
-                                                <li data-tabcontainer="how_2"><span>Wallets</span></li>
-                                                <li data-tabcontainer="how_3"><span>Callbacks</span></li>
+                                                <li data-tabcontainer="how_1" class="selected users">
+                                                	<i class="n_act"></i><i class="act"></i>
+                                                	<span>Users</span>
+                                                </li>
+                                                <li data-tabcontainer="how_2" class="wallets">
+                                                	<i class="n_act"></i><i class="act"></i>
+                                                	<span>Wallets</span>
+                                                </li>
+                                                <li data-tabcontainer="how_3" class="callbacks">
+                                                	<i class="n_act"></i><i class="act"></i>
+                                                	<span>Callbacks</span>
+                                                </li>
 
                                          </ul>
                                          <ul class="tabs_content tabs_content_for_code">
@@ -191,24 +195,26 @@
                             <a href="#" class="desktop api_link">See full API references <i class="arrow_right"></i></a>
                          </div>                         
                     </div><!-- tabs_container -->
-                     <a href="#" class="mob">See full API references<i class="arrow_right"></i></a>
+                     <a href="#" class="mob api_link">See full API references<i class="arrow_right"></i></a>
 
            	</div>      
       	</section> 	
       	<section class="clients">
       		<div class="wave_grid"></div>
-      		<h2>Our solution is already used by:</h2>
-      		<ul>
-      			<li><a href="" target="_blank"><img src="img/clients/client_1.png" alt="WorldWIFI"></a></li>
-      			<li><a href="" target="_blank"><img src="img/clients/client_2.png" alt="Flux"></a></li>
-      			<li><a href="" target="_blank"><img src="img/clients/client_3.png" alt="Adhive"></a></li>
-      			<li><a href="" target="_blank"><img src="img/clients/client_4.png" alt="Viarium"></a></li>
-      			<li><a href="" target="_blank"><img src="img/clients/client_5.png" alt="MUST"></a></li>
-      			<li><a href="" target="_blank"><img src="img/clients/client_6.png" alt="Arbidex"></a></li>
-      			<li><a href="" target="_blank"><img src="img/clients/client_7.png" alt="GraphGrey"></a></li>
-      			<li><a href="" target="_blank"><img src="img/clients/client_8.png" alt="ModulTrade"></a></li>
-      			<li><a href="" target="_blank"><img src="img/clients/client_9.png" alt="SendCoin"></a></li>
-      		</ul>
+      		<div class="wrapper">
+      			<h2>Our solution is already used by:</h2>
+      			<ul>
+      				<li><a href="" target="_blank"><img src="img/clients/client_1.png" alt="WorldWIFI"></a></li>
+      				<li><a href="" target="_blank"><img src="img/clients/client_2.png" alt="Flux"></a></li>
+      				<li><a href="" target="_blank"><img src="img/clients/client_3.png" alt="Adhive"></a></li>
+      				<li><a href="" target="_blank"><img src="img/clients/client_4.png" alt="Viarium"></a></li>
+      				<li><a href="" target="_blank"><img src="img/clients/client_5.png" alt="MUST"></a></li>
+      				<li><a href="" target="_blank"><img src="img/clients/client_6.png" alt="Arbidex"></a></li>
+      				<li><a href="" target="_blank"><img src="img/clients/client_7.png" alt="GraphGrey"></a></li>
+      				<li><a href="" target="_blank"><img src="img/clients/client_8.png" alt="ModulTrade"></a></li>
+      				<li><a href="" target="_blank"><img src="img/clients/client_9.png" alt="SendCoin"></a></li>
+      			</ul>
+      		</div>
       	</section>
 		<section class="team">
 			<h2>Meet the team</h2>
