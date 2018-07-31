@@ -60,4 +60,15 @@ $(document).ready(function(){
        $('.wwd .wwd_container .wwd_r_col .circle_di ul li dl').mouseout(function(){
       	$(this).parent().find('img').removeClass('hover');
       });
+
+
+       $window = $(window);
+$('div[data-type="background"]').each(function(){
+     var $bgobj = $(this);
+ $(window).scroll(function() {
+        var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+        var coords = '20px '+ yPos + 'px';
+        $bgobj.css({ backgroundPosition: coords });
+    }); 
+ });    
 });

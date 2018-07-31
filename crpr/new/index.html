@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link href="./css/styles.css?v7" rel="stylesheet" />
+	<link href="./css/styles.css?v8" rel="stylesheet" />
 </head>
 <body>
 	<header>
@@ -16,7 +16,7 @@
      		<a href="#" class="logo"><img src="./img/cp_logo.svg" alt="CryptoProcessing" /></a>
     		<nav>
         		<ul>
-            		<li><a href="#">Products <i></i></a></li>
+            		<li class="products"><a href="#">Products <i></i></a></li>
             		
 
             		<li><a href="#">Documentation</a></li>
@@ -37,11 +37,12 @@
 	</header>
 	<div class="bg_circle"></div>
 	<div class="sun"></div>
+
 	<main>
 		<section class="first">
 			
 			<div class="bg_wave"></div>
-			<div class="wrapper">
+			<div class="wrapper" data-type="background"  data-speed="20">
 				<div class="main_text">Launch your blockchain projects in a few weeks<br /> instead of months</div>
 				<div class="text">With multi-level technical solution for interaction with blockchains</div>
 				<div class="btn_line">
@@ -58,6 +59,12 @@
       						<span class="down-arrow-2"></span>
       						<span class="down-arrow-3"></span>
    						</div>
+					</div>
+					<div class="circle_block">
+						<div class="static_circle"></div>
+						<div class="circle one"></div>
+						<div class="circle two"></div>
+						<div class="circle three"></div>
 					</div>
 				</div>
 			</div>
@@ -345,6 +352,7 @@
 		</section>
 		<section class="lets_talk">
 			<div class="bg_lets_talk"></div>
+			<div class="bg_particles" data-type="background"  data-speed="20"></div>
 			<div class="wrapper">
 				<div class="lets_talk_container">
 					<span>Lets talk!</span>
