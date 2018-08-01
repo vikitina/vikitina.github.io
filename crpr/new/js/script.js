@@ -3,6 +3,8 @@ $(document).ready(function(){
 	var winheight = $(window).height();
 	$('.first').css('height',winheight+'px');
 
+	$('.contact_sales').css('min-height',winheight+'px');
+
 	$('.team_item').mouseover(function(){
 		$(this).addClass('team_item_hover');
 	});
