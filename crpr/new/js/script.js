@@ -81,6 +81,14 @@ $(document).ready(function(){
 				$(this).addClass('submenu_opened');
 			}
 		});
+
+
+		$('input').blur(function() {
+        	$('input').parents('li').removeClass("focus");
+      	})
+      	.focus(function() {
+      	  	$(this).parents('li').addClass("focus")
+      	});
 			
 
 });
