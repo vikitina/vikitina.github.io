@@ -63,12 +63,22 @@ $(document).ready(function(){
 
 
        $window = $(window);
-$('div[data-type="background"]').each(function(){
-     var $bgobj = $(this);
- $(window).scroll(function() {
-        var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-        var coords = '20px '+ yPos + 'px';
-        $bgobj.css({ backgroundPosition: coords });
-    }); 
- });    
+		$('div[data-type="background"]').each(function(){
+     		var $bgobj = $(this);
+			$(window).scroll(function() {
+       			var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+        		var coords = '20px '+ yPos + 'px';
+       			$bgobj.css({ backgroundPosition: coords });
+    		}); 
+ 		});   
+
+		$('.with_submenu').click(function(){
+			if($(this).hasClass('submenu_opened')){
+				$(this).removeClass('submenu_opened');
+			}else{
+				$(this).addClass('submenu_opened');
+			}
+		});
+			
+
 });
