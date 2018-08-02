@@ -91,6 +91,20 @@ $(document).ready(function(){
       	  	$(this).parents('li').addClass("focus");
       	  	
       	});
+
+      	$(document).click(function(event){
+
+  			if (!$(event.target).closest('.form_window input, .form_window select, .form_window textarea').length){
+      			$('.focus').removeClass('focus');
+  			}
+
+  			 if (!$(event.target).closest('.products').length){
+      			$('.products').removeClass('submenu_opened');
+  			}
+   
+		});
+
+		
 			
 
 });
