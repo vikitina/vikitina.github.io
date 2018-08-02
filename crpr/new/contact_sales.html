@@ -47,8 +47,7 @@
 	</header>
 	<main>
 		<section class="contact_sales">
-			<div class="bg_circle"></div>
-			<div class="sun"></div>
+			
 			<h2>Contact our sales team</h2>
 			<p class="text">
 				Our team is happy to answer your sales questions.<br /> Fill out the form and we’ll be in touch as soon as possible.
@@ -56,6 +55,7 @@
 
 			<div class="form_window">
 				<div class="form">
+					<form id="contact_sales_form" action="" method="post">
 					<ul>
 						<li>
 							<label for="">Your first name</label>
@@ -73,12 +73,51 @@
 							<label for="">Company website</label>
 							<div class="form_input"><input type="text"></div>
 						</li>
+						<li>
+							<label for="">Country</label>
+							<div class="form_input form_select">
+							<i></i>
+								<select name="" id="">
+									<option value="">Russia Federation</option>
+									<option value="">Country</option>
+									<option value="">Country</option>
+									<option value="">Country</option>
+									<option value="">Country</option>
+									<option value="">Country</option>
+									<option value="">Country</option>
+									<option value="">Country</option>
+									<option value="">Country</option>
+									<option value="">Country</option>
+								</select>
+							</div>
+						<li>
+							<label for="">Payments volume</label>
+							<div class="form_input form_select">
+							<i></i>
+								<select name="" id="">
+									<option value="">Select a monthly amount</option>
+									
+								</select>
+							</div>
+						</li>
+						<li class="for_textarea">
+							<label for="">Anything else?</label>
+							<div class="form_input form_txtarea">
+								<textarea placeholder="Tell us something"></textarea>
+							</div>
+						</li>						
+						<li class="sbmt_block">
+							<button form="contact_sales_form" class="btn btn_blue">Contact sales</button>
+						</li>							
+						</li>						
 					</ul>
+					</form>
 				</div>
 			</div>
 		</section>
 		<section class="support">
-			
+			<div class="bg_circle"></div>
+			<div class="sun"></div>
 			<div class="wrapper">
 				<div class="support_container">
 					<dl>

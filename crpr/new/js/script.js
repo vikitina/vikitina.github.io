@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var winheight = $(window).height();
 	$('.first').css('height',winheight+'px');
 
-	$('.contact_sales').css('min-height',winheight+'px');
+	//$('.contact_sales').css('min-height',winheight+'px');
 
 	$('.team_item').mouseover(function(){
 		$(this).addClass('team_item_hover');
@@ -83,11 +83,13 @@ $(document).ready(function(){
 		});
 
 
-		$('input').blur(function() {
+		$('input, select, textarea').blur(function() {
         	$('input').parents('li').removeClass("focus");
       	})
       	.focus(function() {
-      	  	$(this).parents('li').addClass("focus")
+      		$('.focus').removeClass('focus');
+      	  	$(this).parents('li').addClass("focus");
+      	  	
       	});
 			
 
