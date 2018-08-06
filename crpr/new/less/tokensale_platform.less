@@ -1,0 +1,82 @@
+.tokensale_platform{
+	padding-bottom: 212px;
+	.wrapper{
+		height: 100%;
+		padding-top: 104px;
+		position: relative;
+		background: url(../img/bg/particles.png) no-repeat center 100px fixed;
+
+	}
+	.row{
+		.row-flex();
+		height: 100%;
+		justify-content: space-around;
+		align-items: stretch;
+
+		.col{
+			.col();
+			.size(6);
+			.size-md(9);
+			.size-sm(9);
+			.size-xs(12);
+				
+			display: flex;
+			flex-direction: column;
+  			justify-content: center;
+  			
+  			h1{
+  				font-size: 36px;
+  				padding:0;
+  				margin: 0;
+  				margin-bottom: 16px;
+  				text-align: left;
+  			}
+  			p{
+  				font-size: 20px;
+  				line-height: 30px;
+  				padding:0;
+  				margin: 0;
+  				margin-bottom: 100px
+  			}
+  			.img{
+  				width: 100%;
+  				height: 100%;
+  				margin-top:70px;
+  				text-align: center;
+  				img{
+  					width: auto !important;
+  					max-height: 90%;
+  					
+  				}
+  				
+  			}
+  			.btn_line{
+  				a{
+  					margin-right: 48px
+  				}
+  				a:last-child{
+  					margin-right: 0;
+  				}
+  			}
+		}
+	}
+}
+
+@media @xs_sm{
+	.tokensale_platform{
+		height: auto !important;
+		padding-bottom: 60px;
+		.row{
+			.col{
+  				.btn_line{
+  					text-align: center;
+  					a{
+  						margin-right: 0;
+  						margin-bottom:20px;
+  					}
+  				}
+  				
+  			}
+		}
+	}
+}		

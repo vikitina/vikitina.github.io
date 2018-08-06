@@ -1,0 +1,119 @@
+.learn{
+	margin-top: 179px;
+	margin-bottom: 90px;
+	text-align: center;
+	h2{
+		font-size: 26px;
+		margin-bottom: 68px;
+	}
+		a{
+			display: inline-block;
+			padding-top: 327px;
+			position: relative;
+			text-align: center;
+			width: 217px;
+
+
+			.book{
+				position: absolute;
+				height:289px;
+				background: #fff;
+				top:0;
+				left:0;
+				display: inline-block;
+				width:100%;
+			}
+			.first_page{
+				text-align: left;
+				background: #fff url(../img/icons/crpr_big_corner.png) no-repeat right bottom;
+
+				i{
+					font-size: 34px;
+				    color: #000;
+				    font-weight: 700;
+				    text-align: left;
+				    font-family: MullerBold;
+				    margin-left: 14px;
+				    margin-top: 24px;
+				    text-transform: uppercase;
+				    line-height: 40px;
+				    text-align: left;
+				    display: inline-block;
+				    font-style: normal;
+				    position: relative;
+				    padding-bottom:20px;
+
+			    }
+			    i::before{
+					content: "";
+					position:absolute;
+					bottom:0;
+					left:6%;
+					width:85%;
+					height:6px;	
+					background: #000;
+					opacity: 0.1;	
+					display: block;	    
+			    }
+			    i::after{
+					content: "";
+					position:absolute;
+					bottom:-18px;
+					left:6%;
+					width:75%;
+					height:6px;		
+					background: #000;
+					opacity: 0.1;
+					display: block;
+			    }			    
+
+			}
+			.second_page{
+				background: #fff url(../img/icons/crpr_small.png) no-repeat 96% 96%;
+				display: none;
+			
+				h5{
+					margin-top: 25px;
+					border-top:2px solid @pale_gray;
+					padding-top: 17px;
+					font-size: 12px;
+					margin-left: 15px;
+					margin-right: 16px;
+					font-weight: bold;
+					margin-bottom: 20px;
+					text-align: left;
+					line-height: 20px;
+					color:#000;
+					letter-spacing: 1px;
+					font-family: MullerBold;
+
+				}
+				ul{
+					margin-left: 15px;
+					text-align: left;
+					font-size: 11px;
+					letter-spacing: 1px;
+					li{
+
+						margin-bottom: 8px
+					}
+				}
+			}
+			.link{
+				font-size: 14px;
+				opacity: 0.6;
+				display: inline-block;
+				width: 100%;
+				color:#fff;
+				text-decoration: none;
+
+			}
+
+		}
+		a:hover{
+			.second_page{
+				display: block;
+			}
+		}
+	
+}

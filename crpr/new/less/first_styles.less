@@ -1,0 +1,81 @@
+.first{
+	position: relative;
+	
+	.wrapper{
+		height: 100%;
+		position: relative;
+		background: url(../img/bg/particles.png) center 100px fixed;
+		padding-top: 104px;
+		display: flex;
+		flex-direction: column;
+  		justify-content: center;
+		
+	}
+	.main_text{
+		font-size: 35px;
+		line-height: 53px;
+		color: #fff;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		/*padding-top: 10%;*/
+		font-weight: bold;
+		letter-spacing: 1.2px;
+	}
+	.text{
+		font-size: 16px;
+		color: #fff;
+		text-align: center;
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 13px;
+		letter-spacing: 1.2px;
+	}
+	.btn_line{
+
+		text-align: center;
+		margin-top: 68px;
+
+		a{
+			margin-right:40px;
+		}
+		a:last-child{
+		margin-right: 0;
+		margin-bottom: 40px;
+		}
+
+	}
+	.scrolldown{
+		left:50%;
+		margin-left: -62px;
+		width:134px;
+		height:134px;
+		position: relative;
+		bottom: 0px;
+		
+	}
+	.bg_wave{
+		background: url(../img/bg/wave.png) no-repeat top left;
+		width:1440px;
+		height:406px;
+		position: absolute;
+		left: 50%;
+		margin-left: -720px;
+		bottom: 7%;
+    	z-index: -1;
+		
+	}
+	
+}
+@media @xs_sm{
+	.first{
+		height: auto !important;
+	
+		.scrolldown{
+			position: relative;
+		
+		}
+	}
+
+}
+			

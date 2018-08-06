@@ -1,0 +1,136 @@
+.solutions{
+	margin-top:180px;
+	.wrapper{
+		position: relative;
+	}
+	
+	.bg_circle{
+		background: url(../img/bg/circles.png) no-repeat top left;
+		width:1118px;
+		height:1118px;
+		position: absolute;
+		left: 0;
+    	top: -73%;
+    	z-index: -1;		
+    	opacity: 0.5;
+	}
+	
+	.solutions_list{
+		margin-top: 80px;
+		.row-flex();
+		align-items: stretch;
+		justify-content: space-around;
+		a{
+			.col();
+			.size(3);
+			.size-md(5);
+			.size-sm(8);
+			.size-xs(12);
+			
+			margin-bottom:20px;
+			background-image: linear-gradient(353deg, #ccdaf5, #edf4ff);
+  			box-shadow: 0 10px 16px 0 rgba(0, 41, 99, 0.14);
+			border-radius: 5px;
+			position:relative;
+			padding-top:160px;
+			padding-bottom:25px;
+			color: #0c3483;
+			font-size: 20px;
+			text-align: center;
+			transition: all 0.2s;
+			line-height: 25px;
+			i{
+				display: inline-block;
+				background-repeat: no-repeat;
+				background-position: top left;
+				top: 44px;
+				position:absolute;
+				left:50%;
+					
+
+
+			}
+			p{
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+  				justify-content: center;
+  				position:relative;
+  				width:80%;
+  				margin: 0 auto;
+			}	
+			p::before{
+				content:"";
+				position:absolute;
+				width:100%;
+				height:1px;
+				background: #000f25;
+				top:-20px;
+				opacity: 0.1;
+				
+			}
+			
+
+
+		}
+		
+		a:hover{
+
+			background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(354deg, #dee8fc, #ffffff);
+  			box-shadow: 0 20px 31px 20px rgba(0, 35, 91, 0.5);
+  			/*margin-top:-1%;*/
+  			
+		}	
+		.sol_1 i{
+			background-image: url(../img/solutions/sol_1.svg);
+			width: 70px;
+			height:69px;
+			margin-left: -35px;
+		}
+		.sol_2 i{
+			background-image: url(../img/solutions/sol_2.svg);
+			width: 80px;
+			height:72px;
+			margin-left: -40px;
+		}
+		.sol_3 i{
+			width: 82px;
+			height:83px;		
+			background-image: url(../img/solutions/sol_3.svg);
+			margin-left: -41px;
+		}
+		.sol_4 i{
+			width: 66px;
+			height:71px;		
+			background-image: url(../img/solutions/sol_4.svg);
+			margin-left: -33px;
+		}
+
+	}
+	.line_spec{
+		width: 60%;
+   		margin: 153px auto 0;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content:space-around;
+		p{
+			display: inline-block;
+			font-size:23px;
+			letter-spacing: 1px;
+			
+
+		}
+		a{
+			display: inline-block;
+			width: 282px;
+    		font-size: 18px;
+    		height: 37px;
+    		padding-top: 23px;
+
+		}
+	}
+					
+}
+			

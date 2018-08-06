@@ -1,0 +1,137 @@
+.contact_sales{
+	position: relative;
+	z-index: 100;
+	padding-top:209px;
+	background: url(../img/bg/particles.png) no-repeat center 100px fixed;
+	margin-bottom: -80px;
+	h2{
+		margin-bottom:29px;
+	}
+	p.text{
+		width:40%;
+		margin: 0 auto;
+		opacity: 0.7;
+		text-align:center;
+		min-width: 422px;
+		line-height: 25px;
+		font-size: 16px;
+	}
+	
+	.form_window{
+
+		background: #fff;
+		width: 574px;
+		max-width: 90%;
+		/*background-image: linear-gradient(to top, #dee8fc, #ffffff);*/
+  		box-shadow: 0 15px 34px 7px rgba(0,0,0,0.5);
+  		margin: 0 auto;
+  		z-index: 4;
+    	position: relative;
+    	margin-top:79px;
+    	padding-left:4%;
+    	padding-right:4%;
+    	padding-top:40px;
+    	padding-bottom: 40px;
+    	
+	
+    	.form{
+    		ul{
+    			display: flex;
+    			flex-direction: column;
+    			list-style:none;
+    			li{
+    				.row-flex();
+    				justify-content: space-around;
+    				align-items: center;
+    				margin-bottom:20px;
+    				label{
+    					flex-grow:1;
+    					flex-basis: 30%;
+    					font-weight: bold;
+
+    				}
+    				div.form_input{
+    					flex-grow:3;
+    					flex-basis: 69%;
+    					input{
+    						font-size:16px;
+
+    					}
+    				}
+    				div.form_txtarea{
+ 						height: 184px;
+
+    				}
+    			}
+    			li.focus label{
+
+    				color: #007ce1;
+    			}
+    			li.sbmt_block{
+    				justify-content:flex-end;
+    				button{
+						border: none;
+						width: 240px;
+						height: 58px;
+						padding-top: unset;
+						cursor: pointer;
+    				}
+    			}
+    			li.for_textarea{
+    				margin-bottom: 30px;
+    				label{
+    					align-self: flex-start;
+    					margin-top:18px;
+    				}
+    			}
+    		}
+    	}
+	}
+}
+.support{
+	background: @bg_body;
+	padding-top: 100px;
+	padding-bottom: 106px;
+	color: #fff;
+	position: relative;
+	z-index:50;
+	.bg_circle{
+		background: url(../img/bg/circles_gray_m.svg) no-repeat top left;
+		z-index: -1;
+		opacity: 0.8;
+	}
+	.sun{
+		z-index: -2;
+	}
+	.support_container{
+		.row-flex();
+		justify-content: center;
+		width: 680px;
+		max-width: 90%;
+		margin: 0 auto;
+		dl{
+			.col();
+			.size(6);
+
+			dt{
+				font-size: 18px;
+				margin-bottom: 36px;
+
+
+			}
+			dd{
+				font-size: 16px;
+				line-height: 30px;
+				
+				a{
+					font-weight: bold;
+					color: #fff;
+					text-decoration: none;
+				}
+
+
+			}
+		}
+	}
+}
+			

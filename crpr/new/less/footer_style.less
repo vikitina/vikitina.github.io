@@ -1,0 +1,179 @@
+footer{
+	height:auto;
+	width:100%;
+	font-size:14px;
+	color:#fff;
+	position: relative;
+    z-index: 100;
+
+
+	.wrapper{
+		border-top:1px solid #385999;
+		padding-top:40px;
+
+		.footerRow{
+			.row-flex();
+			justify-content: space-around;
+				
+			dl{
+				.col();
+				.size(2);
+				.size-md(6);
+
+				dt{
+					margin-bottom:27px;
+					font-weight:normal;
+				}
+				dd{
+					a{
+						display:block;
+						margin-bottom:17px;
+						color:#5c77ac;
+					}
+					ul{
+						list-style: none;
+						li{
+							color:#5c77ac;
+							margin-bottom:17px;
+							line-height:25px;
+						}
+					}
+				}
+			}
+			dl.address{
+				.col();
+				.size(3);
+				.size-md(12);
+			}
+		
+      					
+			.contact_sale_block{
+				.col();
+				.size(3);
+				.size-md(12);
+				.size-xs(12);
+				text-align: right;
+				a.btn{
+					width: 170px;
+					height: 21px;
+					padding-top: 13px;
+    				font-size: 14px;
+				}
+				.socials_line{
+					margin-top: 43px;
+					a{
+						display:inline-block;
+						width: 32px;
+    					height: 32px;
+    					position:relative;
+    					margin-right:14px;
+						i{
+							background-repeat: no-repeat;
+    						background-position: center center;
+    						display: inline-block;
+    						background-size:cover;
+    						position:absolute;
+    						top:0;
+    						left:0;
+
+						}
+						.over{
+							display:none;
+    						width: 56px;
+    						height: 51px;
+    						background-size: cover;
+    						left: -12px;
+    						top: -3px;
+							
+						}
+						.out{
+							display:inline-block;
+							width: 32px;
+    						height: 32px;
+
+						}
+					}
+					a:last-child{
+						margin-right: 0;
+					}
+					a:hover{
+						.over{
+							display:inline-block;
+
+						}
+						.out{
+							display:none;
+						}
+					}
+					.telegram{
+						.over{
+							background-image: url(../img/socials/telegram_c.svg);
+						}
+						.out{
+							background-image: url(../img/socials/telegram.svg);
+						}
+					}
+					.linkedin{
+						.over{
+							background-image: url(../img/socials/in_c.svg);
+
+						}
+						.out{
+							background-image: url(../img/socials/in.svg);
+						}
+					}				
+      			}
+
+			}
+			.copyrights{
+				.col();
+				.size(12);
+				text-align: left;
+				position:relative;
+				border-top: 1px solid #385999;
+				padding-top:20px;
+				padding-bottom: 40px;
+				font-size:16px;
+				
+				a{
+					color:#5c77ac;
+					margin-right:30px;
+				}
+				a:last-child{
+					margin-right:0;
+				}
+				a:hover{
+					color:#5c77ac;
+				}
+				small{
+					display:inline-block;
+					bottom:34px;
+					right:0;
+					margin-right:30px;
+					color: #5c77ac;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+}
+
+
+@media @xs_sm{
+	footer{
+		.wrapper{
+			
+			dl{
+				text-align: left;
+
+			}
+			.contact_sale_block{
+				text-align: center;
+			}
+
+		}
+	}
+
+
+}

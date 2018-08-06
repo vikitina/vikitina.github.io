@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
-	var winheight = $(window).height();
-	$('.first').css('height',winheight+'px');
+	var winheight = $(window).height()-$('header').height();
+	$('.height100pc').css('height',winheight+'px');
 
 	//$('.contact_sales').css('min-height',winheight+'px');
 
@@ -65,14 +65,15 @@ $(document).ready(function(){
 
 
        $window = $(window);
-		$('div[data-type="background"]').each(function(){
+		    $('div[data-type="background"]').each(function(){
      		var $bgobj = $(this);
-			$(window).scroll(function() {
-       			var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-        		var coords = '20px '+ yPos + 'px';
+			  $(window).scroll(function() {
+       			var yPos = -($window.scrollTop() / $bgobj.data('speed')) + 100; 
+        		var coords = 'center '+ yPos + 'px';
        			$bgobj.css({ backgroundPosition: coords });
     		}); 
- 		});   
+        }); 
+		  
 
 		$('.with_submenu').click(function(){
 			if($(this).hasClass('submenu_opened')){

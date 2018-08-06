@@ -1,0 +1,110 @@
+label{
+	font-size: 16px;
+}
+.form_input{
+	
+	position:relative;
+	height:46px;
+	
+	border-radius:5px;
+	padding:0;
+	input{
+		border:1px solid transparent;
+		width:92%;
+		height:30px;
+		font-size:20px;
+		color:#667b86;
+		font-weight:bold;
+		padding: 8px 5% 8px 3%;
+		border-radius:5px;
+		outline:none;
+		background: @pale_gray_three;
+	}
+}
+.form_input input:focus{
+	/*border-color:#80bdff;
+	box-shadow:0 0 0 0.2rem rgba(0, 123, 255, 0.25);*/
+	outline: 0 none;
+	background: #fff;
+	border-color: @pale_gray;
+}
+
+
+.form_select{
+	position:relative;
+	background: @pale_gray_three;
+	font-size:20px;
+	color:#667b86;
+	border-radius:5px;
+
+	i{
+		width:20px;
+		height:11px;
+		display:block;
+		background: url(../img/icons/carret.svg) no-repeat top left;
+		position:absolute;
+		top:18px;
+		right:10px;
+		}
+	select{
+		
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		height:100%;
+		width:100%;
+		background:none;
+		border:none;
+		padding-left:3%;
+		font-weight:normal;
+		font-size:16px;
+		border-radius:5px;
+		outline:none;
+		color: @dark_navy_blue;
+		cursor:pointer;
+
+		&::-ms-expand {   display: none;}
+
+		&:focus{outline:none;}
+}
+
+		option{
+			line-height:50px;
+			margin:20px;
+			vertical-align:middle;
+			font-size: 14px;
+		}
+	}
+	.form_txtarea{
+		background: @pale_gray_three;
+		font-size:16px;
+		color:#667b86;
+		border-radius:5px;
+		border: 1px solid transparent;
+	   	
+	   	textarea{
+    		height: 95%;
+    		padding-top:5%;
+    		padding-bottom:1%;
+    		width:94%;
+    		padding-left:2%;
+    		padding-right: 2%;
+    		background: none;
+    		border:none;
+    		border-radius: 5px;
+    		resize: none;
+    	}
+    	textarea:focus{
+    	outline:none;
+
+    	}
+    }
+    .focus .form_txtarea{
+    	background: #fff;
+		border: 1px solid @pale_gray;
+	}
+	button{
+		font-family: "MullerLight";
+	}
+	
+
