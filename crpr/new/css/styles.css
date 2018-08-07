@@ -88,23 +88,20 @@ nav {
 }
 
 span.mob_btn {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #fff;
-  border-radius: 5px;
+  width: 60px;
+  height: 60px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 50px;
   cursor: pointer;
   display: none;
 }
 
 span.mob_btn em {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   background: #fff;
-  height: 3px;
-  margin-top: 10px;
+  height: 8px;
+  margin-top: 12px;
   display: block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1148,7 +1145,7 @@ footer .wrapper .footerRow .copyrights small {
 
 .wwd .wwd_container .wwd_l_col h3 {
   margin-top: 178px;
-  font-size: 2rem;
+  font-size: 3rem;
   padding-bottom: 20px;
   margin-bottom: 35px;
 }
@@ -1208,13 +1205,13 @@ footer .wrapper .footerRow .copyrights small {
 }
 
 .wwd .wwd_container .wwd_r_col .circle_di ul li dl dt {
-  font-size: 16px;
+  font-size: 2.5rem;
   line-height: 20px;
   font-weight: bold;
 }
 
 .wwd .wwd_container .wwd_r_col .circle_di ul li dl dd {
-  font-size: 13px;
+  font-size: 2rem;
   line-height: 16px;
 }
 
@@ -2717,7 +2714,7 @@ h2 {
   }
 
   .solutions .solutions_list a {
-    width: calc(41.66666666666667% - 30px);
+    width: calc(75% - 30px);
   }
 
   .clients ul li {
@@ -2744,11 +2741,28 @@ h2 {
 
 @media (max-width: 991px) {
   header {
-    height: 100px;
+    height: 148px;
   }
 
   header .container {
-    /*border-bottom: none;*/
+    width: 90%;
+    display: block;
+  }
+
+  header .container .logo {
+    display: inline-block;
+    width: 56%;
+    position: absolute;
+    top: 46px;
+    left: 0;
+  }
+
+  header .container .logo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background: url(../img/cp_logo.svg) no-repeat top left;
+    background-size: cover;
   }
 
   header .container nav {
@@ -2853,21 +2867,23 @@ h2 {
     left: 3%;
   }
 
-  span.mob_btn {
-    right: 3%;
-    top: 22%;
-  }
-
-  footer {
-    font-size: 18px;
-  }
-
   footer .wrapper .footerRow dl {
     text-align: left;
   }
 
   footer .wrapper .footerRow .contact_sale_block {
     text-align: left;
+    font-size: 2rem;
+  }
+
+  footer .wrapper .footerRow .contact_sale_block a.btn {
+    font-size: 2rem;
+    width: 240px;
+    height: 68px;
+  }
+
+  footer .wrapper .footerRow .copyrights small {
+    font-size: 2rem;
   }
 
   .first {
@@ -2882,23 +2898,29 @@ h2 {
   .first .main_text {
     font-size: 3rem;
     line-height: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 50px;
+    margin-top: 230px;
+    width: 90%;
   }
 
   .first .text {
     width: 80%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3rem;
   }
 
   .first .btn_line {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 80px;
+    margin-bottom: 176px;
   }
 
   .first .btn_line a {
     margin-right: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 61px;
+    height: 75px;
+    width: 78%;
+    padding-top: 45px;
   }
 
   .first .btn_line a:last-child {
@@ -2911,7 +2933,7 @@ h2 {
   }
 
   .wwd {
-    margin-top: 77px;
+    margin-top: 206px;
   }
 
   .wwd .wrapper {
@@ -2934,23 +2956,36 @@ h2 {
 
   .wwd .wwd_container .wwd_l_col {
     padding-left: 0;
-    margin-bottom: 87px;
+    margin-bottom: 154px;
   }
 
   .wwd .wwd_container .wwd_l_col h3 {
     margin-top: 0px;
-    margin-bottom: 26px;
+    margin-bottom: 73px;
     text-align: center;
   }
 
   .wwd .wwd_container .wwd_l_col .text p {
     text-align: center;
-    margin: 0 auto 26px;
+    margin: 0 auto 70px;
+    font-size: 2rem;
+    width: 83%;
+    line-height: 3.5rem;
   }
 
   .wwd .wwd_container .wwd_r_col .circle_di {
     width: 136%;
     margin-left: -18%;
+  }
+
+  .wwd .wwd_container .wwd_r_col .circle_di ul li dl dt {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .wwd .wwd_container .wwd_r_col .circle_di ul li dl dd {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
 
   .wwd .wwd_container .wwd_r_col .circle_di ul .lev_1 {
@@ -2966,6 +3001,16 @@ h2 {
     text-align: center;
   }
 
+  .wwd .wwd_container .wwd_r_col .circle_di ul .lev_1 dl dt {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .wwd .wwd_container .wwd_r_col .circle_di ul .lev_1 dl dd {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
   .wwd .wwd_container .wwd_r_col .circle_di ul .lev_2 {
     width: 76%;
     top: 3%;
@@ -2977,6 +3022,16 @@ h2 {
     width: 100%;
     text-align: center;
     margin-top: 66%;
+  }
+
+  .wwd .wwd_container .wwd_r_col .circle_di ul .lev_2 dl dt {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .wwd .wwd_container .wwd_r_col .circle_di ul .lev_2 dl dd {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
 
   .wwd .wwd_container .wwd_r_col .circle_di ul .lev_3 {
@@ -2993,8 +3048,18 @@ h2 {
     left: 0;
   }
 
+  .wwd .wwd_container .wwd_r_col .circle_di ul .lev_3 dl dt {
+    font-size: 2rem;
+    line-height: 2.5px;
+  }
+
+  .wwd .wwd_container .wwd_r_col .circle_di ul .lev_3 dl dd {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
   .wwd .wwd_container .wwd_r_col .line_di {
-    margin-top: 33px;
+    margin-top: 180px;
   }
 
   .wwd .wwd_container .wwd_r_col .line_di .line {
@@ -3159,7 +3224,9 @@ h2 {
   }
 
   .btn {
-    font-size: 18px;
+    font-size: 2rem;
+    width: 240px;
+    height: 58px;
   }
 
   .desktop {
