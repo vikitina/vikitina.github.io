@@ -2605,6 +2605,10 @@ body {
   overflow-x: hidden;
   position: relative;
   background: #0d3483;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 html {
