@@ -2933,6 +2933,10 @@ h2 {
     font-size: 35px;
   }
 
+  h2 {
+    font-size: 4rem;
+  }
+
   .dev_first {
     margin-top: 220px;
   }
@@ -2944,7 +2948,7 @@ h2 {
   .dev_first p {
     width: 83%;
     margin: 65px auto 0;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 3.4rem;
   }
 
@@ -3134,7 +3138,7 @@ h2 {
   .wwd .wwd_container .wwd_l_col .text p {
     text-align: center;
     margin: 0 auto 70px;
-    font-size: 0.9rem;
+    font-size: 2rem;
     width: 83%;
     line-height: 2.5rem;
   }
@@ -3239,7 +3243,7 @@ h2 {
   }
 
   .solutions h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .solutions .solutions_list {
