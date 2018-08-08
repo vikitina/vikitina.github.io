@@ -3099,6 +3099,78 @@ h2 {
     height: 16px;
   }
 
+  .solutions {
+    margin-top: 268px;
+  }
+
+  .solutions h2 {
+    font-size: 3rem;
+  }
+
+  .solutions .solutions_list {
+    margin-top: 80px;
+  }
+
+  .solutions .solutions_list a {
+    padding-top: 288px;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 90px;
+  }
+
+  .solutions .solutions_list a i {
+    background-size: cover;
+    top: 82px;
+  }
+
+  .solutions .solutions_list .sol_1 i {
+    background-image: url(../img/solutions/sol_1.svg);
+    width: 142px;
+    height: 139px;
+    margin-left: -91px;
+  }
+
+  .solutions .solutions_list .sol_2 i {
+    background-image: url(../img/solutions/sol_2.svg);
+    width: 80px;
+    height: 72px;
+    margin-left: -40px;
+  }
+
+  .solutions .solutions_list .sol_3 i {
+    width: 82px;
+    height: 83px;
+    background-image: url(../img/solutions/sol_3.svg);
+    margin-left: -41px;
+  }
+
+  .solutions .solutions_list .sol_4 i {
+    width: 66px;
+    height: 71px;
+    background-image: url(../img/solutions/sol_4.svg);
+    margin-left: -33px;
+  }
+
+  .solutions .line_spec {
+    width: 100%;
+    margin: 79px auto 0;
+  }
+
+  .solutions .line_spec p {
+    font-size: 3rem;
+    margin-bottom: 90px;
+    display: block;
+  }
+
+  .solutions .line_spec a {
+    display: inline-block;
+    width: 100%;
+    font-size: 2.5rem;
+    height: 87px;
+    padding-top: 39px;
+    max-width: 557px;
+  }
+
   .tokensale_platform {
     height: auto !important;
     padding-bottom: 60px;
@@ -3274,78 +3346,6 @@ h2 {
 @media (max-width: 767px) {
   .team .team_frame .team_items .carousel-cell {
     width: 50%;
-  }
-
-  .solutions {
-    margin-top: 268px;
-  }
-
-  .solutions h2 {
-    font-size: 3rem;
-  }
-
-  .solutions .solutions_list {
-    margin-top: 80px;
-  }
-
-  .solutions .solutions_list a {
-    padding-top: 288px;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    margin-bottom: 90px;
-  }
-
-  .solutions .solutions_list a i {
-    background-size: cover;
-    top: 82px;
-  }
-
-  .solutions .solutions_list .sol_1 i {
-    background-image: url(../img/solutions/sol_1.svg);
-    width: 142px;
-    height: 139px;
-    margin-left: -91px;
-  }
-
-  .solutions .solutions_list .sol_2 i {
-    background-image: url(../img/solutions/sol_2.svg);
-    width: 80px;
-    height: 72px;
-    margin-left: -40px;
-  }
-
-  .solutions .solutions_list .sol_3 i {
-    width: 82px;
-    height: 83px;
-    background-image: url(../img/solutions/sol_3.svg);
-    margin-left: -41px;
-  }
-
-  .solutions .solutions_list .sol_4 i {
-    width: 66px;
-    height: 71px;
-    background-image: url(../img/solutions/sol_4.svg);
-    margin-left: -33px;
-  }
-
-  .solutions .line_spec {
-    width: 100%;
-    margin: 79px auto 0;
-  }
-
-  .solutions .line_spec p {
-    font-size: 3rem;
-    margin-bottom: 90px;
-    display: block;
-  }
-
-  .solutions .line_spec a {
-    display: inline-block;
-    width: 100%;
-    font-size: 2.5rem;
-    height: 87px;
-    padding-top: 39px;
-    max-width: 557px;
   }
 }
 
