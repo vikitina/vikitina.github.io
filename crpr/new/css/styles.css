@@ -2897,29 +2897,29 @@ h2 {
 
   footer .wrapper .footerRow dl {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   footer .wrapper .footerRow dl dt {
-    font-size: 40px;
-    margin-bottom: 45px;
+    font-size: 50px;
+    margin-bottom: 55px;
   }
 
   footer .wrapper .footerRow dl dd a {
-    font-size: 35px;
-    margin-bottom: 40px;
+    font-size: 45px;
+    margin-bottom: 45px;
   }
 
   footer .wrapper .footerRow dl dd ul li {
     margin-bottom: 70px;
-    line-height: 40px;
-    font-size: 35px;
+    line-height: 50px;
+    font-size: 45px;
   }
 
   footer .wrapper .footerRow dl.address dd ul li {
     margin-bottom: 70px;
-    line-height: 51px;
-    font-size: 35px;
+    line-height: 50px;
+    font-size: 45px;
   }
 
   footer .wrapper .footerRow .contact_sale_block {
@@ -2929,9 +2929,9 @@ h2 {
 
   footer .wrapper .footerRow .contact_sale_block a.btn {
     font-size: 35px;
-    width: 300px;
-    height: 65px;
-    padding-top: 30px;
+    width: 400px;
+    height: 75px;
+    padding-top: 35px;
   }
 
   footer .wrapper .footerRow .contact_sale_block .socials_line {
@@ -2940,8 +2940,8 @@ h2 {
   }
 
   footer .wrapper .footerRow .contact_sale_block .socials_line a {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     margin-right: 70px;
   }
 
@@ -2956,17 +2956,17 @@ h2 {
   }
 
   footer .wrapper .footerRow .contact_sale_block .socials_line a .over {
-    width: 110px;
-    height: 119px;
+    width: 165px;
+    height: 171px;
     background-size: cover;
-    left: -21px;
-    top: -13px;
+    left: -33px;
+    top: -19px;
   }
 
   footer .wrapper .footerRow .contact_sale_block .socials_line a .out {
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
   }
 
   footer .wrapper .footerRow .copyrights {
@@ -2974,14 +2974,14 @@ h2 {
   }
 
   footer .wrapper .footerRow .copyrights small {
-    font-size: 35px;
-    margin-bottom: 50px;
+    font-size: 45px;
+    margin-bottom: 60px;
   }
 
   footer .wrapper .footerRow .copyrights a {
-    font-size: 2rem;
+    font-size: 45px;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   h2 {
