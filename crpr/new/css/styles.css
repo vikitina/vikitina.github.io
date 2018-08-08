@@ -2885,34 +2885,35 @@ h2 {
   }
 
   footer .wrapper .footerRow dl dt {
-    font-size: 2rem;
+    font-size: 40px;
     margin-bottom: 45px;
   }
 
   footer .wrapper .footerRow dl dd a {
-    font-size: 2rem;
+    font-size: 35px;
     margin-bottom: 40px;
   }
 
   footer .wrapper .footerRow dl dd ul li {
     margin-bottom: 70px;
-    line-height: 3rem;
-    font-size: 2rem;
+    line-height: 40px;
+    font-size: 35px;
   }
 
   footer .wrapper .footerRow .contact_sale_block {
     text-align: left;
-    font-size: 2rem;
+    font-size: 35px;
   }
 
   footer .wrapper .footerRow .contact_sale_block a.btn {
-    font-size: 2rem;
-    width: 240px;
-    height: 68px;
+    font-size: 35px;
+    width: 250px;
+    height: 65px;
+    padding-top: 30px;
   }
 
   footer .wrapper .footerRow .copyrights small {
-    font-size: 2rem;
+    font-size: 35px;
   }
 
   .dev_first {
@@ -3300,8 +3301,8 @@ h2 {
 
   .lets_talk .wrapper a {
     max-width: 537px;
-    height: 116px;
-    padding-top: 40px;
+    height: 106px;
+    padding-top: 52px;
     font-size: 3rem;
     margin-bottom: 403px;
     width: 85%;
