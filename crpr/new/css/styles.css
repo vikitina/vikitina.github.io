@@ -2899,19 +2899,108 @@ h2 {
   }
 
   .dev_first h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .dev_first p {
     width: 83%;
     margin: 65px auto 0;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 3.4rem;
   }
 
   .dev_first .tabs_container_langs .tabs_menu_langs_container {
     -webkit-box-ordinal-group: 0;
     order: -1;
+    text-align: center;
+    margin-top: 140px;
+    position: relative;
+  }
+
+  .dev_first .tabs_container_langs .tabs_menu_langs_container .mob_list {
+    color: #fff;
+    border-radius: 7px;
+    border-right: none;
+    background: url(../img/elems/btn_prlang_active.png) no-repeat top left;
+    box-shadow: 0 19px 31px 0 rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    height: 65px;
+    width: 70%;
+    background-size: cover;
+    font-size: 2rem;
+    padding-top: 44px;
+    padding-left: 70px;
+    margin: 0 auto;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .dev_first .tabs_container_langs .tabs_menu_langs_container ul.tabs_menu_langs {
+    display: none;
+  }
+
+  .dev_first .tabs_container_langs .tabs_menu_langs_container_opened ul.tabs_menu_langs {
+    display: block;
+  }
+
+  .dev_first .tabs_container_langs ul.tabs_menu_langs {
+    position: absolute;
+    width: 70%;
+    top: 111px;
+    left: 0;
+    background: #fff;
+    color: blue;
+    z-index: 10;
+    box-shadow: 0 19px 31px 0 rgba(0, 0, 0, 0.1);
+    left: 50%;
+    margin-left: -35%;
+  }
+
+  .dev_first .tabs_container_langs ul.tabs_menu_langs li {
+    font-size: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .dev_first .tabs_container_langs ul.tabs_menu_langs li.selected {
+    color: #ccc !important;
+  }
+
+  .dev_first .tabs_container_langs ul.tabs_menu_langs li.selected {
+    background: none;
+  }
+
+  .dev_first .tabs_container_langs ul.tabs_content_langs {
+    margin-top: 70px;
+  }
+
+  .dev_first .tabs_container_for_code ul.tabs_menu_for_code li {
+    padding: 20px 12px 30px 24px;
+    font-size: 2rem;
+  }
+
+  .dev_first .tabs_container_for_code ul.tabs_content_for_code {
+    height: 800px;
+  }
+
+  .api_link {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 75px;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .api_link i {
+    width: 18px;
+    height: 14px;
+    display: inline-block;
+    background: url(../img/icons/arrow.svg) no-repeat top left;
+    background-size: cover;
   }
 
   .first {
