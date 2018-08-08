@@ -2875,8 +2875,29 @@ h2 {
     left: 3%;
   }
 
+  footer .wrapper {
+    padding-top: 100px;
+  }
+
   footer .wrapper .footerRow dl {
     text-align: left;
+    margin-bottom: 50px;
+  }
+
+  footer .wrapper .footerRow dl dt {
+    font-size: 2rem;
+    margin-bottom: 45px;
+  }
+
+  footer .wrapper .footerRow dl dd a {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  footer .wrapper .footerRow dl dd ul li {
+    margin-bottom: 70px;
+    line-height: 3rem;
+    font-size: 2rem;
   }
 
   footer .wrapper .footerRow .contact_sale_block {
@@ -3265,6 +3286,38 @@ h2 {
     height: 87px;
     padding-top: 39px;
     max-width: 557px;
+  }
+
+  .lets_talk {
+    position: relative;
+  }
+
+  .lets_talk .wrapper h5 {
+    font-size: 4rem;
+    display: inline-block;
+    margin-bottom: 80px;
+  }
+
+  .lets_talk .wrapper a {
+    max-width: 537px;
+    height: 116px;
+    padding-top: 40px;
+    font-size: 3rem;
+    margin-bottom: 403px;
+    width: 85%;
+  }
+
+  .lets_talk .bg_lets_talk {
+    background: url(../img/bg/circles.png) no-repeat top left;
+    position: absolute;
+    width: 1118px;
+    height: 1118px;
+    z-index: -1;
+    top: 50%;
+    margin-top: -544px;
+    left: 50%;
+    margin-left: -559px;
+    opacity: 0.3;
   }
 
   .tokensale_platform {
