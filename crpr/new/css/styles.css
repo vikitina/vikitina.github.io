@@ -463,7 +463,6 @@ footer .wrapper .footerRow .copyrights small {
 .team .team_frame {
   position: relative;
   width: 90%;
-  max-width: 1440px;
   overflow: hidden;
   height: 380px;
   margin: 0 auto;
@@ -2737,7 +2736,7 @@ h2 {
   }
 
   .clients ul li {
-    width: calc(41.66666666666667% - 30px);
+    width: calc(50% - 30px);
   }
 
   .tokensale_platform .row .col {
@@ -2988,6 +2987,59 @@ h2 {
     font-size: 4rem;
   }
 
+  .team .team_frame {
+    height: 850px;
+  }
+
+  .team .team_frame .team_items {
+    height: 800px;
+    width: 100%;
+  }
+
+  .team .team_frame .team_items .team_item__img {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .team .team_frame .team_items .team_item__info {
+    margin-top: 20px;
+  }
+
+  .team .team_frame .team_items .team_item__info_name {
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .team .team_frame .team_items .team_item__info_position {
+    opacity: 0.5;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .team .team_frame .team_items .team_item__info_cosials li a {
+    width: 100px;
+    height: 100px;
+    margin-right: 60px;
+  }
+
+  .team .team_frame .team_items .team_item__info_cosials li a .over {
+    width: 165px;
+    height: 171px;
+    background-size: cover;
+    left: -33px;
+    top: -19px;
+  }
+
+  .team .team_frame .team_items .team_item__info_cosials li a .out {
+    width: 100px;
+    height: 100px;
+  }
+
   .dev_first {
     margin-top: 220px;
   }
@@ -3097,11 +3149,12 @@ h2 {
   }
 
   .api_link i {
-    width: 18px;
-    height: 14px;
+    width: 41px;
+    height: 35px;
     display: inline-block;
     background: url(../img/icons/arrow.svg) no-repeat top left;
     background-size: cover;
+    margin-left: 26px;
   }
 
   .first {
@@ -3314,31 +3367,28 @@ h2 {
   }
 
   .solutions .solutions_list .sol_1 i {
-    background-image: url(../img/solutions/sol_1.svg);
     width: 142px;
     height: 139px;
     margin-left: -91px;
   }
 
   .solutions .solutions_list .sol_2 i {
-    background-image: url(../img/solutions/sol_2.svg);
-    width: 80px;
-    height: 72px;
-    margin-left: -40px;
+    width: 164px;
+    height: 147px;
+    margin-left: -82px;
   }
 
   .solutions .solutions_list .sol_3 i {
-    width: 82px;
-    height: 83px;
-    background-image: url(../img/solutions/sol_3.svg);
-    margin-left: -41px;
+    width: 160px;
+    height: 162px;
+    margin-left: -80px;
   }
 
   .solutions .solutions_list .sol_4 i {
-    width: 66px;
-    height: 71px;
+    width: 132px;
+    height: 142px;
     background-image: url(../img/solutions/sol_4.svg);
-    margin-left: -33px;
+    margin-left: -66px;
   }
 
   .solutions .line_spec {
@@ -3359,6 +3409,14 @@ h2 {
     height: 87px;
     padding-top: 39px;
     max-width: 557px;
+  }
+
+  .clients ul li {
+    margin-bottom: 70px;
+  }
+
+  .clients ul li:last-child {
+    margin-right: 0;
   }
 
   .lets_talk {
@@ -3567,7 +3625,7 @@ h2 {
 
 @media (max-width: 767px) {
   .team .team_frame .team_items .carousel-cell {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -3597,7 +3655,7 @@ h2 {
   }
 
   .clients ul li {
-    width: calc(66.66666666666667% - 30px);
+    width: calc(50% - 30px);
   }
 
   .tokensale_platform .row .col {
@@ -3657,7 +3715,7 @@ h2 {
 
 @media (max-width: 479px) {
   .team .team_frame {
-    width: 70%;
+    width: 100%;
     overflow: visible;
   }
 
@@ -3676,6 +3734,6 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 980px) {
   .team .team_frame .team_items .carousel-cell {
-    width: 33.333333%;
+    width: 100%;
   }
 }
