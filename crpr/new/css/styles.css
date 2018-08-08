@@ -1212,13 +1212,13 @@ footer .wrapper .footerRow .copyrights small {
 }
 
 .wwd .wwd_container .wwd_r_col .circle_di ul li dl dt {
-  font-size: 2.5rem;
+  font-size: 16px;
   line-height: 20px;
   font-weight: bold;
 }
 
 .wwd .wwd_container .wwd_r_col .circle_di ul li dl dd {
-  font-size: 2rem;
+  font-size: 13px;
   line-height: 16px;
 }
 
