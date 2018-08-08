@@ -2685,11 +2685,11 @@ h2 {
 }
 
 .desktop {
-  display: block;
+  display: block !important;
 }
 
 .mob {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -2706,6 +2706,14 @@ h2 {
   }
 
   footer .wrapper .footerRow .contact_sale_block {
+    width: calc(100% - 30px);
+  }
+
+  .dev_first .tabs_container_langs .tabs_menu_langs_container {
+    width: calc(100% - 30px);
+  }
+
+  .dev_first .tabs_container_langs .tabs_content_langs {
     width: calc(100% - 30px);
   }
 
@@ -2753,7 +2761,7 @@ h2 {
     display: inline-block;
     width: 56%;
     position: absolute;
-    top: 33px;
+    top: 25px;
     left: 0;
   }
 
@@ -2886,6 +2894,26 @@ h2 {
     font-size: 2rem;
   }
 
+  .dev_first {
+    margin-top: 220px;
+  }
+
+  .dev_first h2 {
+    font-size: 3rem;
+  }
+
+  .dev_first p {
+    width: 83%;
+    margin: 65px auto 0;
+    font-size: 2rem;
+    line-height: 3.4rem;
+  }
+
+  .dev_first .tabs_container_langs .tabs_menu_langs_container {
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
   .first {
     height: auto !important;
   }
@@ -2965,13 +2993,13 @@ h2 {
     margin-top: 0px;
     margin-bottom: 73px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .wwd .wwd_container .wwd_l_col .text p {
     text-align: center;
     margin: 0 auto 70px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 83%;
     line-height: 2.5rem;
   }
@@ -3063,7 +3091,7 @@ h2 {
   }
 
   .wwd .wwd_container .wwd_r_col .line_di {
-    margin-top: 180px;
+    margin-top: 100px;
   }
 
   .wwd .wwd_container .wwd_r_col .line_di .line {
@@ -3235,11 +3263,11 @@ h2 {
   }
 
   .desktop {
-    display: none;
+    display: none !important;
   }
 
   .mob {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -3248,33 +3276,76 @@ h2 {
     width: 50%;
   }
 
-  .dev_first {
-    margin-top: 100px;
+  .solutions {
+    margin-top: 268px;
   }
 
-  .dev_first p {
-    width: 83%;
-    margin: 21px auto 0;
+  .solutions h2 {
+    font-size: 3rem;
   }
 
   .solutions .solutions_list {
-    margin-top: 44px;
+    margin-top: 80px;
   }
 
   .solutions .solutions_list a {
-    padding-top: 134px;
-    font-size: 16px;
-    line-height: 18px;
+    padding-top: 288px;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 90px;
+  }
+
+  .solutions .solutions_list a i {
+    background-size: cover;
+    top: 82px;
+  }
+
+  .solutions .solutions_list .sol_1 i {
+    background-image: url(../img/solutions/sol_1.svg);
+    width: 142px;
+    height: 139px;
+    margin-left: -91px;
+  }
+
+  .solutions .solutions_list .sol_2 i {
+    background-image: url(../img/solutions/sol_2.svg);
+    width: 80px;
+    height: 72px;
+    margin-left: -40px;
+  }
+
+  .solutions .solutions_list .sol_3 i {
+    width: 82px;
+    height: 83px;
+    background-image: url(../img/solutions/sol_3.svg);
+    margin-left: -41px;
+  }
+
+  .solutions .solutions_list .sol_4 i {
+    width: 66px;
+    height: 71px;
+    background-image: url(../img/solutions/sol_4.svg);
+    margin-left: -33px;
   }
 
   .solutions .line_spec {
-    width: 80%;
+    width: 100%;
     margin: 79px auto 0;
   }
 
   .solutions .line_spec p {
-    font-size: 21px;
-    margin-bottom: 38px;
+    font-size: 3rem;
+    margin-bottom: 90px;
+    display: block;
+  }
+
+  .solutions .line_spec a {
+    display: inline-block;
+    width: 100%;
+    font-size: 2.5rem;
+    height: 87px;
+    padding-top: 39px;
+    max-width: 557px;
   }
 }
 
@@ -3284,6 +3355,14 @@ h2 {
   }
 
   footer .wrapper .footerRow dl.docs {
+    width: calc(100% - 30px);
+  }
+
+  .dev_first .tabs_container_langs .tabs_menu_langs_container {
+    width: calc(100% - 30px);
+  }
+
+  .dev_first .tabs_container_langs .tabs_content_langs {
     width: calc(100% - 30px);
   }
 
@@ -3322,6 +3401,14 @@ h2 {
   }
 
   footer .wrapper .footerRow .contact_sale_block {
+    width: calc(100% - 30px);
+  }
+
+  .dev_first .tabs_container_langs .tabs_menu_langs_container {
+    width: calc(100% - 30px);
+  }
+
+  .dev_first .tabs_container_langs .tabs_content_langs {
     width: calc(100% - 30px);
   }
 
