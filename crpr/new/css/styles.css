@@ -2977,23 +2977,14 @@ h2 {
   }
 
   .dev_first .tabs_container_for_code ul.tabs_menu_for_code li {
-    padding: 20px 12px 30px 24px;
-    font-size: 2rem;
+    padding: 20px 0 30px 0;
+    font-size: 3rem;
+    width: 33%;
+    text-align: center;
   }
 
   .dev_first .tabs_container_for_code ul.tabs_menu_for_code li i {
-    width: 32px;
-    height: 27px;
-  }
-
-  .dev_first .tabs_container_for_code ul.tabs_menu_for_code li.wallets i {
-    width: 36px;
-    height: 32px;
-  }
-
-  .dev_first .tabs_container_for_code ul.tabs_menu_for_code li.callbacks i {
-    width: 40px;
-    height: 40px;
+    display: none !important;
   }
 
   .dev_first .tabs_container_for_code ul.tabs_content_for_code {
