@@ -38,6 +38,13 @@ $(document).ready(function(){
 
             
        });
+       $('.mob_list').click(function(){
+          if($(this).parent().hasClass('tabs_menu_langs_container_opened')){
+            $(this).parent().removeClass('tabs_menu_langs_container_opened');
+          }else{
+            $(this).parent().addClass('tabs_menu_langs_container_opened');
+          }
+       });
 
       $(window).scroll(function(){
         var winScrollTop = $(this).scrollTop();
