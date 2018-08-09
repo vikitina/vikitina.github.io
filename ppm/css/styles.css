@@ -1,25 +1,40 @@
+h2 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
 table {
   margin: 0 auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
   border-collapse: collapse;
   color: #686461;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+  border-bottom: 1px solid #76d672;
 }
 
 table caption {
   padding: 10px;
   color: white;
-  background: #8FD4C1;
+  background: #76d672;
   font-size: 18px;
   text-align: left;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 table th {
   border-bottom: 3px solid #B9B29F;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+table th.semiborder {
+  border-bottom: 1px solid #B9B29F;
 }
 
 table tr:nth-child(odd) td {
@@ -27,7 +42,27 @@ table tr:nth-child(odd) td {
 }
 
 table tr:nth-child(even) td {
-  background: #E8E6D1;
+  background: #f2f0da;
+}
+
+table tr.topline {
+  border-top: 1px solid #f2f0da;
+}
+
+table td.left {
+  text-align: left;
+  padding-left: 5px;
+}
+
+table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 52px;
+  height: 52px;
+}
+
+table .right {
+  border-right: 1px solid #B9B29F;
 }
 
 a {
