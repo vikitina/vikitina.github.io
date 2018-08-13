@@ -5,7 +5,7 @@ h2 {
 
 .table_container {
   border: 1px solid #76d672;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 table {
@@ -46,7 +46,7 @@ table tr:nth-child(odd) td {
 }
 
 table tr:nth-child(even) td {
-  background: #f2f0da;
+  background: #e3d8e9;
 }
 
 table tr.topline {
