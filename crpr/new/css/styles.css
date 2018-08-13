@@ -2116,7 +2116,6 @@ button {
   display: block;
   top: 50%;
   z-index: -1;
-  padding-right: 20px;
 }
 
 .how .schema .platform .tokens_block::before {
@@ -2126,6 +2125,7 @@ button {
   width: 10px;
   top: 50%;
   background-size: cover;
+  margin-top: -5px;
 }
 
 .how .schema .platform .tokens {
@@ -2140,7 +2140,10 @@ button {
 
 .how .schema .platform .tokens::before {
   left: 0;
-  background: url(../img/elems/arrow_left.svg) no-repeat top left;
+  background: url(../img/elems/arrow_right.svg) no-repeat top left;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .benefits {
@@ -3499,18 +3502,18 @@ h2 {
   }
 
   .how .schema .platform .investor {
-    width: 300px;
+    width: 100%;
     height: 90px;
-    left: 50%;
+    left: 0;
     top: -153px;
-    margin-left: -150px;
+    margin-left: 0;
   }
 
   .how .schema .platform .ico {
-    width: 300px;
+    width: 100%;
     height: 90px;
-    right: 50%;
-    margin-right: -150px;
+    right: 0;
+    margin-right: 0;
     top: 211px;
   }
 
@@ -3552,12 +3555,22 @@ h2 {
     left: 4px;
   }
 
+  .how .schema .platform .token_line::before {
+    right: 50%;
+    margin-right: -6px;
+    top: -20%;
+    background: url(../img/elems/arrow_down.svg) no-repeat top left;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
   .how .schema .platform .tokens_block::after {
-    height: 100%;
+    height: 140%;
     border-top: none;
     border-left: 1px solid #fff;
     width: 3px;
-    top: 0;
+    top: -20%;
     left: 50%;
     padding-right: 0;
   }
@@ -3567,6 +3580,22 @@ h2 {
     right: 4px;
     top: -50px;
     left: unset;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  .how .schema .platform .tokens::after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .how .schema .platform .tokens::before {
+    top: 50%;
+    bottom: unset;
+    left: -165%;
+    margin-top: -6px;
   }
 
   .benefits .wrapper .container {
@@ -3663,11 +3692,11 @@ h2 {
   }
 
   .benefits .wrapper .container .per_two .row dl {
-    width: calc(66.66666666666667% - 30px);
+    width: calc(100% - 30px);
   }
 
   .benefits .wrapper .container .per_three .row dl {
-    width: calc(66.66666666666667% - 30px);
+    width: calc(100% - 30px);
   }
 }
 
