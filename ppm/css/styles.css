@@ -1,6 +1,11 @@
 h2 {
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.table_container {
+  border: 1px solid #76d672;
+  margin-bottom: 80px;
 }
 
 table {
@@ -8,7 +13,6 @@ table {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
   border-collapse: collapse;
   color: #686461;
-  margin-bottom: 80px;
   text-align: center;
   border-bottom: 1px solid #76d672;
 }
@@ -58,7 +62,7 @@ table td {
   padding-top: 5px;
   padding-bottom: 5px;
   min-height: 52px;
-  height: 52px;
+  height: auto;
 }
 
 table .right {
