@@ -446,15 +446,143 @@ footer .wrapper .footerRow .copyrights small {
   font-size: 15px;
 }
 
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 2px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
 .calculator {
   margin-top: 150px;
   margin-bottom: 100px;
   padding-top: 100px;
   padding-bottom: 100px;
+  color: #424242;
+}
+
+.calculator h3 {
+  color: #fff;
+}
+
+.calculator .calculator_block {
+  padding: 24px;
+}
+
+.calculator .calculator_block ul {
+  list-style: none;
+}
+
+.calculator .calculator_block ul li {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 0;
+  padding-bottom: 10px;
+  min-height: 40px;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  height: auto;
+  cursor: pointer;
+}
+
+.calculator .calculator_block ul li span {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  top: 9px;
+  left: 0;
+}
+
+.calculator .calculator_block ul li span i {
+  height: 28px;
+  width: 28px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  font-style: normal;
+}
+
+.calculator .calculator_block ul li span em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+
+.calculator .calculator_block ul li h5 {
+  color: #424242;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: -64px;
+  padding-left: 64px;
+  margin-right: -24px;
+  padding-right: 24px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.calculator .calculator_block ul li h5.hover {
+  background: #b3d4fc;
+}
+
+.calculator .calculator_block ul li .data_block {
+  height: 0;
+  -webkit-transition: height 4s;
+  transition: height 4s;
+  overflow: hidden;
+}
+
+.calculator .calculator_block ul li .data_block ul li::after {
+  width: 0;
+  height: 0;
+}
+
+.calculator .calculator_block ul li.active .data_block {
+  height: auto;
+}
+
+.calculator .calculator_block ul li.error span i {
+  display: none;
+}
+
+.calculator .calculator_block ul li.error span em {
+  display: block;
+  background: red;
+}
+
+.calculator .calculator_block ul li::after {
+  content: '';
+  position: absolute;
+  top: 43px;
+  left: 13.5px;
+  width: 1px;
+  height: 40%;
+  height: calc(100% - 38px);
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.calculator .calculator_block ul li:last-child::after {
+  height: 0;
+  width: 0;
 }
 
 .main_section {
-  background: url(../img/bg/first_sec.png) no-repeat top left fixed;
+  background: url(../img/bg/2.jpg) no-repeat top left fixed;
   background-size: cover;
   padding-top: 150px;
 }
@@ -772,15 +900,14 @@ main {
 }
 
 .btn {
-  width: 210px;
-  height: 35px;
-  border-radius: 6px;
-  text-decoration: none;
+  border: none;
+  border-radius: 2px;
   display: inline-block;
-  padding-top: 20px;
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn:hover {
