@@ -136,61 +136,77 @@ main{opacity:0.5;}
 			<div class="card">
 				<div class="calculator_block">
 					<ul>
-						<li data-step="1">
+						<li data-step="1" class="step">
 							<span><i>1</i><em></em></span>
 							<h5>Шаг первый</h5>
 							<div class="data_block">
+								<h6>Укажите материал</h6>
 								<ul id="first_data_block"></ul>
 								<input type="hidden" class="control_element" />
-								<button class="btn btn_blue nex_step_btn">Продолжить</button>
+								<button class="btn btn_blue next_step_btn">Продолжить</button>
 							</div>
 							<div class="result_block">
-								
+								<h6>Материал/изделие: <span class="result"></span></h6>
 							</div>
 						</li>
-						<li data-step="2">
+						<li data-step="2" class="step">
 							<span><i>2</i><em></em></span>
 							<h5>Шаг второй</h5>
 							<div class="data_block">
+								<h6>Выберите цвет</h6>
 								<ul class="list_options"></ul>
 								<input type="hidden" class="control_element" data-parent="" />
-								<button class="btn btn_blue nex_step_btn">Продолжить</button>
+								<button class="btn btn_blue next_step_btn">Продолжить</button>
 							</div>
-							<div class="result_block"></div>
+							<div class="result_block">
+								<h6>Цвет/фактура: <span class="result"></span></h6>
+							</div>
 						</li>
-						<li data-step="3">
+						<li data-step="3" class="step">
 							<span><i>3</i><em></em></span>
 							<h5>Шаг третий</h5>
 							<div class="data_block">
-									<ul class="list_options"></ul>
-									<button class="btn btn_blue nex_step_btn">Продолжить</button>
+								<h6>Требуемый тип печати</h6>
+								<ul class="list_options"></ul>
+								<input type="hidden" class="control_element" data-parent="" />
+								<button class="btn btn_blue next_step_btn">Продолжить</button>
 							</div>
-							<div class="result_block"></div>
+							<div class="result_block">
+								<h6>Тип печати: <span class="result"></span></h6>
+							</div>
 						</li>
-						<li data-step="4">
+						<li data-step="4" class="step">
 							<span><i>4</i><em></em></span>
 							<h5>Шаг четвертый</h5>
 							<div class="data_block">
-									<ul class="list_options"></ul>
-									<button class="btn btn_blue nex_step_btn">Продолжить</button>
+								<h6>Укажите размеры изделия</h6>
+								<ul class="list_options"></ul>
+								<button class="btn btn_blue next_step_btn">Продолжить</button>
 							</div>
-							<div class="result_block"></div>
+							<div class="result_block">
+								<h6>Размер: <span class="result"></span></h6>
+							</div>
 						</li>
-						<li data-step="5">
+						<li data-step="5" class="step">
 							<span><i>5</i><em></em></span>
 							<h5>Шаг пятый</h5>
 							<div class="data_block">
-									<ul class="list_options"></ul>
-									<button class="btn btn_blue nex_step_btn">Продолжить</button>
+								<h6>Послепечатная обработка:</h6>
+								<ul class="list_options"></ul>
+								<button class="btn btn_blue next_step_btn">Продолжить</button>
 							</div>
-							<div class="result_block"></div>
+							<div class="result_block">
+								<h6>Послепечатная обработка: <span class="result"></span></h6>
+							</div>
 						</li>
-						<li data-step="6">
+						<li data-step="6" class="step">
 							<span><i>6</i><em></em></span>
 							<h5>Шаг шестой</h5>
 							<div class="data_block">
-									<ul class="list_options"></ul>
-									<button class="btn btn_blue nex_step_btn">Продолжить</button>
+								<h5>Еще чуть-чуть осталось</h5>
+								<h6>Укажите ваш e-mail и мы вам вышлем результат расчета.</h6>
+								<ul class="list_options"></ul>
+								<button class="btn btn_blue next_step_btn">Продолжить</button>
 							</div>
 							<div class="result_block"></div>
 						</li>

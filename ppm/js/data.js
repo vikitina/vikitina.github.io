@@ -69,19 +69,63 @@ var data = [
         children: [
             {
                 name: 'Литой',
-                children: null
+                children: [
+                    {
+                        name: '720 dpi',
+                        children: null
+                    },
+                    {
+                        name: '1440dpi',
+                        children: null
+                    },
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             },  
             {
                 name: 'Ламинированный',
-                children: null
+                children:[
+                    {
+                        name: '720 dpi',
+                        children: null
+                    },
+                    {
+                        name: '1440dpi',
+                        children: null
+                    },
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             },   
             {
                 name: 'Backlit',
-                children: null
+                children: [
+                    {
+                        name: '720 dpi',
+                        children: null
+                    },
+                    {
+                        name: '1440dpi',
+                        children: null
+                    },
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             },   
             {
                 name: 'Mesh',
-                children: null
+                children: [
+                    {
+                        name: '720 dpi',
+                        children: null
+                    }
+                ]
             }                                          
         ]
     },
@@ -90,11 +134,29 @@ var data = [
         children: [
             {
                 name: 'Просветная "City"',
-                children: null
+                children: [
+                    {
+                        name: '720 dpi',
+                        children: null
+                    },
+                    {
+                        name: '1440dpi',
+                        children: null
+                    }
+                ]
             }, 
             {
                 name: '"Blue Back"',
-                children: null
+                children:[
+                    {
+                        name: '720 dpi',
+                        children: null
+                    },
+                    {
+                        name: '1440dpi',
+                        children: null
+                    }
+                ]
             },                        
         ]
     },
@@ -103,19 +165,39 @@ var data = [
         children: [
             {
                 name: 'Белый - 3 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }, 
             {
                 name: 'Белый - 4 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             },  
             {
                 name: 'Белый - 5 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }, 
             {
                 name: 'Белый - 8 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }                                  
         ]
     },
@@ -124,7 +206,12 @@ var data = [
         children: [
             {
                 name: 'Белый - 3 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }                               
         ]
     }, 
@@ -133,7 +220,12 @@ var data = [
         children: [
             {
                 name: 'Белый - 3 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }                               
         ]
     },  
@@ -142,23 +234,48 @@ var data = [
         children: [
             {
                 name: 'Прозрачный - 1 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }, 
             {
                 name: 'Прозрачный - 2 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             },  
             {
                 name: 'Молочный - 1 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }, 
             {
                 name: 'Молочный - 2 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }, 
             {
                 name: 'Молочный - 3 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }                                    
         ]
     },   
@@ -167,43 +284,42 @@ var data = [
         children: [
             {
                 name: 'Белый - 0.75 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }, 
             {
                 name: 'Белый - 1 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             },  
             {
                 name: 'Белый - 2 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }, 
             {
                 name: 'Белый - 3 мм',
-                children: null
+                children: [
+                    {
+                        name: 'УФ печать',
+                        children: null
+                    }
+                ]
             }                                   
         ]
-    },
-    {
-        name: 'Полистирол',
-        children: [
-            {
-                name: 'Белый - 0.75 мм',
-                children: null
-            }, 
-            {
-                name: 'Белый - 1 мм',
-                children: null
-            },  
-            {
-                name: 'Белый - 2 мм',
-                children: null
-            }, 
-            {
-                name: 'Белый - 3 мм',
-                children: null
-            }                                   
-        ]
-    }                   
+    }                
 ];
 
 
