@@ -1,0 +1,5 @@
+.sortable {
+  cursor: pointer;
+    .fa-sort-desc { position:relative;bottom:3px;}
+    .fa-sort-asc { position:relative;top:3px;}
+}
