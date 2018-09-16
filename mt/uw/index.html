@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,7 @@
 <link href="./css/responsive.css" rel="stylesheet" />
 <link href="./css/custom.css" rel="stylesheet" />
 <link href="./css/application.css" rel="stylesheet" />
+<link href="./css/additional_styles.css" rel="stylesheet" />
 
 <script type="text/javascript" async="" src="./js/popper.min.js"></script>
 <script type="text/javascript" async="" src="./js/jquery-2.1.1.min.js"></script>
@@ -25,251 +27,292 @@
   
 </head>
 <body>
+  <header>
+
+	<div class="blue_line">
+	  <div class="container">
+		<nav class="desktop">
+		  <a href="https://modultrade.com/" target="_blank">about</a>
+		  <a href="https://market.modultrade.com/" target="_blank" id='market_btn'>market</a>
+		  <a href="/" class="selected">wallet</a>
+  
+  
+		</nav>
+  
+  
+		<div class="right_block">
+		  <a href="http://t.me/MT_WalletSupport" target="_blank" class="help_mob" id="support_btn"><i class="chat" id="support_btn_img"></i>support
+		  </a>
+		  <div class="lang_container">
+			<div class="lang">
+			  <em></em>
+			  <span>EN</span>
+  
+			  <ul>
+				  <li>CN</li>
+				  <li>RU</li>
+				  <li>IT</li>
+				  <li>FR</li>
+				  <li>KR</li>
+			  </ul>
+			</div><!-- lang  -->
+		  </div><!-- lang_container -->
+  
+		  <div class="clear"></div>
+		</div><!--  right_block  -->
+	  </div><!-- container  -->
+	  <div class="nav_mob mob">
+		<span></span>
+		<ul>
+		  <li><a href="/?lang=<%= I18n.locale %>" class="selected">wallet</a>
+			<ul class="inner_menu">
+			  <li class="selected"><a href="/profile/?lang=<%= I18n.locale %>">dashboard</a>
+			  </li>
+			  <li>You can:</li>
+			  <li>
+				<a href="https://market.modultrade.com/" target="_blank" class="outerlink"><span>Trade on MT Market</span></a>
+			  </li>
+			  <li><a href="/send_mtrc/?lang=<%= I18n.locale %>">Send Tokens</a></li>
+			  <li><a href="/receive_tokens/?lang=<%= I18n.locale %>">Receive Tokens</a></li>
+			  <li><a href="/send_smc_mtrc/?lang=<%= I18n.locale %>">Pay on MT Smart-Contract</a></li>
+			  <li><a href=#>Exchange Tokens</a></li>
+			  <li><a href=#>Buy Tokens')</a></li>
+			</ul>
+		  </li>
+		  <li><a href="https://modultrade.com/" target="_blank">about company</a></li>
+		  <li><a href="https://market.modultrade.com/" target="_blank">Market</a></li>
+  
+		</ul>
+	  </div><!-- nav_mob  -->
+	</div><!--  blue_line  -->
+	<div class="white_line desktop">
+	  <div class="container">
+		<div class="row row_for_empty_hello">
+		  <div class="logo_container desktop col-lg-3 col-md-3 col-sm-3">
+  
+			<a href="/" class="logo"><img src="./img/new_lk/mt_logo.png"/></a></div>
+		  <!--<h1 class="dashboard">Dashboard</h1>-->
+  
+		  <h2 class="hello fs_big empty_hello col-lg-6 col-md-6 col-sm-6">
+			Welcome to MT Wallet
+		  </h2>
+  
+  
+		  <div class="right_block_container  col-lg-3 col-md-3 col-sm-3">
+  
+  
+		  </div><!-- right-block - container-->
+		</div>
+	  </div><!-- container  -->
+	</div>
+  </header>
+  <div class="wrapper">
+    
+<main class="main">
+		<section id="main_screen">
+		  <div class="container">
+			<h2 class="mob">Welcome to MT Wallet</h2>
+			<h1>Payments on blockchain<br /> for everyone</h1>
+
+			<div class="wrapper_signin">
+				<a href="" class="signin_mt"><span><i></i>Sign in with MT</span></a>
+				<a href="" class="signin_google"><span><i></i>Sign in with Google</span></a>
+			</div>
+
+			<p class="easy">EASY, SECURE & EFFECTIVE</p>
+			<a href="//<%= Rails.application.secrets.accounts_domain %>/users/sign_up?lang=<%= I18n.locale %>" class="create_wallet" id="create_wallet_btn"><i id="create_wallet_btn_img"></i>Create New Wallet
+			</a>
+	
+	
+		  </div><!--  container -->
+		</section>
+		<section id="what_is">
+		  <div class="container">
+			<h3>WHAT IS MTRC TOKEN</h3>
+			<ul class="row">
+			  <li class="first col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<i></i>
+				<p>A utility token for MT Market</p>
+	
+			  </li>
+			  <li class="second col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<i></i>
+				<p>A new instrument for value exchange with a huge potential to grow</p>
+	
+			  </li>
+			  <li class="third col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<i></i>
+				<p>Finance in MTRc B2B trade transactions on MT Market for a fee</p>
+	
+			  </li>
+	
+			</ul>
+	
+	
+		  </div><!--  container -->
+		</section>
+	
+	<section class="exchange_block">
+		<div class="container">
+			<h2>Exchange BTC/ETH/MTRc and Buy with Credit Card</h2>
+			<p>Medium exchange rate on <a href="#" class="ext_link">MT Exchange</a> as of 07/09/2018 at 00:01</p>
+			<div class="exchange_trio">
+				<div class="exchange_item">
+					<h3 class="btc"><i><em></em>€ 6,400.00</i> <span class="down">1%</span></h3>
+					<div class="links_line">
+						<div>
+							<a href="#">Exchange</a>
+						</div>
+						<div>
+							<a href="#">Buy</a>
+						</div>
+					</div>
+				</div>
+				<div class="exchange_item">
+					<h3 class="eth"><i><em></em>€ 180.00</i> <span class="down">1.2%</span></h3>
+					<div class="links_line">
+						<div>
+							<a href="#">Exchange</a>
+						</div>
+						<div>
+							<a href="#">Buy</a>
+						</div>
+					</div>
+				</div>
+				<div class="exchange_item">
+					<h3 class="mtrc"><i><em></em>€ 0.123</i> <span class="up">23%</span></h3>
+					<div class="links_line">
+						<div>					
+							<span class="soon">Exchange</span>
+						</div>
+						<div>
+							<a href="#">Buy</a>
+						</div>
+					</div>
+				</div>							
+			</div>
+		</div>	
+	</section>
+	<section class="exchanges_container">
+	  <h2>Buy MTRc at</h2>
+	  <div class="container">
+	
+		<div class="exchanges">
+		  <div class="row">
+			<div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+			  <span class="hidden-l" data-l="https://www.livecoin.net/" id="livecoin_btn_img"><img src='./img/new_lk/ex_livecoin.png' alt="Livecoin" class="livecoin" id="livecoin_btn_img"/></span>
+			</div>
+			<div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+			  <span class="hidden-l" data-l="https://idex.market/eth/mtrc" id="idex_btn"><img class="idex" src='./img/new_lk/ex_idex_g.png' alt="Idex" id="idex_btn_img" /></span>
+			</div>
+			<div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+			  <span class="hidden-l" data-l="https://wallet.latoken.com/market/Crypto/LA/MTRc-LA" id="latoken_btn"><img class="latoken" src='./img/new_lk/ex_latoken_g.png' alt="Latoken" id="latoken_btn_img"/></span>
+			</div>
+	
+	
+	
+		  </div>
+		</div>
+	  </div>
+	
+	</section>    
+	
+		<section id="suscribe">
+		  <div class="container">
+	
+			<h3>SUBSCRIBE FOR OUR NEWS</h3>
+			<div class="form">
+			  <form class="subscribe" id="subscribtion_form" name="subscribtion_form">
+				<div class="subscribe_complex">
+				  <label>Your email</label>
+	
+				  <input id="subscription_email" class="email" name="request[email]" required="" type="email">
+	
+				</div>
+				<div id="subscription_status" style="display: none;">Success!</div>
+			  </form>
+			</div>
+		  </div>
+		</section>
+	  </main>
 
 
-<header>
-
-  <div class="blue_line">
-    <div class="container">
-      <nav class="desktop">
-        <a href="https://modultrade.com/" target="_blank">about</a>
-        <a href="https://market.modultrade.com/" target="_blank" id='market_btn'>market</a>
-        <a href="/" class="selected">wallet</a>
-
-
-      </nav>
-
-
-      <div class="right_block">
-        <a href="http://t.me/MT_WalletSupport" target="_blank" class="help_mob" id="support_btn"><i class="chat" id="support_btn_img"></i>support
-        </a>
-        <div class="lang_container">
-          <div class="lang">
-            <em></em>
-            <span>EN</span>
-
-            <ul>
-                <li>CN</li>
-                <li>RU</li>
-                <li>IT</li>
-                <li>FR</li>
-                <li>KR</li>
-            </ul>
-          </div><!-- lang  -->
-        </div><!-- lang_container -->
-
-        <div class="clear"></div>
-      </div><!--  right_block  -->
-    </div><!-- container  -->
-    <div class="nav_mob mob">
-      <span></span>
-      <ul>
-        <li><a href="/?lang=<%= I18n.locale %>" class="selected">wallet</a>
-          <ul class="inner_menu">
-            <li class="selected"><a href="/profile/?lang=<%= I18n.locale %>">dashboard</a>
-            </li>
-            <li>You can:</li>
-            <li>
-              <a href="https://market.modultrade.com/" target="_blank" class="outerlink"><span>Trade on MT Market</span></a>
-            </li>
-            <li><a href="/send_mtrc/?lang=<%= I18n.locale %>">Send Tokens</a></li>
-            <li><a href="/receive_tokens/?lang=<%= I18n.locale %>">Receive Tokens</a></li>
-            <li><a href="/send_smc_mtrc/?lang=<%= I18n.locale %>">Pay on MT Smart-Contract</a></li>
-            <li><a href=#>Exchange Tokens</a></li>
-            <li><a href=#>Buy Tokens')</a></li>
-          </ul>
-        </li>
-        <li><a href="https://modultrade.com/" target="_blank">about company</a></li>
-        <li><a href="https://market.modultrade.com/" target="_blank">Market</a></li>
-
-      </ul>
-    </div><!-- nav_mob  -->
-  </div><!--  blue_line  -->
-  <div class="white_line desktop">
-    <div class="container">
-      <div class="row row_for_empty_hello">
-        <div class="logo_container desktop col-lg-3 col-md-3 col-sm-3">
-
-          <a href="/" class="logo"><img src="./img/new_lk/mt_logo.png"/></a></div>
-        <!--<h1 class="dashboard">Dashboard</h1>-->
-
-        <h2 class="hello fs_big empty_hello col-lg-6 col-md-6 col-sm-6">
-          Welcome to MT Wallet
-        </h2>
-
-
-        <div class="right_block_container  col-lg-3 col-md-3 col-sm-3">
-
-
-        </div><!-- right-block - container-->
-      </div>
-    </div><!-- container  -->
-  </div>
-</header>
-<div class="wrapper">
-  <main class="main">
-    <section id="main_screen">
-      <div class="container">
-        <h2 class="mob">Welcome to MT Wallet</h2>
-        <h1>Payments on blockchain<br /> for everyone</h1>
-        <a class="wrapper-sign-in" href="<%= @auth_url %>">
-          <button type="submit" form="form_signin" id="signin_btn">
-            <i id="signin_btn_img"></i>Sign In</button>
-        </a>
-        <p class="easy">EASY, SECURE & EFFECTIVE</p>
-        <a href="//<%= Rails.application.secrets.accounts_domain %>/users/sign_up?lang=<%= I18n.locale %>" class="create_wallet" id="create_wallet_btn"><i id="create_wallet_btn_img"></i>Create New Wallet
-        </a>
-
-
-      </div><!--  container -->
-    </section>
-    <section id="what_is">
-      <div class="container">
-        <h3>WHAT IS MTRC TOKEN</h3>
-        <ul class="row">
-          <li class="first col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <i></i>
-            <p>A utility token for MT Market</p>
-
-          </li>
-          <li class="second col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <i></i>
-            <p>A new instrument for value exchange with a huge potential to grow</p>
-
-          </li>
-          <li class="third col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <i></i>
-            <p>Finance in MTRc B2B trade transactions on MT Market for a fee</p>
-
-          </li>
-
-        </ul>
-
-
-      </div><!--  container -->
-    </section>
-
-
-<section class="exchanges_container">
-  <h2>Buy MTRc at</h2>
-  <div class="container">
-
-    <div class="exchanges">
-      <div class="row">
-        <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
-          <span class="hidden-l" data-l="https://www.livecoin.net/" id="livecoin_btn_img"><img src='./img/new_lk/ex_livecoin.png' alt="Livecoin" class="livecoin" id="livecoin_btn_img"/></span>
-        </div>
-        <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
-          <span class="hidden-l" data-l="https://idex.market/eth/mtrc" id="idex_btn"><img class="idex" src='./img/new_lk/ex_idex_g.png' alt="Idex" id="idex_btn_img" /></span>
-        </div>
-        <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
-          <span class="hidden-l" data-l="https://wallet.latoken.com/market/Crypto/LA/MTRc-LA" id="latoken_btn"><img class="latoken" src='./img/new_lk/ex_latoken_g.png' alt="Latoken" id="latoken_btn_img"/></span>
-        </div>
-
-
-
-      </div>
-    </div>
-  </div>
-
-</section>    
-
-    <section id="suscribe">
-      <div class="container">
-
-        <h3>SUBSCRIBE FOR UOR NEWS</h3>
-        <div class="form">
-          <form class="subscribe" id="subscribtion_form" name="subscribtion_form">
-            <div class="subscribe_complex">
-              <label>Your email</label>
-
-              <input id="subscription_email" class="email" name="request[email]" required="" type="email">
-
-            </div>
-            <div id="subscription_status" style="display: none;">Success!</div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <a href="/" class="footer_logo"><img src="./img/new_lk/mt_logo_f.png" alt=""/></a>
-        <a href="https://files.modultrade.com/wallet/MT-Wallet_UserGuide.pdf" target="blank" class="about_mt" id="user_guide_btn">MT Wallet User Guide</a>
-        <a href="https://files.modultrade.com/ModulTrade_TermsOfUse.pdf" target="blank" class="about_mt" id="terms_of_use_btn">MT Wallet Terms of Use</a>
-        <!--<a href="/docs/MT-Wallet-User-Guide.pdf" target="blank" class="about_mt">About MT Wallet</a>-->
-      </div>
-      <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 socials">
-        <a href="https://www.linkedin.com/company/16259600/" target="_blank"><i class="linkedin"></i></a>
-        <a href="https://www.facebook.com/modultrade/" target="_blank"><i class="fb"></i></a>
-        <a href="https://twitter.com/ModulTrade" target="_blank"><i class="twitter"></i></a>
-        <a href="https://angel.co/modultrade" target="_blank"><i class="icon_4"></i></a>
-        <br class="mob"/>
-        <a href="https://www.reddit.com/user/ModulTrade/" target="_blank"><i class="reddit"></i></a>
-        <a href="https://github.com/ModulTrade"><i class="github"></i></a>
-        <a href="https://www.youtube.com/channel/UCmrYHneVIDhZNnwJgHJEK5A" target="_blank"><i class="youtube"></i></a>
-        <a href="https://medium.com/@ModulTrade" target="_blank"><i class="google"></i></a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 without_padding">
-
-        <address>
-          Email:&nbsp;<a href="mailto:support@modultrade.com">support@modultrade.com</a>
-        </address>
-
-
-      </div>
-
-    </div>
-  </div>
-</footer>
-
-</div><!-- wrapper -->
-<script>
-    // BOTTOM SUBSCRIBE FORM
-    var $subscribtion_form = $("#subscribtion_form");
-    var $subscription_email = $("#subscription_email");
-    var $subscription_status = $("#subscription_status");
-
-    $subscription_email.keyup(function (e) {
-        var code = e.which;
-        if (code != 13) $subscription_status.hide();
-    });
-    var sending_in_progress = false;
-    $subscribtion_form.submit(function () {
-        if (sending_in_progress) return false;
-        var form = $subscribtion_form.serialize();
-        sending_in_progress = true;
-        $subscription_status.html("<span style='color: black;'>Sending...</span>");
-        $subscription_status.show();
-        if (!$subscription_email.val()) {
-            return $subscription_email.focus();
-        }
-        $.ajax({
-            type: "POST",
-            url: "/create_request",
-            data: form,
-            success: function () {
-                setCookie("subscription_email", document.getElementById("subscription_email").value, expiry_tiny);
-                $subscription_email.val("");
-                $subscription_status.html("<span style='color: green;'>Success!</span>");
-                $subscription_status.show();
-                dataLayer.push({'event': 'try-subscribe', 'subscribed': 'true'});
-                sending_in_progress = false;
-            },
-            error: function () {
-                $subscription_status.html("<span style='color: red;'>It seems you've already subscribed!</span>");
-                $subscription_status.show();
-                dataLayer.push({'event': 'try-subscribe', 'subscribed': 'false'});
-                sending_in_progress = false;
-            }
-        });
-        return false;
-    });
-
-
-</script>
-</body>
-</html>
+    <footer>
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		  <a href="/" class="footer_logo"><img src="./img/new_lk/mt_logo_f.png" alt=""/></a>
+		  <a href="https://files.modultrade.com/wallet/MT-Wallet_UserGuide.pdf" target="blank" class="about_mt" id="user_guide_btn">MT Wallet User Guide</a>
+		  <a href="https://files.modultrade.com/ModulTrade_TermsOfUse.pdf" target="blank" class="about_mt" id="terms_of_use_btn">MT Wallet Terms of Use</a>
+		  <!--<a href="/docs/MT-Wallet-User-Guide.pdf" target="blank" class="about_mt">About MT Wallet</a>-->
+		</div>
+		<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 socials">
+		  <a href="https://www.linkedin.com/company/16259600/" target="_blank"><i class="linkedin"></i></a>
+		  <a href="https://www.facebook.com/modultrade/" target="_blank"><i class="fb"></i></a>
+		  <a href="https://twitter.com/ModulTrade" target="_blank"><i class="twitter"></i></a>
+		  <a href="https://angel.co/modultrade" target="_blank"><i class="icon_4"></i></a>
+		  <br class="mob"/>
+		  <a href="https://www.reddit.com/user/ModulTrade/" target="_blank"><i class="reddit"></i></a>
+		  <a href="https://github.com/ModulTrade"><i class="github"></i></a>
+		  <a href="https://www.youtube.com/channel/UCmrYHneVIDhZNnwJgHJEK5A" target="_blank"><i class="youtube"></i></a>
+		  <a href="https://medium.com/@ModulTrade" target="_blank"><i class="google"></i></a>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 without_padding">
+  
+		  <address>
+			Email:&nbsp;<a href="mailto:support@modultrade.com">support@modultrade.com</a>
+		  </address>
+  
+  
+		</div>
+  
+	  </div>
+	</div>
+  </footer>
+  </div><!-- wrapper -->
+  <script>
+      // BOTTOM SUBSCRIBE FORM
+      var $subscribtion_form = $("#subscribtion_form");
+      var $subscription_email = $("#subscription_email");
+      var $subscription_status = $("#subscription_status");
+  
+      $subscription_email.keyup(function (e) {
+          var code = e.which;
+          if (code != 13) $subscription_status.hide();
+      });
+      var sending_in_progress = false;
+      $subscribtion_form.submit(function () {
+          if (sending_in_progress) return false;
+          var form = $subscribtion_form.serialize();
+          sending_in_progress = true;
+          $subscription_status.html("<span style='color: black;'>Sending...</span>");
+          $subscription_status.show();
+          if (!$subscription_email.val()) {
+              return $subscription_email.focus();
+          }
+          $.ajax({
+              type: "POST",
+              url: "/create_request",
+              data: form,
+              success: function () {
+                  setCookie("subscription_email", document.getElementById("subscription_email").value, expiry_tiny);
+                  $subscription_email.val("");
+                  $subscription_status.html("<span style='color: green;'>Success!</span>");
+                  $subscription_status.show();
+                  dataLayer.push({'event': 'try-subscribe', 'subscribed': 'true'});
+                  sending_in_progress = false;
+              },
+              error: function () {
+                  $subscription_status.html("<span style='color: red;'>It seems you've already subscribed!</span>");
+                  $subscription_status.show();
+                  dataLayer.push({'event': 'try-subscribe', 'subscribed': 'false'});
+                  sending_in_progress = false;
+              }
+          });
+          return false;
+      });
+  
+  
+  </script>
+  </body>
+  </html>

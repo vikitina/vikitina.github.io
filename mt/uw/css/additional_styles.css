@@ -1,0 +1,308 @@
+.wrapper_signin {
+  display: block;
+  width: 100%;
+}
+
+.wrapper_signin a {
+  display: block;
+  width: 100%;
+  max-width: 385px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 60px;
+  text-decoration: none;
+  font-size: 18px;
+  height: 59px;
+}
+
+.wrapper_signin a i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+
+.wrapper_signin a span {
+  display: inline-block;
+  line-height: 59px;
+  position: relative;
+  padding-left: 39px;
+}
+
+.wrapper_signin a.signin_mt i {
+  background: url(../img/new_lk/set_elements_1509/i_mt.png) no-repeat top left;
+  background-size: cover;
+}
+
+.wrapper_signin a.signin_google i {
+  background: url(../img/new_lk/set_elements_1509/i_google.png) no-repeat top left;
+  background-size: cover;
+}
+
+.create_wallet {
+  width: 385px;
+}
+
+.exchange_block {
+  padding-top: 55px;
+  background: #fff;
+  padding-bottom: 10px;
+}
+
+.exchange_block h2 {
+  text-align: center;
+  color: #122874;
+  margin-bottom: -3px;
+  font-weight: bold;
+}
+
+.exchange_block p {
+  text-align: center;
+  color: #1798d6;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.exchange_block p .ext_link {
+  padding-right: 18px;
+  background: url(../img/new_lk/set_elements_1509/ext_link.png) no-repeat right 6px;
+  border-bottom: 1px solid #1798d6;
+  display: inline-block;
+  line-height: 24px;
+}
+
+.exchange_block .exchange_trio {
+  width: 100%;
+  display: block;
+}
+
+.exchange_block .exchange_trio .exchange_item {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #e9ecfb;
+  border-radius: 10px;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 {
+  border-bottom: 1px solid #e9ecfb;
+  font-weight: normal;
+  color: #1798d6;
+  height: 80px;
+  line-height: 78px;
+  margin: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 i {
+  font-style: normal;
+  display: inline-block;
+  padding-left: 37px;
+  position: relative;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 i em {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: #1798d6;
+  border-radius: 50%;
+  margin-top: -15px;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 i em::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  background-size: cover;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 span {
+  margin-left: 6px;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  padding-left: 16px;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 span::before {
+  content: "";
+  width: 12px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  background-size: cover;
+  margin-top: -14px;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 .down {
+  color: #c83a3a;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 .down::before {
+  background: url(../img/new_lk/set_elements_1509/down.png) no-repeat top left;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 .up {
+  color: #1c7f3c;
+}
+
+.exchange_block .exchange_trio .exchange_item h3 .up::before {
+  background: url(../img/new_lk/set_elements_1509/up.png) no-repeat top left;
+}
+
+.exchange_block .exchange_trio .exchange_item h3.btc i em::before {
+  background: #1798d6 url(../img/new_lk/set_elements_1509/BTC.svg) no-repeat center center;
+}
+
+.exchange_block .exchange_trio .exchange_item h3.eth i em::before {
+  background: #1798d6 url(../img/new_lk/set_elements_1509/ETH.svg) no-repeat center center;
+}
+
+.exchange_block .exchange_trio .exchange_item h3.mtrc i em::before {
+  background: #1798d6 url(../img/new_lk/set_elements_1509/MTRc.svg) no-repeat center center;
+}
+
+.exchange_block .exchange_trio .exchange_item .links_line {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  height: 59px;
+  line-height: 52px;
+  font-size: 19px;
+}
+
+.exchange_block .exchange_trio .exchange_item .links_line div {
+  width: 50%;
+  text-align: center;
+}
+
+.exchange_block .exchange_trio .exchange_item .links_line div a {
+  text-decoration: underline;
+}
+
+.exchange_block .exchange_trio .exchange_item .links_line div span {
+  color: #8994ba;
+}
+
+.exchange_block .exchange_trio .exchange_item .links_line div span.soon {
+  padding-right: 40px;
+  position: relative;
+}
+
+.exchange_block .exchange_trio .exchange_item .links_line div span.soon::after {
+  content: "soon";
+  background: #122874;
+  color: #d0d4e4;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 6px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  display: inline-block;
+  height: auto;
+  line-height: 13px;
+}
+
+.exchange_block .exchange_trio .exchange_item .links_line div:last-child {
+  border-left: 1px solid #e9ecfb;
+}
+
+.exchanges_container {
+  margin-bottom: 0px;
+  padding-top: 31px;
+}
+
+.exchanges span {
+  display: block;
+  text-align: center;
+  background: #e6eafa;
+  border-radius: 10px;
+  height: 90px;
+  padding-top: 27px;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.exchanges_container h2 {
+  border-bottom: none;
+}
+
+#idex_btn_img {
+  width: 138px;
+}
+
+#latoken_btn_img {
+  width: 186px;
+}
+
+@media (min-width: 850px) {
+  .wrapper_signin {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+
+  .wrapper_signin a {
+    display: inline-block;
+    width: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin: unset;
+    margin-bottom: 0px;
+  }
+
+  .exchange_block {
+    background: #fff;
+  }
+
+  .exchange_block h2 {
+    text-align: center;
+  }
+
+  .exchange_block p {
+    text-align: center;
+  }
+
+  .exchange_block .exchange_trio {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .exchange_block .exchange_trio .exchange_item {
+    width: 30%;
+  }
+}
