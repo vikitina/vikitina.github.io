@@ -45,7 +45,8 @@
 }
 
 .create_wallet {
-  width: 385px;
+  max-width: 385px;
+  width: 100%;
 }
 
 .exchange_block {
@@ -74,6 +75,10 @@
   border-bottom: 1px solid #1798d6;
   display: inline-block;
   line-height: 24px;
+}
+
+.exchange_block p .ext_link:hover {
+  text-decoration: none;
 }
 
 .exchange_block .exchange_trio {
@@ -234,7 +239,7 @@
 }
 
 .exchanges_container {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   padding-top: 31px;
 }
 
@@ -254,11 +259,32 @@
 }
 
 #idex_btn_img {
-  width: 138px;
+  max-width: 138px;
+  width: 80%;
 }
 
 #latoken_btn_img {
-  width: 186px;
+  max-width: 186px;
+  width: 80%;
+}
+
+.livecoin {
+  max-width: 267px;
+  width: 80%;
+}
+
+.exchange_block_container {
+  margin-bottom: 30px;
+}
+
+#what_is {
+  background: #122874;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.main {
+  background: #fff;
 }
 
 @media (min-width: 850px) {

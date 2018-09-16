@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ModulTrade</title>
+  <link href="favicon.ico" rel="icon">
+  <meta name="format-detection" content="telephone=no">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link href="./css/magnific-popup.css" rel="stylesheet" />
+<link href="./css/font-awesome.css" rel="stylesheet" />
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link href="./css/datepicker.css" rel="stylesheet" />
+<link href="./css/style_wallet.css" rel="stylesheet" />
+<link href="./css/responsive.css" rel="stylesheet" />
+<link href="./css/custom.css" rel="stylesheet" />
+<link href="./css/application.css" rel="stylesheet" />
+<link href="./css/additional_styles.css" rel="stylesheet" />
+
+<script type="text/javascript" async="" src="./js/popper.min.js"></script>
+<script type="text/javascript" async="" src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" async="" src="./js/script_new_wallet.js"></script>
+<script type="text/javascript" async="" src="./js/datepicker.min.js"></script>
+
+  
+</head>
+<body>
+  <header>
+
+        <div class="blue_line">
+          <div class="container">
+            <nav class="desktop">
+              <a href="https://modultrade.com/" target="_blank">About</a>
+              <a href="https://academy.modultrade.com/" target="_blank">Academy</a>
+              <a href="https://market.modultrade.com/" target="_blank">Market</a>
+              <a href="/?lang=<%= I18n.locale %>" class="selected">Wallet</a>
+              <a href="/exchange?lang=<%= I18n.locale %>">Exchange tokens</a>     
+            </nav>
+      
+      
+            <div class="right_block">
+      
+              <a href="http://t.me/MT_WalletSupport" target="_blank" class="help_mob" id="support_btn"><i class="chat" id="support_btn_img"></i>support</a>
+              <div class="lang_container">
+                <div class="lang">
+                  <em></em>
+                  <span>EN</span>
+              
+                  <ul>
+                    <li ></li>
+                    <li>RU</li>
+                    <li>IT</li>
+                    <li>FR</li>
+                    <li>KR</li>
+                  </ul>
+                </div><!-- lang  -->
+                </div><!-- lang_container  -->
+             
+                <div class="persona_mob mob">
+                  <em></em>
+                  <div class="img"><img src="/img/new_lk/no_userpic.png" alt=""/></div>
+                  <div class="popup">
+                    <div class="name_block">
+                      <div class="img_p"><img src="/img/new_lk/no_userpic_big.png" alt=""/></div>
+                      <div class="name_p">
+                            <span>
+                                John Smith
+                            </span>
+                        <!--<i>Private wallet</i>-->
+                      </div>
+      
+                      <div class="clear"></div>
+                    </div><!--  name_block -->
+      
+                    <div class="btns_line">
+                      <a href="<%= edit_user_registration_path(domain: Rails.application.secrets.accounts_domain, lang: I18n.locale) %>" class="edit_profile">edit profile</a>
+                      <a href="<%= Rails.application.secrets.oauth_provider %>/users/sign_out/?lang=<%= I18n.locale %>" class="logout btn-logout">logout</a>
+                    </div><!-- btns_line  -->
+      
+                    <div class="block">
+      
+
+                    </div><!-- block   -->
+      
+      
+                  </div><!-- popup  -->
+                  <div class="clear"></div>
+                </div><!--  persona  -->
+              
+              <div class="clear"></div>
+            </div><!--  right_block  -->
+          </div><!-- container  -->
+          <div class="nav_mob mob">
+            <span></span>
+            <ul>
+              <li><a href="/?lang=<%= I18n.locale %>" class="selected"><%== t('dashboard_menu.wallet') %></a>
+                <ul class="inner_menu">
+                  <li class="selected"><a href="/profile/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.dashboard') %></a></li>
+                  <li><%= t('dashboard_menu.you_can') %>:</li>
+                  <li>
+                    <a href="https://market.modultrade.com/" target="_blank" class="outerlink"><span><%= t('dashboard_menu.trade_on_market') %></span></a>
+                  </li>
+                  <li><a href="/send_mtrc/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.send_tokens') %></a></li>
+                  <li><a href="/receive_tokens/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.receive_tokens') %></a></li>
+                  <li><a href="/send_smc_mtrc/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.pay_on_smc') %></a></li>
+                  <li><a><%= t('dashboard_menu.exchange_tokens') %></a></li>
+                  <li><a><%= t('dashboard_menu.buy_sell_tokens') %></a></li>
+                </ul>
+              </li>
+              <li><a href="https://modultrade.com/" target="_blank"><%= t('dashboard_menu.about_company') %></a></li>
+              <li><a href="https://market.modultrade.com/" target="_blank"><%= t('dashboard_menu.market') %></a></li>
+              <% if false %>
+                <li><a href="https://academy.modultrade.com/news/" target="_blank"><%= t('main_menu.blog') %></a></li>
+              <% end %>
+              <li><a href="https://academy.modultrade.com/" target="_blank"><%= t('main_menu.academy') %></a></li>
+
+            </ul>
+          </div><!-- nav_mob  -->
+        </div><!--  blue_line  -->
+        <div class="white_line desktop">
+          <div class="container">
+            <div class="row">
+              <div class="logo_container desktop col-lg-3 col-md-3 col-sm-3">
+                <a href="/?lang=<%= I18n.locale %>" class="logo"><img src="/img/new_lk/mt_logo.png"/></a>
+              </div>
+              <!--<h1 class="dashboard">Dashboard</h1>-->
+              
+                <h2 class="hello fs_big col-lg-6 col-md-6 col-sm-6">
+                  <span class="spec" data-hj-suppress="">
+
+                         Hello,&nbsp;John 
+                
+                    <em> </em></span>
+                  <div class="in_your_wallet">
+                    <div class="in_your_wallet__inner_text">
+                      In Your Wallet
+                    </div>
+                      <div class="inner_menu_trigger">
+                          <i></i>
+                          <ul class="inner_menu">
+                                 <li class="selected"><a href=# class="main_link"><a href="/profile/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.dashboard') %></a></li>
+                                 <li><%= t('dashboard_menu.you_can') %>:</li>
+                                 <li>
+                                     <a href="https://market.modultrade.com/" target="_blank" class="outerlink"><span><%= t('dashboard_menu.trade_on_market') %></span></a>
+                                 </li>
+                                 <li><a href='/send_mtrc/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.send_tokens') %></a></li>
+                                 <li><a href='/receive_tokens/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.receive_tokens') %></a></li>
+                                 <li><a href='/send_smc_mtrc/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.pay_on_smc') %></a></li>
+                                 <li><a><%= t('dashboard_menu.exchange_tokens') %></a></li>
+                                 <li><a><%= t('dashboard_menu.buy_sell_tokens') %></a></li>
+      
+                          </ul>
+                      </div>
+                </div>
+                </h2>
+             
+      
+              <div class="right_block_container  col-lg-3 col-md-3 col-sm-3">
+
+              
+                  <div class="persona">
+                    <em></em>
+                    <div class="img"><img src="/img/new_lk/no_userpic.png" alt=""/></div>
+                    <div class="name desktop">
+                                        <span data-hj-suppress="">
+                                         John Smith
+                                          </span><em></em>
+      
+                    </div><!--  name -->
+                    <div class="popup">
+                      <div class="name_block">
+                        <div class="img_p"><img src="/img/new_lk/no_userpic_big.png" alt=""/></div>
+                        <div class="name_p">
+                        <em></em>
+                          <span data-hj-suppress="">John Smith</span>
+                          <!--<i>Private wallet</i>-->
+                        </div>
+      
+                        <div class="clear"></div>
+                      </div><!--  name_block -->
+      
+                      <div class="btns_line">
+                        <a href="<%= edit_user_registration_path(domain: Rails.application.secrets.accounts_domain, lang: I18n.locale) %>" class="edit_profile">edit_profile</a>
+                        <a href="<%= Rails.application.secrets.oauth_provider %>/users/sign_out/?lang=<%= I18n.locale %>&redirect_after=<%= CGI::escape(destroy_user_session_url)%>" class="logout btn-logout">logout</a>
+                      </div><!-- btns_line  -->
+      
+                      <div class="block">
+                      
+                      </div><!-- block   -->
+      
+      
+                    </div><!-- popup  -->
+                    <div class="clear"></div>
+                  </div><!--  persona  -->
+               
+              </div><!-- right-block - container-->
+            </div>
+          </div><!-- container  -->
+        </div>
+      </header>
+  <div class="wrapper">
+    
+<main>
+    <div class="container">
+    
+    
+    <h2 class="hello fs_big mob">
+            Hello,&nbsp;John!
+      <br/>In Your Wallet... </h2>
+  
+         
+    <div class="wallet_block row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="w_block">
+          <h3>You Have
+            <!-- <i id="refreshBalance" class="fa fa-refresh refrash-my"></i> <i class="reload mob"></i> -->
+            <img id="refreshBalance" class="refrash-my" src="https://wallet.modultrade.com/images/balance_refresh_static.png" alt="Balance refresh static">
+            <i class="reload mob"></i> 
+          </h3>
+
+          <ul class="list_of_currencies">
+            <li class="mtrc">
+               <span class="sum" id="mtrc-balance">
+                <i></i>
+                <span id="mtrcBalance" title="1000">1000</span>
+                </span>
+              <em></em>
+              <ul class="local_menu">
+                <li><a href="/send_mtrc/?lang=<%= I18n.locale %>"><%== t('dashboard.send') %> MTRc</a></li>
+                <li><a href="/receive_mtrc/?lang=<%= I18n.locale %>"><%== t('dashboard.receive') %> MTRc</a></li>
+                <!--<li><a href="">Update balance</a></li>-->
+                <li><a href="/history_mtrc/?lang=<%= I18n.locale %>"><%== t('dashboard.transaction_history') %></a></li>
+                <li><a href="/send_mtrc/?lang=<%= I18n.locale %>&repeat=1"><%== t('dashboard.send_repeat') %></a></li>
+                <li><a href="/exchange-fiat/?lang=<%= I18n.locale %>&currency=mtrc">Buy MTRc using Card</a></li>
+              </ul>
+            </li>
+            <li class="eth">
+                <span class="sum" id="eth-balance">
+                    <i></i>
+                    <span id="ethBalance" title="123">123</span>
+                </span>
+              <em></em>
+              <ul class="local_menu">
+                <li><a href="/send_eth/?lang=<%= I18n.locale %>"><%== t('dashboard.send') %> ETH</a></li>
+                <li><a href="/receive_eth/?lang=<%= I18n.locale %>"><%== t('dashboard.receive') %> ETH</a></li>
+                <!--<li><a href="">Update balance</a></li>-->
+                <li><a href="/history_eth/?lang=<%= I18n.locale %>"><%== t('dashboard.transaction_history') %></a></li>
+                <li><a href="/send_eth/?lang=<%= I18n.locale %>&repeat=1"><%== t('dashboard.send_repeat') %></a></li>
+                <li><a href="/exchange-fiat/?lang=<%= I18n.locale %>&currency=eth"><%== t('dashboard.buy_eth') %></a></li>
+              </ul>
+            </li>
+            <li class="btc">
+                <span class="sum" id="btc-balance">
+                    <i></i>
+                    <span id="btcBalance" title="432">432</span>
+                </span>
+              <em></em>
+              <ul class="local_menu">
+                <li><a href="/send_btc/?lang=<%= I18n.locale %>"><%== t('dashboard.send') %> BTC</a></li>
+                <li><a href="/receive_btc/?lang=<%= I18n.locale %>"><%== t('dashboard.receive') %> BTC</a></li>
+                <!--<li><a href="">Update balance</a></li>-->
+                <li><a href="/history_btc/?lang=<%= I18n.locale %>"><%== t('dashboard.transaction_history') %></a></li>
+                <li><a href="/send_btc/?lang=<%= I18n.locale %>&repeat=1"><%== t('dashboard.send_repeat') %></a></li>
+                <li><a href="/exchange-fiat/?lang=<%= I18n.locale %>&currency=btc"><%== t('dashboard.buy_btc') %></a></li>
+              </ul>
+          </ul>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <style>
+      .wallet_block .w_block .you_can .soon::after{content:"soon";}
+      </style>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="w_block">
+          <h3>You Can</h3>
+          <div class="you_can">
+            <div class="row sky_block">
+              <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+                <a href="/send_mtrc/?lang=<%= I18n.locale %>" class="send_tokens sky" id="send_tokens_btn"><i id="send_tokens_btn_img"></i><span class="send_tokens_gtm" id="send_tokens_btn_txt">Send<br class="desktop"> <b class="desktop">Tokens</b></span></a>
+              </div>
+              <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 r'>
+                <a href="/receive_tokens/?lang=<%= I18n.locale %>" class="sky receive_token" id="receive_tokens_btn"><i id="receive_tokens_btn_img"></i><span class="receive_tokens_gtm" id="receive_tokens_btn_txt">Receive<br class="desktop"> <b class="desktop">Tokens</b></span></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+                <a href="/send_smc_mtrc/?lang=<%= I18n.locale %>" class="blue payonsmc"><i></i><br class="desktop"/><span>Pay on MT<br class="desktop"> Smart-<br class="desktop">Contract</span></a>
+              </div>
+              <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+                <a href="/exchange" class="blue exchangetoken" id="exchange_tokens_btn"><i id="exchange_tokens_btn_img"></i><br class="desktop"/><span class="exchange_tokens_gtm" id="exchange_tokens_btn_txt">Exchange<br class="desktop"> Tokens</span></a>
+              </div>
+              <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+                <a href="<%= exchange_fiat_path %>" class="blue buyselltokens"><i></i><br class="desktop"/><span>Buy Tokens (€)</span></a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+      </div>
+    </div><!-- row -->
+
+    <div class="youtrade_container">
+      <a href="https://market.modultrade.com" target="_blank" class="you_trade" id="youtrade_btn"><span class="trade_on_mt" id="youtrade_btn_txt"><i class="case" id="youtrade_btn_img"></i>Trade on Mt Market</span></a>
+    </div>
+    
+    <div class="exchange_block_container">
+        <section class="exchange_block">
+            <div class="container">
+                <h2>Exchange BTC/ETH/MTRc and Buy with Credit Card</h2>
+                <p>Medium exchange rate on <a href="#" class="ext_link">MT Exchange</a> as of 07/09/2018 at 00:01</p>
+                <div class="exchange_trio">
+                    <div class="exchange_item">
+                        <h3 class="btc"><i><em></em>€ 6,400.00</i> <span class="down">1%</span></h3>
+                        <div class="links_line">
+                            <div>
+                                <a href="#">Exchange</a>
+                            </div>
+                            <div>
+                                <a href="#">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exchange_item">
+                        <h3 class="eth"><i><em></em>€ 180.00</i> <span class="down">1.2%</span></h3>
+                        <div class="links_line">
+                            <div>
+                                <a href="#">Exchange</a>
+                            </div>
+                            <div>
+                                <a href="#">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exchange_item">
+                        <h3 class="mtrc"><i><em></em>€ 0.123</i> <span class="up">23%</span></h3>
+                        <div class="links_line">
+                            <div>					
+                                <span class="soon">Exchange</span>
+                            </div>
+                            <div>
+                                <a href="#">Buy</a>
+                            </div>
+                        </div>
+                    </div>							
+                </div>
+            </div>	
+        </section>           
+    </div>    
+    
+    <div class="exchanges_container">
+      <h2>Buy MTRc at</h2>
+      <div class="container">
+    
+        <div class="exchanges">
+          <div class="row">
+            <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+              <a href="https://www.livecoin.net/" target="_blank" id="livecoin_btn_img"><img src='/img/new_lk/ex_livecoin.png' alt="Livecoin" class="livecoin" id="livecoin_btn_img"/></a>
+            </div>
+            <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+              <a href="https://idex.market/eth/mtrc" target="_blank" id="idex_btn"><img class="idex" src='/img/new_lk/ex_idex.png' alt="Idex" id="idex_btn_img" /></a>
+            </div>
+            <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+              <a href="https://wallet.latoken.com/market/Crypto/LA/MTRc-LA" target="_blank" id="latoken_btn"><img class="latoken" src='/img/new_lk/ex_latoken.png' alt="Latoken" id="latoken_btn_img"/></a>
+            </div>
+
+    
+    
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+    
+            $('.referral-link__link').mouseover(function () {
+                if (!$('.referral-link').hasClass('referral-link__copied')) {
+                    $('.referral-link').addClass('referral-link__over');
+                }
+                ;
+            });
+            $('.referral-link__link').mouseout(function () {
+    
+                $('.referral-link').removeClass('referral-link__over');
+            });
+            $('.referral-link__link').click(function () {
+    
+                $('.referral-link').addClass('referral-link__copied').removeClass('referral-link__over');
+                copyToClipboard(document.getElementById("referral_link_val"));
+    
+    
+            });
+    
+    
+            function copyToClipboard(elem) {
+                // create hidden text element, if it doesn't already exist
+                var targetId = "_hiddenCopyText_";
+                var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+                var origSelectionStart, origSelectionEnd;
+                if (isInput) {
+                    // can just use the original source element for the selection and copy
+                    target = elem;
+                    origSelectionStart = elem.selectionStart;
+                    origSelectionEnd = elem.selectionEnd;
+                } else {
+                    // must use a temporary form element for the selection and copy
+                    target = document.getElementById(targetId);
+                    if (!target) {
+                        var target = document.createElement("textarea");
+                        target.style.position = "absolute";
+                        target.style.left = "-9999px";
+                        target.style.top = "0";
+                        target.id = targetId;
+                        document.body.appendChild(target);
+                    }
+                    target.textContent = elem.textContent;
+                }
+                // select the content
+                var currentFocus = document.activeElement;
+                target.focus();
+                target.setSelectionRange(0, target.value.length);
+    
+                // copy the selection
+                var succeed;
+                try {
+                    succeed = document.execCommand("copy");
+                } catch (e) {
+                    succeed = false;
+                }
+                // restore original focus
+                if (currentFocus && typeof currentFocus.focus === "function") {
+                    currentFocus.focus();
+                }
+    
+                if (isInput) {
+                    // restore prior selection
+                    elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+                } else {
+                    // clear temporary content
+                    target.textContent = "";
+                }
+                return succeed;
+            }
+        });
+    </script>
+    
+    <script type="text/javascript" charset="utf-8">
+        var $refreshBalance = $('#refreshBalance');
+        $refreshBalance.on('click', function () {
+            var currencies = ['btc', 'eth', 'mtrc'];
+            var currency_count = currencies.length
+    
+          try {
+            currencies.forEach(function (currency) {
+                var url = '/refresh_' + currency + '_balance';
+                var idSelector = '#' + currency + 'Balance';
+                $('#refreshBalance').attr("src", "/images/balance_refresh_spinner.png");
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},                
+                    success: function (data) {
+                        $(idSelector).text(data['data']['balance_crop']);
+                        $(idSelector).attr('title', data['data']['balance']);
+                        
+                        currency_count--;
+                        if (currency_count == 0) {
+                          $('#refreshBalance').attr("src", "/images/balance_refresh_static.png");
+                        }
+                    },
+                    error: function (jqXHR, exception) {
+                        var msg = '';
+                        if (jqXHR.status === 0) {
+                            msg = 'Not connect.\n Verify Network.';
+                        } else if (jqXHR.status == 404) {
+                            msg = 'Requested page not found. [404]';
+                        } else if (jqXHR.status == 500) {
+                            msg = 'Internal Server Error [500].';
+                        } else if (exception === 'parsererror') {
+                            msg = 'Requested JSON parse failed.';
+                        } else if (exception === 'timeout') {
+                            msg = 'Time out error.';
+                        } else if (exception === 'abort') {
+                            msg = 'Ajax request aborted.';
+                        } else {
+                            msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                        }
+    
+                        currency_count--;
+                        if (currency_count == 0) {
+                          $('#refreshBalance').attr("src", "/images/balance_refresh_static.png");
+                        }
+                        alert(msg);                 
+                    },
+                });
+            });
+          } 
+          catch (e) {
+              console.log(e);
+          }             
+        });
+       
+    
+    </script>
+    
+        </div><!--  container -->
+      </main>
+
+
+    <footer>
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		  <a href="/" class="footer_logo"><img src="./img/new_lk/mt_logo_f.png" alt=""/></a>
+		  <a href="https://files.modultrade.com/wallet/MT-Wallet_UserGuide.pdf" target="blank" class="about_mt" id="user_guide_btn">MT Wallet User Guide</a>
+		  <a href="https://files.modultrade.com/ModulTrade_TermsOfUse.pdf" target="blank" class="about_mt" id="terms_of_use_btn">MT Wallet Terms of Use</a>
+		  <!--<a href="/docs/MT-Wallet-User-Guide.pdf" target="blank" class="about_mt">About MT Wallet</a>-->
+		</div>
+		<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 socials">
+		  <a href="https://www.linkedin.com/company/16259600/" target="_blank"><i class="linkedin"></i></a>
+		  <a href="https://www.facebook.com/modultrade/" target="_blank"><i class="fb"></i></a>
+		  <a href="https://twitter.com/ModulTrade" target="_blank"><i class="twitter"></i></a>
+		  <a href="https://angel.co/modultrade" target="_blank"><i class="icon_4"></i></a>
+		  <br class="mob"/>
+		  <a href="https://www.reddit.com/user/ModulTrade/" target="_blank"><i class="reddit"></i></a>
+		  <a href="https://github.com/ModulTrade"><i class="github"></i></a>
+		  <a href="https://www.youtube.com/channel/UCmrYHneVIDhZNnwJgHJEK5A" target="_blank"><i class="youtube"></i></a>
+		  <a href="https://medium.com/@ModulTrade" target="_blank"><i class="google"></i></a>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 without_padding">
+  
+		  <address>
+			Email:&nbsp;<a href="mailto:support@modultrade.com">support@modultrade.com</a>
+		  </address>
+  
+  
+		</div>
+  
+	  </div>
+	</div>
+  </footer>
+  </div><!-- wrapper -->
+  <script>
+      // BOTTOM SUBSCRIBE FORM
+      var $subscribtion_form = $("#subscribtion_form");
+      var $subscription_email = $("#subscription_email");
+      var $subscription_status = $("#subscription_status");
+  
+      $subscription_email.keyup(function (e) {
+          var code = e.which;
+          if (code != 13) $subscription_status.hide();
+      });
+      var sending_in_progress = false;
+      $subscribtion_form.submit(function () {
+          if (sending_in_progress) return false;
+          var form = $subscribtion_form.serialize();
+          sending_in_progress = true;
+          $subscription_status.html("<span style='color: black;'>Sending...</span>");
+          $subscription_status.show();
+          if (!$subscription_email.val()) {
+              return $subscription_email.focus();
+          }
+          $.ajax({
+              type: "POST",
+              url: "/create_request",
+              data: form,
+              success: function () {
+                  setCookie("subscription_email", document.getElementById("subscription_email").value, expiry_tiny);
+                  $subscription_email.val("");
+                  $subscription_status.html("<span style='color: green;'>Success!</span>");
+                  $subscription_status.show();
+                  dataLayer.push({'event': 'try-subscribe', 'subscribed': 'true'});
+                  sending_in_progress = false;
+              },
+              error: function () {
+                  $subscription_status.html("<span style='color: red;'>It seems you've already subscribed!</span>");
+                  $subscription_status.show();
+                  dataLayer.push({'event': 'try-subscribe', 'subscribed': 'false'});
+                  sending_in_progress = false;
+              }
+          });
+          return false;
+      });
+  
+  
+  </script>
+  </body>
+  </html>
