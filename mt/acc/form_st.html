@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ModulTrade</title>
+  <link href="favicon.ico" rel="icon">
+  <meta name="format-detection" content="telephone=no">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link href="./css/magnific-popup.css" rel="stylesheet" />
+<link href="./css/font-awesome.css" rel="stylesheet" />
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link href="./css/datepicker.css" rel="stylesheet" />
+<link href="./css/style_wallet.css" rel="stylesheet" />
+<link href="./css/style_wallet_2.css" rel="stylesheet" />
+<link href="./css/responsive.css" rel="stylesheet" />
+<link href="./css/responsive_2.css" rel="stylesheet" />
+<link href="./css/custom.css" rel="stylesheet" />
+<link href="./css/application.css" rel="stylesheet" />
+<link href="./css/additional_styles.css" rel="stylesheet" />
+<link href="./css/requests_list_styles.css" rel="stylesheet" />
+
+
+
+
+  
+</head>
+<body>
+  <header>
+
+	<div class="blue_line">
+	  <div class="container">
+		<nav class="desktop">
+		  <a href="https://modultrade.com/" target="_blank">about</a>
+		  <a href="https://market.modultrade.com/" target="_blank" id='market_btn'>market</a>
+		  <a href="/" class="selected">wallet</a>
+  
+  
+		</nav>
+  
+  
+		<div class="right_block">
+		  <a href="http://t.me/MT_WalletSupport" target="_blank" class="help_mob" id="support_btn"><i class="chat" id="support_btn_img"></i>support
+		  </a>
+		  <div class="lang_container">
+			<div class="lang">
+			  <em></em>
+			  <span>EN</span>
+  
+			  <ul>
+				  <li>CN</li>
+				  <li>RU</li>
+				  <li>IT</li>
+				  <li>FR</li>
+				  <li>KR</li>
+			  </ul>
+			</div><!-- lang  -->
+		  </div><!-- lang_container -->
+  
+		  <div class="clear"></div>
+		</div><!--  right_block  -->
+	  </div><!-- container  -->
+	  <div class="nav_mob mob">
+		<span></span>
+		<ul>
+		  <li><a href="/?lang=<%= I18n.locale %>" class="selected">wallet</a>
+			<ul class="inner_menu">
+			  <li class="selected"><a href="/profile/?lang=<%= I18n.locale %>">dashboard</a>
+			  </li>
+			  <li>You can:</li>
+			  <li>
+				<a href="https://market.modultrade.com/" target="_blank" class="outerlink"><span>Trade on MT Market</span></a>
+			  </li>
+			  <li><a href="/send_mtrc/?lang=<%= I18n.locale %>">Send Tokens</a></li>
+			  <li><a href="/receive_tokens/?lang=<%= I18n.locale %>">Receive Tokens</a></li>
+			  <li><a href="/send_smc_mtrc/?lang=<%= I18n.locale %>">Pay on MT Smart-Contract</a></li>
+			  <li><a href=#>Exchange Tokens</a></li>
+			  <li><a href=#>Buy Tokens')</a></li>
+			</ul>
+		  </li>
+		  <li><a href="https://modultrade.com/" target="_blank">about company</a></li>
+		  <li><a href="https://market.modultrade.com/" target="_blank">Market</a></li>
+  
+		</ul>
+	  </div><!-- nav_mob  -->
+	</div><!--  blue_line  -->
+	<div class="white_line desktop">
+	  <div class="container">
+		<div class="row row_for_empty_hello">
+		  <div class="logo_container desktop col-lg-3 col-md-3 col-sm-3">
+  
+			<a href="/" class="logo"><img src="./img/new_lk/mt_logo.png"/></a></div>
+		  <!--<h1 class="dashboard">Dashboard</h1>-->
+  
+		  <h2 class="hello fs_big empty_hello col-lg-6 col-md-6 col-sm-6">
+			Welcome to MT Wallet
+		  </h2>
+  
+  
+		  <div class="right_block_container  col-lg-3 col-md-3 col-sm-3">
+  
+  
+		  </div><!-- right-block - container-->
+		</div>
+	  </div><!-- container  -->
+	</div>
+  </header>
+  <div class="wrapper">
+    
+<main class="account inner_account">
+  	<div class="container">
+		<h1>John's MT Account</h1>
+		<div class="tabs_block">
+			<div class="active_tab">
+				<span>Verification</span><i></i>
+			</div>
+			<ul>
+				<li><a href="/users/edit?page=user_profile">User Profile</a></li>
+				<li><a href="/users/edit?page=trade_profile">Trade Profile</a></li>
+				<li class="active"><a href="/">Verification</a></li>
+				<li><a href="/2fa">Settings</a></li>
+				<li><a href="/">API</a></li>
+			</ul>
+		</div>
+		<div class="tabs_container">
+			<div class="form_kys_block">
+				<h3>New KYS-request</h3>
+				<div class="form form_kys">
+					<form action="">
+						<ul>
+							<li>
+								<label>First name</label>
+								<div class="form_input">
+									<input type="text" class="required_elem" />
+								</div>						
+							</li>
+							<li>
+								<label>Last name</label>
+								<div class="form_input">
+									<input type="text" class="required_elem" />
+								</div>
+							</li>
+							<li>
+								<label>Nationality</label>
+								<div class="form_input form_input_select">
+									<i></i>
+							  		<select>
+									  	<option>Russian</option>
+									  	<option>American</option>
+							  		</select>
+								</div>														
+							</li>
+							<li>
+								<label>Country of Residence</label>
+								<div class="form_input">
+									<input type="text" class="required_elem" />
+								</div>
+							</li>
+							<li>
+								<label for="">Gender</label>
+								<div class="radio_switcher">
+									<input type="hidden" name="gender"  class="required_elem" />
+									<div data-type="male"><i class="checked"></i><i></i><span>Male</span></div>
+									<div data-type="female"><i class="checked"></i><i></i><span>Female</span></div>
+								</div><!--  radio_switcher  -->
+							</li>
+							<li class="calendar_block">
+								<label>Birthday*</label>
+								<div class="form_input">
+									<em><i class="calendar"></i></em>
+									<input type="text" data-toggle="datepicker"  class="required_elem" />
+								</div>
+							</li> 
+							<li>
+								<label for="">Passport scan-copy (jpg, pdf, png)</label>
+								<div class="multiple_elems_sys" data-max="7">
+									<div class="multiple_elems_block">
+										<div class="form_input choose_file multiple_elems">
+											<input name="passport_scan" type="file"  class="required_elem" />
+											<div class="choose_btn">Choose...</div>
+											<input type="text" readonly />
+											<span></span>
+										</div>	
+									</div>
+									<div class="multiple_btn_block">
+										<span class="btn_add">Add new file<em></em></span>
+										<i>Up to 7 files</i>
+									</div>
+								</div>							
+
+							</li>	
+							<li>
+								<label for="">Photo or selfie with passport (jpg, pdf, png)</label>
+								<div class="multiple_elems_sys" data-max="2">
+									<div class="multiple_elems_block">
+										<div class="form_input choose_file multiple_elems">
+											<input name="passport_scan" type="file" class="required_elem" />
+											<div class="choose_btn">Choose...</div>
+											<input type="text" readonly />
+											<span></span>
+										</div>	
+									</div>
+									<div class="multiple_btn_block">
+										<span class="btn_add">Add new file<em></em></span>
+										<i>Up to 2 files</i>
+									</div>
+								</div>							
+
+							</li>
+							<li>
+								<div class="submit">
+									<button type="submit" disabled="true">Send request</button>
+								</div>
+							</li>																					
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+  	</div>
+</main>
+
+
+    <footer>
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		  <a href="/" class="footer_logo"><img src="./img/new_lk/mt_logo_f.png" alt=""/></a>
+		  <a href="https://files.modultrade.com/wallet/MT-Wallet_UserGuide.pdf" target="blank" class="about_mt" id="user_guide_btn">MT Wallet User Guide</a>
+		  <a href="https://files.modultrade.com/ModulTrade_TermsOfUse.pdf" target="blank" class="about_mt" id="terms_of_use_btn">MT Wallet Terms of Use</a>
+		  <!--<a href="/docs/MT-Wallet-User-Guide.pdf" target="blank" class="about_mt">About MT Wallet</a>-->
+		</div>
+		<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 socials">
+		  <a href="https://www.linkedin.com/company/16259600/" target="_blank"><i class="linkedin"></i></a>
+		  <a href="https://www.facebook.com/modultrade/" target="_blank"><i class="fb"></i></a>
+		  <a href="https://twitter.com/ModulTrade" target="_blank"><i class="twitter"></i></a>
+		  <a href="https://angel.co/modultrade" target="_blank"><i class="icon_4"></i></a>
+		  <br class="mob"/>
+		  <a href="https://www.reddit.com/user/ModulTrade/" target="_blank"><i class="reddit"></i></a>
+		  <a href="https://github.com/ModulTrade"><i class="github"></i></a>
+		  <a href="https://www.youtube.com/channel/UCmrYHneVIDhZNnwJgHJEK5A" target="_blank"><i class="youtube"></i></a>
+		  <a href="https://medium.com/@ModulTrade" target="_blank"><i class="google"></i></a>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 without_padding">
+  
+		  <address>
+			Email:&nbsp;<a href="mailto:support@modultrade.com">support@modultrade.com</a>
+		  </address>
+  
+  
+		</div>
+  
+	  </div>
+	</div>
+  </footer>
+  </div><!-- wrapper -->
+		
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="./js/popper.min.js"></script>
+    <script type="text/javascript" async="" src="./js/script_new_wallet.js"></script>
+    <script type="text/javascript" async="" src="./js/datepicker.min.js"></script>  
+    <script type="text/javascript" async="" src="./js/requests_list_script.js"></script>
+    
+    
+ 
+  </body>
+  </html>
