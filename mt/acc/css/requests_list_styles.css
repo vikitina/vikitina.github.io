@@ -74,7 +74,6 @@
 
 .form_kys_block .form_kys form ul li .choose_file {
   position: relative;
-  margin-bottom: 15px;
 }
 
 .form_kys_block .form_kys form ul li .choose_file span {
@@ -158,6 +157,10 @@
   display: block;
 }
 
+.form_kys_block .form_kys form ul li .multiple_elems {
+  margin-bottom: 15px;
+}
+
 .form_kys_block .form_kys form ul li .multiple_btn_block {
   margin-top: 10px;
 }
@@ -215,7 +218,8 @@
   font-size: 14px;
   padding: 0;
   margin: 0;
-  margin-top: 7px;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .form_kys_block .form_kys form ul .st_wrong .form_input,
@@ -251,6 +255,11 @@
 
 .form_kys_block .form_kys form ul .multiple_elems::after {
   top: 0;
+}
+
+.form_kys_block .form_kys form ul .multiple_elems::after .st_message {
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .form_kys_block .form_kys form ul .st_ok::after {
