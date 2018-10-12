@@ -205,6 +205,9 @@
 
 .form_kys_block .form_kys form ul .st {
   position: relative;
+  padding-right: 40px;
+  width: unset;
+  display: block;
 }
 
 .form_kys_block .form_kys form ul .st .st_message {
@@ -240,7 +243,7 @@
   width: 30px;
   height: 30px;
   content: "";
-  right: -40px;
+  right: 0px;
   top: 32px;
   display: block;
   border-radius: 50%;
@@ -601,7 +604,11 @@
     left: 100%;
     top: 36px;
     width: 90%;
-    padding-left: 50px;
+    padding-left: 18px;
     margin-top: 0;
+  }
+
+  .form_kys_block .form_kys form ul .multiple_elems .st_message {
+    top: 0;
   }
 }
