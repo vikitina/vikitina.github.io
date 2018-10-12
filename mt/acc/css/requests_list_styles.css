@@ -1,7 +1,22 @@
+.tabs_container {
+  position: relative;
+}
+
+.tabs_container .btn_back {
+  width: 49px;
+  height: 49px;
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  background: url(../img/set_for_requests/btn_back.png) no-repeat top left;
+}
+
 .form_kys_block {
   width: 95%;
   margin: 0 auto;
   max-width: 370px;
+  position: relative;
 }
 
 .form_kys_block h3 {
@@ -186,6 +201,69 @@
 .form_kys_block .form_kys form ul li .submit button:disabled {
   background-image: -webkit-linear-gradient(left, #8ccceb, #8cb5de);
   background-image: linear-gradient(left, #8ccceb, #8cb5de);
+}
+
+.form_kys_block .form_kys form ul .st {
+  position: relative;
+}
+
+.form_kys_block .form_kys form ul .st .st_message {
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  margin-top: 7px;
+}
+
+.form_kys_block .form_kys form ul .st_wrong .form_input,
+.form_kys_block .form_kys form ul .st_wrong .choose_btn,
+.form_kys_block .form_kys form ul .st_wrong em {
+  border-color: #a36061 !important;
+}
+
+.form_kys_block .form_kys form ul .st_wrong .st_message {
+  color: #a36061;
+}
+
+.form_kys_block .form_kys form ul .st_warning .form_input,
+.form_kys_block .form_kys form ul .st_warning .choose_btn,
+.form_kys_block .form_kys form ul .st_warning em {
+  border-color: #ddaa42 !important;
+}
+
+.form_kys_block .form_kys form ul .st_warning .st_message {
+  color: #ddaa42;
+}
+
+.form_kys_block .form_kys form ul .st::after {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  content: "";
+  right: -40px;
+  top: 32px;
+  display: block;
+  border-radius: 50%;
+}
+
+.form_kys_block .form_kys form ul .st_ok::after {
+  background: #5aaf36 url(../img/set_for_requests/st_ok.png) no-repeat center center;
+}
+
+.form_kys_block .form_kys form ul .st_wrong::after {
+  background: #bd5a5b url(../img/set_for_requests/st_wrong.png) no-repeat center center;
+}
+
+.form_kys_block .form_kys form ul .st_warning::after {
+  background: #d18c00 url(../img/set_for_requests/st_warning.png) no-repeat center 5px;
+}
+
+.form_kys_block .form_kys form ul .calendar_block {
+  width: 100%;
+}
+
+.form_kys_block .form_kys form ul .calendar_block .form_input {
+  width: 50%;
 }
 
 .form_kys_block .form_kys form ul .calendar_block .form_input input {
@@ -510,5 +588,16 @@
 
   .verification_request_block .verification_request_list .body_list ul li dl dd.opened .spec_btn {
     display: inline-block;
+  }
+}
+
+@media (min-width: 900px) {
+  .form_kys_block .form_kys form ul .st .st_message {
+    position: absolute;
+    left: 100%;
+    top: 36px;
+    width: 90%;
+    padding-left: 50px;
+    margin-top: 0;
   }
 }
