@@ -246,6 +246,10 @@
   border-radius: 50%;
 }
 
+.form_kys_block .form_kys form ul .multiple_elems::after {
+  top: 0;
+}
+
 .form_kys_block .form_kys form ul .st_ok::after {
   background: #5aaf36 url(../img/set_for_requests/st_ok.png) no-repeat center center;
 }

@@ -36,7 +36,7 @@ $(function(){
     });
 
     $('.multiple_btn_block .btn_add').click(function(){
-        var elem = '<div class="form_input choose_file multiple_elems"><input name="passport_scan" type="file"><div class="choose_btn">Choose...</div><input type="text" readonly /><span></span></div>';
+        var elem = '<div class="multiple_elems"><div class="form_input choose_file"><input name="passport_scan" type="file"><div class="choose_btn">Choose...</div><input type="text" readonly /><span></span></div></div>';
         var limit = $(this).parents('.multiple_elems_sys').data("max") * 1;
         if( $(this).parents('.multiple_elems_sys').find('.multiple_elems_block .multiple_elems').length < limit ){
             $(this).parents('.multiple_elems_sys').find('.multiple_elems_block').append(elem);
