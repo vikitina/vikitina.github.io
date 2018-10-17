@@ -1,0 +1,321 @@
+@media (min-width: 768px) and (max-width: 900px) {
+
+  header .white_line .logo img{max-width: 100%;}
+  h2.hello.fs_big{font-size:20px;margin-top: 20px;}
+  h2.hello span.spec{height:25px;}
+  // .inner_menu_trigger{top:27px;margin-right:-127px;}
+
+  .wallet_block .w_block .you_can .sky{margin-bottom: 19px;height: 94px;padding-top: 24px;}
+  .send_tokens i{height: 47px;width: 48px;margin-bottom: -6px;background-size:cover;}
+  .receive_token i{height: 47px;width: 48px;margin-bottom: -6px;background-size:cover;}
+  .wallet_block .w_block .you_can .sky span{font-size:16px;}
+
+  .wallet_block .w_block .you_can .row > div{padding-left:7px;padding-right:7px;}
+  .payonsmc i{background-size: cover;width:35px;height:38px;}
+  .exchangetoken i{background-size: cover;width:41px;height:38px;}
+  .buyselltokens i{background-size: cover;width:41px;height:35px;}
+
+  .wallet_block .w_block .you_can .blue{padding-top: 29px;}
+  .wallet_block .w_block .you_can .blue span{font-size:16px;margin-top: 10px;}
+
+  .wallet_block .w_block h3{font-size: 20px;}
+
+  .wallet_block .w_block .list_of_currencies li{height: 110px;}
+  .wallet_block .w_block .list_of_currencies li .sum::before{top: 40px;font-size: 20px;}
+
+  .exchanges_container h2{font-size:20px;font-weight:bold;}
+
+
+  .exchanges a .idex{width:60%;}
+  .exchanges a .latoken{width: 70%;}
+  .exchanges a .livecoin{width: 80%;}
+
+  .exchanges a{box-shadow: 0 8px 17px -6px black;height: 74px;padding-top: 19px;}
+
+  .you_trade span{font-size: 25px;padding-left: 133px;}
+  .you_trade i.case{width: 54px;top: -7px;height: 43px;background-size: cover;}
+
+  footer .socials br.mob{display:block !important;}
+  footer .socials{text-align: center;}
+  footer .socials a:last-child {margin-right: 8px;}
+
+
+  .footer_logo{width:100%;}
+  .footer_logo img{max-width:100%;}
+
+  footer address{margin-top: 8px;}
+
+  header .white_line .right_block_container .persona .name span{width:104px;}
+}
+/*---------------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .desktop{display: none !important;}
+  .mob{display: block !important;}
+  header {height:50px;}
+  header .blue_line .nav_mob{position:absolute;top: 10px;left: 10px;}
+  header .blue_line .nav_mob > span{cursor:pointer;border:1px solid #1798d6;border-radius:30px;width:30px;height:30px;background:url(/img/new_lk/mob_menu_btn.png) no-repeat center center;display:block;z-index:1000;}
+  header .blue_line .nav_mob > ul{display:none;position:fixed;margin:0;padding:0;list-style:none;width:100%;height:100%;background:#f2f5fe;z-index:-1;left: 0px;padding-top: 50px;top:0}
+  header .blue_line .nav_mob > ul > li{border-bottom: 1px solid #dce2f8;}
+  header .blue_line .nav_mob > ul > li > a{color:#708090;text-decoration:none;display:block;padding-left:25px;text-transform:uppercase;padding-top:15px;padding-bottom:15px;}
+  header .blue_line .nav_mob > ul > li > a.selected{background:#fff;}
+  header .blue_line .nav_mob_opened > ul{display:block;height:100%;overflow:auto;}
+
+  header .blue_line .nav_mob .inner_menu{list-style:none;margin:0;padding:0;border-top: 1px solid #dce2f8;}
+  header .blue_line .nav_mob .inner_menu li{color:#708090;border-bottom:1px solid #dce2f8;text-align:left;font-size:14px;padding-left:50px;padding-right:15px;padding-top:15px;padding-bottom:15px;}
+  header .blue_line .nav_mob .inner_menu li:last-child{border-bottom:none;}
+  header .blue_line .nav_mob .inner_menu li a{font-weight:normal;color:#708090;display:block;padding-left:25px;}
+  header .blue_line .nav_mob .inner_menu li a.main_link{}
+  header .blue_line .nav_mob .inner_menu li a:hover{text-decoration:none;color:#708090;}
+  header .blue_line .nav_mob .inner_menu li.selected {color:#1798d6;}
+  header .blue_line .nav_mob .inner_menu li.selected a{padding-left:0;}
+  header .blue_line .nav_mob .inner_menu li a.outerlink span{position:relative;display:inline-block;}
+  header .blue_line .nav_mob .inner_menu li a.outerlink span::after{content:" ";position:absolute;right: -30px;top:0; width:20px;height:20px;background:url(/img/new_lk/outer_link.png) no-repeat top left;}
+
+
+  header .blue_line .container .right_block .help_mob i {width:16px;height:13px;position:absolute;display:block;top:7px;left:7px;background:url(/img/new_lk/i_chat.png) no-repeat left center;}
+  header .blue_line .container .right_block .lang{display:inline-block;top: 0px;}
+
+  header .white_line {height: 50px;}
+  header .white_line h1.dashboard {text-align: left;padding-top: 13px;padding-left: 51px;display: table-cell;background: url(/img/new_lk/bg_dashboard_title.png) no-repeat left center;font-size: 20px;}
+  .wrapper {}
+  main > .container{margin-top: 50px;}
+  main{background:#e6eafa url(/img/new_lk/bg_breadcrumbs.png) repeat-x left 50px;}
+  main .breadcrumbs_bot{bottom:50px;}
+  main .breadcrumbs{display:none;}
+
+
+  footer{height:auto;text-align:center;padding-bottom:100px;}
+
+  footer .about_mt{margin-top:16px;}
+  footer address{width: 80%;margin: 40px auto 0;}
+  footer p{color: #1798d6;}
+  .socials{padding-top:40px;padding-left: 23px;}
+  .socials a:last-child{margin-right: 8px}
+
+  .centered_block_w{width:100%;}
+  .centered_block_w .form{width:86%;}
+  .form form ul li.submit .form_submit button{width:100%;height:65px;}
+
+
+  h2.hello {margin: 0 auto;margin-top: 7px;width: 80%;padding-bottom:20px;}
+  .inner_menu_trigger{right:50%;margin-right: -15px;bottom: 0;top:unset;}
+  .inner_menu_trigger ul {width: 300px;top: 30px;right: -150px;}
+
+  .сalculator_container .calculator_block { width: 100%;}
+  .calculator_block ul li.left::after {
+    position: absolute;
+    background: #1798d6 url(/img/new_lk/calc_exchange.png) no-repeat center center;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    content: " ";
+    right: 50%;
+    top: unset;
+    box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.2);
+    bottom: -42px;
+    transform: rotate(90deg);
+    margin-right: -15px;
+  }
+  .calculator_block ul li.left {
+
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 26px;
+
+  }
+  .calculator_block ul li {
+
+    padding-left: 15px;
+
+  }
+  .low_row .right {text-align: left;}
+  .low_row > div{margin-bottom:20px;}
+
+
+  .persona_mob{display:inline-block !important;position:relative;cursor:pointer;}
+  .persona_mob em{display:none;width:11px;height:7px;position:absolute;right:-8px;top:16px;background:url(/img/new_lk/triangle_w.png) no-repeat left top;}
+  .persona_mob_open em{background-position:left bottom;}
+  .persona_mob .img{width:31px;height:31px;display:inline-block;float:left;margin-right: 8px;margin-top: 0;}
+  .persona_mob .img img{max-width:100%;}
+  .persona_mob .name{display:inline-block;float:right;text-align:left;margin-right: 16px;}
+  .persona_mob .name span{display:block;font-size:14px;color:#1798d6;width:120px;overflow:hidden;}
+  .persona_mob .name i{display:block;color:#071545;font-size:14px;font-style: normal;margin-top: -3px;}
+  .persona_mob .popup{display:none;position:absolute;top: 40px;right: 0;width: 253px;background: #f3f5fd;box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.4);}
+  .persona_mob_open .popup{display:block;}
+  .persona_mob .popup .name_block{text-align:left;margin-top:13px;margin-bottom: 16px;}
+  .persona_mob .popup .name_block .img_p{float:left;margin-left: 33px;margin-right: 10px;margin-top: -13px;}
+  .persona_mob .popup .name_p .img_p img{}
+  .persona_mob .popup .name_block .name_p{margin-top: 26px;}
+  .persona_mob .popup .name_block .name_p span{display:block;margin-bottom:-3px;}
+  .persona_mob .popup .name_block .name_p i{display:block;font-style: normal;}
+  .persona_mob .popup .btns_line{text-align:center;padding-left: 21px;margin-bottom: 15px;}
+  .persona_mob .popup .btns_line a{box-shadow: 5px 5px 3px rgba(0, 0 ,0, 0.4);font-size:16px;display:inline-block;padding-left:15px;padding-right:15px;padding-top:4px;padding-bottom:4px;border-radius:15px;}
+  .persona_mob .popup .btns_line a:hover{text-decoration:none;}
+  .persona_mob .popup .edit_profile{background:#1798d6;color:#fff;margin-right:10px;}
+  .persona_mob .popup .logout{background:#fff;color:#708090;}
+  .persona_mob .popup .block{padding-top:10px;padding-bottom:10px;border-top:1px solid #ccc;text-align:left;padding-left:33px;}
+  .persona_mob .popup .block a{color:#708090;font-size:18px;}
+  .persona_mob .popup .block a:hover{text-decoration:none;}
+
+  .sign_mob{margin-right: 8px;display:inline-block !important;background: url(/img/new_lk/alarm_sign.png) no-repeat center center;width:16px; height:20px;}
+
+  .right_block{}
+  .right_block .sign_mob{float:left;margin-top:7px;margin-right: 15px;}
+  .right_block .persona_mob{float:left;}
+  .right_block .help_mob{float:left;margin-right: 11px;}
+  header .blue_line .container .right_block {right: 11px;}
+
+  h2.hello{font-size:20px;margin-bottom:0px;padding-bottom:0;margin-top: 12px;}
+  h1{font-size:20px;margin-top:20px;}
+
+
+  .form form ul li.submit .pay_sm_contract button{font-size:14px;background: #1798d6;position:relative;width: 100%;height: 59px;padding-left:0;padding-right:0;padding-bottom: 5px;}
+  .form form ul li.submit .pay_sm_contract{position:relative}
+
+  .form form ul li.submit .pay_sm_contract button .i_pay_on_sc {width: 27px;height: 27px;margin-right: 7px;top: 10px;}
+
+  .form form .myprofile_submit_block .input_block {padding-right: 0;}
+
+  main {background: #e6eafa;}
+  main > .container::before{content:" ";width:100%;height:1px;top:0;left:0;display: block;}
+  .form form ul li.submit .pay_sm_contract input {padding-left: 47px;padding-right: 18px;position:relative;}
+
+  .form form ul li.with_right_text .elements_container { width: 100%;}
+  .form form ul li.with_right_text p{width: 100%;padding-top: 11px;}
+
+  .complex_container {height: 48px;}
+  .complex_container .form_select select {font-size: 12px;}
+  .complex_container .form_select::after{width: 12px;height: 6px;background-size:cover;}
+  .form_input {height: 48px;}
+  .form form ul li.with_right_text .elements_container .complex_container .form_select {padding-right: 23px;padding-top: 12px;}
+  .form form ul li.with_right_text .elements_container .complex_container .form_select::after {top: 23px;right: 8px;}
+
+  .persona_mob .popup .name_block .img_p {margin-left: 0;margin-right: 0;width: 100%;text-align: center;}
+  .persona_mob .popup .name_block .name_p {text-align: center;}
+
+  body.fixed{overflow-y:hidden;}
+
+  .form form .expert_feature ul li{width:100%;}
+
+  .input-group .input-group-btn button{height: 48px;}
+  .dropdown-toggle::after {font-size: 28px;top: 23px;right: 7px;}
+  .input-group .input-group-btn ul{left: unset !important;right: -17px !important;}
+
+  .wallet_block .w_block .you_can .blue {height: 56px;margin-bottom: 20px;padding-top: 17px; padding-left: 5%;text-align: left;}
+  .blue i {    background-size: cover;height: 17px;margin-bottom: -3px;margin-right: 4%;width: 15px;}
+  .exchangetoken i{width: 18px;}
+  .buyselltokens i{height: 15px;width: 18px;}
+  .wallet_block .w_block .you_can .sky {height: 62px;margin-bottom: 19px;text-align: center;padding-top: 13px;}
+  .wallet_block .w_block .you_can .sky span {font-size: 18px;}
+  .wallet_block .w_block .you_can .blue span{font-size: 16px;}
+  .sky i {background-size: cover;width: 34px;height: 34px;margin-bottom: -10px;margin-right: 6px;background-size: cover;}
+  .wallet_block .w_block .you_can .soon::after {display: inline-block;line-height: 12px;margin-left: 6px;position: unset;top: -3px;}
+
+
+  .youtrade_container{background:none;margin-bottom: 0;padding-bottom: 22px;padding-top: 0;}
+  .you_trade {width:100%;}
+  .you_trade span {font-size: 20px;position: relative;display: inline-block;line-height: 16px;padding-left: 43px;text-align: left;}
+  .you_trade i.case {display: inline-block;height: 37px;left: -8px;top: -13px;width: 44px;background-size: cover;}
+  .wallet_block .w_block .you_can {padding-left: 15px;padding-right: 15px;padding-top: 17px;}
+  h2 {font-size: 20px;}
+
+  .wallet_block .w_block .list_of_currencies li .sum::before {font-size: 20px;left: 64px;top: 7px;}
+  .wallet_block .w_block .list_of_currencies li .sum {padding-left: 64px;padding-right: 25px;padding-top: 23px;text-align: left;}
+  .wallet_block .w_block .list_of_currencies li .sum i{background-size: cover !important;width:40px;height:40px;}
+  .wallet_block .w_block .list_of_currencies li {height:82px;}
+  .wallet_block .w_block h3 {font-size:20px;}
+  .wallet_block .w_block .list_of_currencies li em {height: 35px;right: 18px;top: 25px;width: 8px;}
+
+  .sky_block > div{width:50%;    padding-left: 15px;padding-right: 7px;}
+  .sky_block > div.r{padding-left: 7px;padding-right:15px;}
+
+  .confirm-transaction_block h3 {font-size: 20px;}
+  .confirm-transaction_block .confirm_address {margin-top: 5px;}
+  .confirm-transaction_block .confirm_address b {font-size: 13px;}
+  .confirm-transaction_block .btns_row .send {font-size: 20px;}
+  .radio_group span.toggle_radio {margin-right: 5px;}
+
+  .create_wallet{width:100%;}
+  #suscribe .form { max-width: unset;width: 100%;}
+  #main_screen .framed_block {max-width: unset;width: 100%;border:none;}
+  .form_framed {width: 100%;}
+
+  .form form ul li.submit .form_submit button.signup {font-size: 18px;line-height: 25px;}
+  .form form ul li.agree label {padding-top: 0;}
+  .form form ul li.submit .form_submit input{font-size: 20px;}
+
+  .livecoin {width: 205px;}
+
+  #main_screen{margin-top:60px;}
+  #main_screen h2{color:#fff; font-size:20px;font-weight: bold;padding-top:47px;text-transform: uppercase;}
+  #main_screen .container h1{font-size:20px;padding-top: 25px;margin-bottom: 12px;}
+  .form_framed form ul li .input_block{height:50px;}
+  .form_framed form ul li.submit .form_submit button{font-size:20px;}
+  .form_framed form ul li.agree_with_right_link .form__foggot_link {
+    float: none;
+    margin-top: 17px;
+    text-align: center;
+    width: 100%;
+  }
+  .form_framed form ul li.agree_with_right_link label {
+    float: none;
+    width: auto;
+  }
+  .easy{font-size:20px;}
+  #what_is h3 {font-size: 20px;}
+  #what_is ul {margin-top: 25px;}
+  #what_is ul li i {margin-bottom:19px;}
+  #what_is ul li p{margin-bottom:43px;}
+  #what_is {margin-top: 43px;}
+  .form_framed form ul li.submit .form_submit button i{    height: 28px;
+    left: 50%;
+    margin-left: -51px;
+    position: absolute;
+    top: 12px;
+    width: 28px;}
+  .create_wallet i{margin-left:0;position: unset;width: 26px;height: 22px;display: inline-block;margin-bottom: -5px; margin-right: 10px;}
+  .create_wallet{font-size:17px;padding-left:0; padding-top: 16px;}
+  main h3{font-size:20px;}
+
+
+  .btns_row .send{font-size: 20px;width:92%;}
+  .btns_row > div {width: 41%;}
+  .btns_row > div.c {width: 58%;}
+
+  .wallet_address {font-size: 11px;}
+  .wallet_address_for_history{font-size:11px;}
+  .table_block ul li.header .amount{display:none;}
+  .table_block ul li.header .address{display:none;}
+  .table_block ul li.header .transaction{display:none;}
+  .table_block ul li.header .status{display:none;}
+  .table_block ul li.header .comment{display:none;}
+  .table_block ul li > div {float: none;width:100% !important;text-align: left !important;}
+  .table_block ul li .address{width:100% !important;margin-right:0;}
+  .table_block ul li .transaction{width:100% !important;margin-right:0;}
+
+  .table_block ul li.header .only_button_input-group-btn .dropdown-toggle::after{ right: 89px;}
+
+  .notice-transaction {width:100%;max-width: unset;}
+
+  .wrapper{display:block;height:auto;}
+  main{display:block;height:auto;padding-bottom:36px;}
+
+  .for_submit_block {margin-top: 0;width:100%;text-align:center;}
+
+  header .blue_line .container .right_block .help_mob{padding-left: 26px;padding-right: 8px;margin-right: 9px;}
+
+  .centered_block_g {width: 100%;margin-bottom: 35px;}
+  .btn_green_back {padding-top: 9px;padding-right: 20px;padding-left: 22px;padding-right: 37px;margin-bottom: 42px;margin-top: 16px;padding-bottom: 12px;}
+  .btn_green_back i {width: 19px;height: 16px;margin-right: 8px;}
+  .btn_green_back span {font-size: 20px;font-weight: normal;}
+  .btn_green_back span{font-size: 20px;font-weight:normal;}
+  .centered_block_g p {font-size: 20px;margin-bottom: 24px;line-height: 24px;}
+  .centered_block_g a.transaction_address {font-size: 12px;}
+  .centered_block_g p.main_text {font-size: 20px;}
+
+  h1.green { margin-top: 20px;}
+
+}
+    
