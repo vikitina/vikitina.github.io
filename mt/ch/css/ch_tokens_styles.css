@@ -111,6 +111,10 @@
   color: #39a8dc;
 }
 
+.bg_market h2.hello {
+  color: #fff;
+}
+
 footer .block_ex {
   text-align: center;
   max-width: unset;
