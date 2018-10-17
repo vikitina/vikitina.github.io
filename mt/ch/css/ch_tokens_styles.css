@@ -1,5 +1,5 @@
 .bg_market {
-  background: url(../img/new_lk/ch_tokens_set/bg_market.png) no-repeat top center;
+  background: url(../img/new_lk/ch_tokens_set/bg_market.jpg) no-repeat top center;
   background-size: cover;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .exchange_tokens_block .form form ul li.submit {
-  margin-top: 0;
+  margin-top: 20;
 }
 
 .exchange_tokens_block .elements_container p a {
@@ -58,6 +58,8 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 19px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .exchange_tokens_block .description_block .info {
@@ -111,8 +113,8 @@
 
 footer .block_ex {
   text-align: center;
-  max-width: 340px;
-  margin: 0 auto;
+  max-width: unset;
+  margin: o auto;
   margin-top: 30px;
 }
 
@@ -125,6 +127,10 @@ footer .block_ex p {
 footer .block_ex p span {
   display: inline-block;
   padding-right: 20px;
+}
+
+footer .block_ex p:last-child {
+  margin-right: 0;
 }
 
 footer .block_ex p.up span {
@@ -140,6 +146,12 @@ footer .block_ex p.down span {
 }
 
 @media (min-width: 760px) {
+  footer .block_ex {
+    margin: unset;
+    margin-top: 30px;
+    max-width: 340px;
+  }
+
   .exchange_tokens_block .elements_container {
     width: 46%;
     float: left;
