@@ -223,6 +223,124 @@ footer .block_ex p.down span {
   color: #233318;
 }
 
+.table_block {
+  padding-top: 7px;
+}
+
+.table_block ul {
+  float: none;
+}
+
+.table_block ul li {
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+
+.table_block ul li > div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left !important;
+  margin-bottom: 6px;
+}
+
+.table_block ul li > div .mob_title {
+  display: inline-block;
+  color: #37a5db;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.table_block ul li .status,
+.table_block ul li .amount {
+  text-align: left !important;
+}
+
+.table_block ul li .date {
+  float: left;
+  color: #122874;
+  width: auto !important;
+}
+
+.table_block ul li .date .mob_title {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.table_block ul li .time {
+  float: left;
+  color: #122874;
+  margin-left: 10px;
+  width: auto !important;
+}
+
+.table_block ul li .in_amount {
+  color: #559d37;
+  font-weight: bold;
+}
+
+.table_block ul li .out_amount {
+  color: #c83a3a;
+  font-weight: bold;
+}
+
+.table_block ul li .paid {
+  color: #5aaf36;
+  font-weight: bold;
+}
+
+.table_block ul li .pending {
+  font-style: italic;
+  color: #606468;
+}
+
+.table_block ul li .edit {
+  float: right;
+}
+
+.table_block ul li .edit a {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(../img/new_lk/ch_tokens_set/pencil.png) no-repeat top left;
+}
+
+.table_block ul li .edit a:hover {
+  text-decoration: none;
+}
+
+.table_block ul li.rejected_line .date {
+  color: #909abe;
+}
+
+.table_block ul li.rejected_line .time {
+  color: #909abe;
+}
+
+.table_block ul li.rejected_line .out_amount {
+  color: #e49d9d;
+}
+
+.table_block ul li.rejected_line .in_amount {
+  color: #add09e;
+}
+
+.table_block ul li.rejected_line .transaction {
+  text-decoration: none;
+}
+
+.table_block ul li.rejected_line .status {
+  color: #c83a3a;
+  font-weight: bold;
+}
+
+.table_block ul li.rejected_line .address {
+  color: #9ea7c6;
+}
+
+.table_block ul li.header {
+  display: none;
+}
+
 @media (min-width: 760px) {
   footer .block_ex {
     margin: unset;
@@ -255,5 +373,151 @@ footer .block_ex p.down span {
 
   .exchange_tokens_block .description_block .c:last-child {
     float: right;
+  }
+
+  .table_block {
+    padding-top: 7px;
+  }
+
+  .table_block ul {
+    float: left;
+  }
+
+  .table_block ul li {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .table_block ul li > div {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+
+  .table_block ul li > div .mob_title {
+    display: none;
+  }
+
+  .table_block ul li .date {
+    text-align: left !important;
+    width: 7% !important;
+  }
+
+  .table_block ul li .date .mob_title {
+    display: none;
+  }
+
+  .table_block ul li .time {
+    width: 6% !important;
+    color: #122874;
+  }
+
+  .table_block ul li .amount {
+    width: 9%;
+    padding-right: 0%;
+    text-align: right !important;
+    margin-right: 0;
+  }
+
+  .table_block ul li .in_amount {
+    width: 8%;
+    font-weight: bold;
+  }
+
+  .table_block ul li .out_amount {
+    font-weight: bold;
+  }
+
+  .table_block ul li .address {
+    width: 5%;
+    text-align: left !important;
+    padding-left: 1%;
+    margin-right: 0;
+    color: #122874;
+    text-decoration: underline;
+  }
+
+  .table_block ul li .transaction {
+    width: 14%;
+    margin-right: 0%;
+    padding-left: 1%;
+  }
+
+  .table_block ul li .status {
+    width: 5%;
+    margin-right: 0;
+    text-align: left !important;
+  }
+
+  .table_block ul li .status_in {
+    padding-left: 1%;
+    width: 6%;
+  }
+
+  .table_block ul li .exchange_rate {
+    width: 6%;
+    text-align: left !important;
+  }
+
+  .table_block ul li.header {
+    font-size: 13px;
+    padding-left: 2%;
+    display: block;
+  }
+
+  .table_block ul li.header > div {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    height: 30px;
+  }
+
+  .table_block ul li.header .date_and_time {
+    padding-left: 0;
+    width: 13%;
+    text-align: left !important;
+    position: relative;
+    padding-left: 15px;
+  }
+
+  .table_block ul li.header .date_and_time i {
+    position: absolute;
+    left: 0;
+    top: 7px;
+  }
+
+  .table_block ul li.header .amount {
+    padding: 0;
+    margin: 0;
+    width: 9%;
+    text-align: right !important;
+  }
+
+  .table_block ul li.header .address {
+    text-align: left !important;
+    width: 5%;
+    padding-left: 1%;
+    margin-right: 0;
+  }
+
+  .table_block ul li.header .transaction {
+    text-align: left !important;
+    width: 14%;
+    margin-right: 0;
+    padding-left: 1%;
+  }
+
+  .table_block ul li.header .status {
+    margin-right: 0;
+    text-align: left !important;
+    padding-left: 0;
+  }
+
+  .table_block ul li.header .amount_to {
+    width: 8%;
   }
 }

@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ModulTrade</title>
+  <link href="favicon.ico" rel="icon">
+  <meta name="format-detection" content="telephone=no">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link href="./css/magnific-popup.css" rel="stylesheet" />
+<link href="./css/font-awesome.css" rel="stylesheet" />
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link href="./css/datepicker.css" rel="stylesheet" />
+<link href="./css/style_wallet.css" rel="stylesheet" />
+<link href="./css/responsive.css" rel="stylesheet" />
+<link href="./css/custom.css" rel="stylesheet" />
+<link href="./css/application.css" rel="stylesheet" />
+<link href="./css/additional_styles.css" rel="stylesheet" />
+<link href="./css/exchange_tokens.css" rel="stylesheet" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" async="" src="./js/script_new_wallet.js"></script>
+  <script type="text/javascript" async="" src="./js/datepicker.min.js"></script>  
+
+
+</head>
+<body>
+  <header>
+
+        <div class="blue_line">
+          <div class="container">
+            <nav class="desktop">
+              <a href="https://modultrade.com/" target="_blank">About</a>
+              <a href="https://academy.modultrade.com/" target="_blank">Academy</a>
+              <a href="https://market.modultrade.com/" target="_blank">Market</a>
+              <a href="/?lang=<%= I18n.locale %>" class="selected">Wallet</a>
+              <a href="/exchange?lang=<%= I18n.locale %>">Exchange tokens</a>     
+            </nav>
+      
+      
+            <div class="right_block">
+      
+              <a href="http://t.me/MT_WalletSupport" target="_blank" class="help_mob" id="support_btn"><i class="chat" id="support_btn_img"></i>support</a>
+              <div class="lang_container">
+                <div class="lang">
+                  <em></em>
+                  <span>EN</span>
+              
+                  <ul>
+                    <li ></li>
+                    <li>RU</li>
+                    <li>IT</li>
+                    <li>FR</li>
+                    <li>KR</li>
+                  </ul>
+                </div><!-- lang  -->
+                </div><!-- lang_container  -->
+             
+                <div class="persona_mob mob">
+                  <em></em>
+                  <div class="img"><img src="./img/new_lk/no_userpic.png" alt=""/></div>
+                  <div class="popup">
+                    <div class="name_block">
+                      <div class="img_p"><img src="./img/new_lk/no_userpic_big.png" alt=""/></div>
+                      <div class="name_p">
+                            <span>
+                                John Smith
+                            </span>
+                        <!--<i>Private wallet</i>-->
+                      </div>
+      
+                      <div class="clear"></div>
+                    </div><!--  name_block -->
+      
+                    <div class="btns_line">
+                      <a href="<%= edit_user_registration_path(domain: Rails.application.secrets.accounts_domain, lang: I18n.locale) %>" class="edit_profile">edit profile</a>
+                      <a href="<%= Rails.application.secrets.oauth_provider %>/users/sign_out/?lang=<%= I18n.locale %>" class="logout btn-logout">logout</a>
+                    </div><!-- btns_line  -->
+      
+                    <div class="block">
+      
+
+                    </div><!-- block   -->
+      
+      
+                  </div><!-- popup  -->
+                  <div class="clear"></div>
+                </div><!--  persona  -->
+              
+              <div class="clear"></div>
+            </div><!--  right_block  -->
+          </div><!-- container  -->
+          <div class="nav_mob mob">
+            <span></span>
+            <ul>
+              <li><a href="/?lang=<%= I18n.locale %>" class="selected"><%== t('dashboard_menu.wallet') %></a>
+                <ul class="inner_menu">
+                  <li class="selected"><a href="/profile/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.dashboard') %></a></li>
+                  <li><%= t('dashboard_menu.you_can') %>:</li>
+                  <li>
+                    <a href="https://market.modultrade.com/" target="_blank" class="outerlink"><span><%= t('dashboard_menu.trade_on_market') %></span></a>
+                  </li>
+                  <li><a href="/send_mtrc/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.send_tokens') %></a></li>
+                  <li><a href="/receive_tokens/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.receive_tokens') %></a></li>
+                  <li><a href="/send_smc_mtrc/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.pay_on_smc') %></a></li>
+                  <li><a><%= t('dashboard_menu.exchange_tokens') %></a></li>
+                  <li><a><%= t('dashboard_menu.buy_sell_tokens') %></a></li>
+                </ul>
+              </li>
+              <li><a href="https://modultrade.com/" target="_blank"><%= t('dashboard_menu.about_company') %></a></li>
+              <li><a href="https://market.modultrade.com/" target="_blank"><%= t('dashboard_menu.market') %></a></li>
+              <% if false %>
+                <li><a href="https://academy.modultrade.com/news/" target="_blank"><%= t('main_menu.blog') %></a></li>
+              <% end %>
+              <li><a href="https://academy.modultrade.com/" target="_blank"><%= t('main_menu.academy') %></a></li>
+
+            </ul>
+          </div><!-- nav_mob  -->
+        </div><!--  blue_line  -->
+        <div class="white_line desktop">
+          <div class="container">
+            <div class="row">
+              <div class="logo_container desktop col-lg-3 col-md-3 col-sm-3">
+                <a href="/?lang=<%= I18n.locale %>" class="logo"><img src="./img/new_lk/mt_logo.png"/></a>
+              </div>
+              <!--<h1 class="dashboard">Dashboard</h1>-->
+              
+                <h2 class="hello fs_big col-lg-6 col-md-6 col-sm-6">
+                  <span class="spec" data-hj-suppress="">
+
+                         Hello,&nbsp;John 
+                
+                    <em> </em></span>
+                  <div class="in_your_wallet">
+                    <div class="in_your_wallet__inner_text">
+                      In Your Wallet
+                    </div>
+                      <div class="inner_menu_trigger">
+                          <i></i>
+                          <ul class="inner_menu">
+                                 <li class="selected"><a href=# class="main_link"><a href="/profile/?lang=<%= I18n.locale %>"><%= t('dashboard_menu.dashboard') %></a></li>
+                                 <li><%= t('dashboard_menu.you_can') %>:</li>
+                                 <li>
+                                     <a href="https://market.modultrade.com/" target="_blank" class="outerlink"><span><%= t('dashboard_menu.trade_on_market') %></span></a>
+                                 </li>
+                                 <li><a href='/send_mtrc/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.send_tokens') %></a></li>
+                                 <li><a href='/receive_tokens/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.receive_tokens') %></a></li>
+                                 <li><a href='/send_smc_mtrc/?lang=<%= I18n.locale %>'><%= t('dashboard_menu.pay_on_smc') %></a></li>
+                                 <li><a><%= t('dashboard_menu.exchange_tokens') %></a></li>
+                                 <li><a><%= t('dashboard_menu.buy_sell_tokens') %></a></li>
+      
+                          </ul>
+                      </div>
+                </div>
+                </h2>
+             
+      
+              <div class="right_block_container  col-lg-3 col-md-3 col-sm-3">
+
+              
+                  <div class="persona">
+                    <em></em>
+                    <div class="img"><img src="./img/new_lk/no_userpic.png" alt=""/></div>
+                    <div class="name desktop">
+                                        <span data-hj-suppress="">
+                                         John Smith
+                                          </span><em></em>
+      
+                    </div><!--  name -->
+                    <div class="popup">
+                      <div class="name_block">
+                        <div class="img_p"><img src="./img/new_lk/no_userpic_big.png" alt=""/></div>
+                        <div class="name_p">
+                        <em></em>
+                          <span data-hj-suppress="">John Smith</span>
+                          <!--<i>Private wallet</i>-->
+                        </div>
+      
+                        <div class="clear"></div>
+                      </div><!--  name_block -->
+      
+                      <div class="btns_line">
+                        <a href="<%= edit_user_registration_path(domain: Rails.application.secrets.accounts_domain, lang: I18n.locale) %>" class="edit_profile">edit_profile</a>
+                        <a href="<%= Rails.application.secrets.oauth_provider %>/users/sign_out/?lang=<%= I18n.locale %>&redirect_after=<%= CGI::escape(destroy_user_session_url)%>" class="logout btn-logout">logout</a>
+                      </div><!-- btns_line  -->
+      
+                      <div class="block">
+                      
+                      </div><!-- block   -->
+      
+      
+                    </div><!-- popup  -->
+                    <div class="clear"></div>
+                  </div><!--  persona  -->
+               
+              </div><!-- right-block - container-->
+            </div>
+          </div><!-- container  -->
+        </div>
+      </header>
+  <div class="wrapper">
+    <main>
+    
+    <div class="container">
+		<h1>History of exchange</h1>
+		<div class="centered_block_w table_block">
+  			<ul id="transactions_table">
+    			<li class="header">
+
+      				<div class="date_and_time sortable" onclick="sortTransactionsTable(0)">
+        				<i class = "fa fa-sort"> </i> 
+        				Date and time
+      				</div>
+      				<div class="amount">Outcoming<br />Amount</div>
+      				<div class="address">From<br />account</div>
+      				<div class="transaction">Outcoming<br />transaction ID</div>
+					<div class="status">Status</div>
+      				<div class="amount amount_to">Incoming<br />Amount</div>
+      				<div class="address">To account</div>
+      				<div class="transaction">Incoming<br />transaction ID</div>
+					<div class="status">Status</div>
+					<div class="exchange_rate">Exchange rate</div>
+      				<div class="comment">Comment</div>
+    			</li>
+  
+
+
+				<li>
+					<div class="date"><span class="mob_title">Date and time</span>2018.01.01</div>
+					<div class="time">1:10 PM</div>
+					<div class="clear mob"></div>
+					<div class="amount out_amount"><span class="mob_title">Outcoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">From account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Outcoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_out pending"><span class="mob_title">Outcoming transaction ID</span>Pending...</div>
+					<div class="amount in_amount"><span class="mob_title">Status</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">To account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Incoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_in paid"><span class="mob_title">Status Amount</span>Paid</div>		
+					<div class="exchange_rate"><span class="mob_title">Exchange rate</span>12.6</div>
+					<div class="comment"><span class="mob_title">Comment</span>For 10 goods</div>
+					<div class="edit"><a href="#">&nbsp;</a></div>
+				</li>
+				
+				<li>
+					<div class="date"><span class="mob_title">Date and time</span>2018.01.01</div>
+					<div class="time">1:10 PM</div>
+					<div class="clear mob"></div>
+					<div class="amount out_amount"><span class="mob_title">Outcoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">From account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Outcoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_out pending"><span class="mob_title">Outcoming transaction ID</span>Pending...</div>
+					<div class="amount in_amount"><span class="mob_title">Incoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">To account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Incoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_in paid"><span class="mob_title">Status</span>Paid</div>		
+					<div class="exchange_rate"><span class="mob_title">Exchange rate</span>12.6</div>
+					<div class="comment"><span class="mob_title">Comment</span>For 10 goods</div>
+					<div class="edit"><a href="#">&nbsp;</a></div>
+				</li>
+				<li class="rejected_line">
+					<div class="date"><span class="mob_title">Date and time</span>2018.01.01</div>
+					<div class="time">1:10 PM</div>
+					<div class="clear mob"></div>
+					<div class="amount out_amount"><span class="mob_title">Outcoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">From account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Outcoming transaction ID</span>&nbsp;</div>
+					<div class="status status_out"><span class="mob_title">Status</span>Rejected</div>
+					<div class="amount in_amount"><span class="mob_title">Incoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">To account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Incoming transaction ID</span>&nbsp;</div>
+					<div class="status status_in"><span class="mob_title">Status</span>Rejected</div>		
+					<div class="exchange_rate"><span class="mob_title">Exchange rate</span>12.6</div>
+					<div class="comment"><span class="mob_title">Comment</span>For 10 goods</div>
+					<div class="edit"><a href="#">&nbsp;</a></div>
+				</li>	
+				<li>
+					<div class="date"><span class="mob_title">Date and time</span>2018.01.01</div>
+					<div class="time">1:10 PM</div>
+					<div class="clear mob"></div>
+					<div class="amount out_amount"><span class="mob_title">Outcoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">From account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Outcoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_out pending"><span class="mob_title">Outcoming transaction ID</span>Pending...</div>
+					<div class="amount in_amount"><span class="mob_title">Incoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">To account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Incoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_in paid"><span class="mob_title">Status</span>Paid</div>		
+					<div class="exchange_rate"><span class="mob_title">Exchange rate</span>12.6</div>
+					<div class="comment"><span class="mob_title">Comment</span>For 10 goods</div>
+					<div class="edit"><a href="#">&nbsp;</a></div>
+				</li>
+				<li>
+					<div class="date"><span class="mob_title">Date and time</span>2018.01.01</div>
+					<div class="time">1:10 PM</div>
+					<div class="clear mob"></div>
+					<div class="amount out_amount"><span class="mob_title">Outcoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">From account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Outcoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_out pending"><span class="mob_title">Outcoming transaction ID</span>Pending...</div>
+					<div class="amount in_amount"><span class="mob_title">Incoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">To account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Incoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_in paid"><span class="mob_title">Status</span>Paid</div>		
+					<div class="exchange_rate"><span class="mob_title">Exchange rate</span>12.6</div>
+					<div class="comment"><span class="mob_title">Comment</span>For 10 goods</div>
+					<div class="edit"><a href="#">&nbsp;</a></div>
+				</li>
+				<li>
+					<div class="date"><span class="mob_title">Date and time</span>2018.01.01</div>
+					<div class="time">1:10 PM</div>
+					<div class="clear mob"></div>
+					<div class="amount out_amount"><span class="mob_title">Outcoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">From account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Outcoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_out pending"><span class="mob_title">Outcoming transaction ID</span>Pending...</div>
+					<div class="amount in_amount"><span class="mob_title">Incoming Amount</span>+&nbsp;170'590.08</div>
+					<div class="address"><span class="mob_title">To account</span>BTC</div>
+					<div class="transaction"><span class="mob_title">Incoming transaction ID</span>0xd1f2343ce5bdad3e760b664fc1320780376ba3e8</div>
+					<div class="status status_in paid"><span class="mob_title">Status</span>Paid</div>		
+					<div class="exchange_rate"><span class="mob_title">Exchange rate</span>12.6</div>
+					<div class="comment"><span class="mob_title">Comment</span>For 10 goods</div>
+					<div class="edit"><a href="#">&nbsp;</a></div>
+				</li>
+ 			</ul>
+
+
+  <div class="clear"></div>
+</div>
+</div><!--  container -->
+</main>
+
+
+    <footer>
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		  <a href="/" class="footer_logo"><img src="./img/new_lk/mt_logo_f.png" alt=""/></a>
+		  <a href="https://files.modultrade.com/wallet/MT-Wallet_UserGuide.pdf" target="blank" class="about_mt" id="user_guide_btn">MT Wallet User Guide</a>
+		  <a href="https://files.modultrade.com/ModulTrade_TermsOfUse.pdf" target="blank" class="about_mt" id="terms_of_use_btn">MT Wallet Terms of Use</a>
+		  <!--<a href="/docs/MT-Wallet-User-Guide.pdf" target="blank" class="about_mt">About MT Wallet</a>-->
+		</div>
+		<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 socials">
+		  <a href="https://www.linkedin.com/company/16259600/" target="_blank"><i class="linkedin"></i></a>
+		  <a href="https://www.facebook.com/modultrade/" target="_blank"><i class="fb"></i></a>
+		  <a href="https://twitter.com/ModulTrade" target="_blank"><i class="twitter"></i></a>
+		  <a href="https://angel.co/modultrade" target="_blank"><i class="icon_4"></i></a>
+		  <br class="mob"/>
+		  <a href="https://www.reddit.com/user/ModulTrade/" target="_blank"><i class="reddit"></i></a>
+		  <a href="https://github.com/ModulTrade"><i class="github"></i></a>
+		  <a href="https://www.youtube.com/channel/UCmrYHneVIDhZNnwJgHJEK5A" target="_blank"><i class="youtube"></i></a>
+			<a href="https://medium.com/@ModulTrade" target="_blank"><i class="google"></i></a>
+			
+			
+			<div class="block_ex">
+					<p class="up"><b>MTRc/ETH</b><br /><span>~0.000118</span></p>
+					<p class="down"><b>MTRc/ETH</b><br /><span>~0.000118</span></p>
+				</div>			
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 without_padding">
+  
+		  <address>
+			Email:&nbsp;<a href="mailto:support@modultrade.com">support@modultrade.com</a>
+		  </address>
+  
+  
+		</div>
+  
+	  </div>
+	</div>
+  </footer>
+  </div><!-- wrapper -->
+  <script>
+      // BOTTOM SUBSCRIBE FORM
+      var $subscribtion_form = $("#subscribtion_form");
+      var $subscription_email = $("#subscription_email");
+      var $subscription_status = $("#subscription_status");
+  
+      $subscription_email.keyup(function (e) {
+          var code = e.which;
+          if (code != 13) $subscription_status.hide();
+      });
+      var sending_in_progress = false;
+      $subscribtion_form.submit(function () {
+          if (sending_in_progress) return false;
+          var form = $subscribtion_form.serialize();
+          sending_in_progress = true;
+          $subscription_status.html("<span style='color: black;'>Sending...</span>");
+          $subscription_status.show();
+          if (!$subscription_email.val()) {
+              return $subscription_email.focus();
+          }
+          $.ajax({
+              type: "POST",
+              url: "/create_request",
+              data: form,
+              success: function () {
+                  setCookie("subscription_email", document.getElementById("subscription_email").value, expiry_tiny);
+                  $subscription_email.val("");
+                  $subscription_status.html("<span style='color: green;'>Success!</span>");
+                  $subscription_status.show();
+                  dataLayer.push({'event': 'try-subscribe', 'subscribed': 'true'});
+                  sending_in_progress = false;
+              },
+              error: function () {
+                  $subscription_status.html("<span style='color: red;'>It seems you've already subscribed!</span>");
+                  $subscription_status.show();
+                  dataLayer.push({'event': 'try-subscribe', 'subscribed': 'false'});
+                  sending_in_progress = false;
+              }
+          });
+          return false;
+      });
+  
+  
+  </script>
+  </body>
+  </html>
