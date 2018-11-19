@@ -1,0 +1,14 @@
+.DaysPager{
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+}
+.timeZone{
+    height: 100%;
+    display:flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
